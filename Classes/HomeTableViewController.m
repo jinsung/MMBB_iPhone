@@ -23,25 +23,15 @@
 
 @implementation HomeTableViewController
 
-@synthesize selectedTabIndex, segmentedControl;
+@synthesize selectedTabIndex, segmentedControl, filteredListContent;
 
 - (void)dealloc {
 	[segmentedControl release];
     [super dealloc];
 }
 
-- (id)init {
-	self = [super init];
-	if (!self) 
-		return nil;	
-    return self;
-}
-
 - (NSMutableArray *) dataList {
 	NSMutableArray *list = [self.tableData copy];
-	if (self.tableView == self.searchDisplayController.searchResultsTableView) {
-		list = [self.filteredListContent copy];
-	}
 	return [list autorelease];
 }
 
@@ -54,8 +44,8 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    [self.tableView reloadData];
+	self.tableView.scrollEnabled = YES;
 }
 
 -(void) viewDidLoad 
@@ -151,12 +141,8 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (tableView == self.searchDisplayController.searchResultsTableView) {
-		return [self.filteredListContent count];
-	} else {
-		ChapterItem *ci = [[self dataList] objectAtIndex:section];
-		return [ci.units count];
-	}
+	ChapterItem *ci = [[self dataList] objectAtIndex:section];
+	return [ci.units count];
 }
 
 // Customize the appearance of table view cells.
@@ -171,27 +157,41 @@
 										 reuseIdentifier:@"TOCItemCell"] autorelease];
 	
 	// Instead of setting each label directly, we pass it a table items object
-	ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];
-	UnitItem *ui = [ci.units objectAtIndex:[indexPath row]];
+	UnitItem *ui;
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
+	} else {
+		ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];	
+		ui = [ci.units objectAtIndex:[indexPath row]];
+	}
 	[cell setTitle:[ui title]];
 	return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	ChapterItem * ci = [[self dataList] objectAtIndex:section];
-	NSString *sectiontitle;
-	if (self.selectedTabIndex == 0) {
-		sectiontitle = [NSString stringWithFormat:@"%@ - %@", ci.sectionTitle, ci.title];
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		return nil;
 	} else {
-		sectiontitle = ci.title;
+		ChapterItem * ci = [[self dataList] objectAtIndex:section];
+		NSString *sectiontitle;
+		if (self.selectedTabIndex == 0) {
+			sectiontitle = [NSString stringWithFormat:@"%@ - %@", ci.sectionTitle, ci.title];
+		} else {
+			sectiontitle = ci.title;
+		}
+		return sectiontitle;
 	}
-	return sectiontitle;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-	ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];
-	UnitItem *ui = [[ci units] objectAtIndex:[indexPath row]];
+	UnitItem *ui;
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];
+		ui = [[ci units] objectAtIndex:[indexPath row]];
+	} else {
+		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
+	}
 	UnitViewer *uv = [[UnitViewer alloc] initWithUnitID: ui.id];
 	[uv setHidesBottomBarWhenPushed: YES];
 	[self.navigationController pushViewController:uv animated:YES];
@@ -199,16 +199,14 @@
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+	NSMutableArray *a = [[NSMutableArray alloc] init];
 	if (self.selectedTabIndex == 1) {
-		NSMutableArray *a = [[NSMutableArray alloc] init];
 		for (int i=0; i<[[self dataList] count]; i++ ) {
 			ChapterItem *ci = [[self dataList] objectAtIndex:i];
 			[a addObject:[ci title]];
 		}
-		return [a autorelease];
-	} else {
-		return nil;
 	}
+	return [a autorelease];
 }
 
 #pragma mark -
@@ -218,9 +216,9 @@
 {
 	// Update the filtered array based on the search text and scope.
 	[self.filteredListContent removeAllObjects]; // First clear the filtered array.
-
 	// Search the main list for products whose type matches the scope (if selected) and 
 	// whose name matches searchText; add items tha match to the filtered array.
+	NSMutableArray *fc = [[NSMutableArray alloc] init];
 	for (int i=0; i<[[self dataList] count]; i++ ) {
 		ChapterItem *ci = [[self dataList] objectAtIndex:i];
 		for (UnitItem *ui in [ci units]) {
@@ -228,10 +226,15 @@
 			[ui.title compare:searchText 
 					  options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) 
 						range:NSMakeRange(0, [searchText length])];
-			if (result == NSOrderedAscending)
-				[self.filteredListContent addObject:ui];
+			if (result == NSOrderedSame) {
+				[fc addObject:ui];
+				//[self.filteredListContent addObject:ui];
+			}
 		}
 	}
+	if ([fc count] > 0 )
+		[self setFilteredListContent:fc];
+	[self setTableView: [self.searchDisplayController searchResultsTableView]];
 }
 
 @end

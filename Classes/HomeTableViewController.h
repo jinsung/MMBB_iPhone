@@ -11,12 +11,14 @@
 
 
 @interface HomeTableViewController : MMBBTableController {
+	NSMutableArray *filteredListContent;
 	NSInteger selectedTabIndex;
 	UISegmentedControl *segmentedControl;
 }
 
 @property (nonatomic) NSInteger selectedTabIndex;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedControl;
+@property (nonatomic, retain) NSMutableArray *filteredListContent;
 
 - (IBAction) segmentAction: (id) sender;
 
