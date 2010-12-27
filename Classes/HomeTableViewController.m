@@ -17,22 +17,16 @@
 @interface HomeTableViewController (Private)
 
 - (void) addBookmark;
-- (NSMutableArray *) dataList;
 
 @end
 
 @implementation HomeTableViewController
 
-@synthesize selectedTabIndex, segmentedControl, filteredListContent;
+@synthesize selectedTabIndex, segmentedControl;
 
 - (void)dealloc {
 	[segmentedControl release];
     [super dealloc];
-}
-
-- (NSMutableArray *) dataList {
-	NSMutableArray *list = [self.tableData copy];
-	return [list autorelease];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,12 +39,14 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
     [self.tableView reloadData];
+	self.filteredListContent = nil;
 	self.tableView.scrollEnabled = YES;
 }
 
 -(void) viewDidLoad 
 {
 	[super viewDidLoad];
+	
 	// setup segment controlls
 	[segmentedControl setTitle:NSLocalizedString(@"TableOfContent", "dummy") forSegmentAtIndex:0];
 	[segmentedControl setTitle:NSLocalizedString(@"Term", "dummy") forSegmentAtIndex:1];
@@ -71,6 +67,8 @@
 
 - (IBAction) segmentAction: (id) sender {
 	[self setSelectedTabIndex: segmentedControl.selectedSegmentIndex];
+	[self.tableData removeAllObjects];
+	[self.filteredListContent removeAllObjects];
 	switch ( self.selectedTabIndex ) {
 		case 0:
 			self.tableData = [[MMBBAppDelegate sql] getChapters];
@@ -87,18 +85,25 @@
 		case 2:
 			self.tableData = [[MMBBAppDelegate sql] getUnitsInBookmarked];
 			// add edit button
-			if ([[self dataList] count] > 0 ) {
+			if ([[self tableData] count] > 0 ) {
 				[[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
 			}
-			/*
-			 TOODO: ADD BUTTON?
+			
 			UIBarButtonItem *addButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd 
 																						target:self action:@selector(addBookmark)];
 			[[self navigationItem] setRightBarButtonItem:addButtonItem];
 			[addButtonItem release];
-			 */
+			
 			break;
 	}
+	// create a filtered list that will contain products for the search results table.
+	NSInteger numOfItems = 0;
+	for (ChapterItem *ci in [self tableData]){
+		numOfItems += [ci.units count];
+	}
+	self.filteredListContent = [NSMutableArray arrayWithCapacity:numOfItems];
+	[self.tableView scrollRectToVisible:self.tableView.tableHeaderView.bounds animated:NO]; 
+	
 	[self.tableView reloadData];
 }
 
@@ -113,7 +118,7 @@
 	
 	if( self.selectedTabIndex == 2 ) {
 		if (editingStyle == UITableViewCellEditingStyleDelete) {
-			ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];
+			ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];
 			UnitItem *ui = [ci.units objectAtIndex:[indexPath row]];
 			BOOL isSQLGood = [[MMBBAppDelegate sql] updateBookmarkUnitWithID:[ui id] isBookmark:0];
 			if (isSQLGood) {
@@ -122,7 +127,7 @@
 				[myTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] 
 								   withRowAnimation:UITableViewRowAnimationFade];
 				if ([[ci units] count] == 0) {
-					[[self dataList] removeObjectAtIndex:[indexPath section]];
+					[[self tableData] removeObjectAtIndex:[indexPath section]];
 					[myTableView deleteSections:[NSIndexSet indexSetWithIndex:[indexPath section]]
 							   withRowAnimation:UITableViewRowAnimationFade];
 				}
@@ -139,10 +144,22 @@
 #pragma mark -
 #pragma mark Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		return 1;
+	} else {
+		return [[self tableData] count];
+	}
+}
+
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	ChapterItem *ci = [[self dataList] objectAtIndex:section];
-	return [ci.units count];
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		return [self.filteredListContent count];
+	} else {
+		ChapterItem *ci = [[self tableData] objectAtIndex:section];
+		return [ci.units count];
+	}
 }
 
 // Customize the appearance of table view cells.
@@ -157,11 +174,11 @@
 										 reuseIdentifier:@"TOCItemCell"] autorelease];
 	
 	// Instead of setting each label directly, we pass it a table items object
-	UnitItem *ui;
+	UnitItem *ui = nil;
 	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
 		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
 	} else {
-		ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];	
+		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];	
 		ui = [ci.units objectAtIndex:[indexPath row]];
 	}
 	[cell setTitle:[ui title]];
@@ -172,8 +189,8 @@
 	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
 		return nil;
 	} else {
-		ChapterItem * ci = [[self dataList] objectAtIndex:section];
-		NSString *sectiontitle;
+		ChapterItem * ci = [[self tableData] objectAtIndex:section];
+		NSString *sectiontitle = nil;
 		if (self.selectedTabIndex == 0) {
 			sectiontitle = [NSString stringWithFormat:@"%@ - %@", ci.sectionTitle, ci.title];
 		} else {
@@ -185,12 +202,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-	UnitItem *ui;
+	UnitItem *ui = nil;
 	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
-		ChapterItem *ci = [[self dataList] objectAtIndex:[indexPath section]];
-		ui = [[ci units] objectAtIndex:[indexPath row]];
+		ui = [self.filteredListContent objectAtIndex:[indexPath row]];		
 	} else {
-		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
+		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];
+		ui = [[ci units] objectAtIndex:[indexPath row]];
 	}
 	UnitViewer *uv = [[UnitViewer alloc] initWithUnitID: ui.id];
 	[uv setHidesBottomBarWhenPushed: YES];
@@ -200,13 +217,26 @@
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
 	NSMutableArray *a = [[NSMutableArray alloc] init];
+
 	if (self.selectedTabIndex == 1) {
-		for (int i=0; i<[[self dataList] count]; i++ ) {
-			ChapterItem *ci = [[self dataList] objectAtIndex:i];
+		// search icon.
+		[a addObject:@"{search}"];
+		for (int i=0; i<[[self tableData] count]; i++ ) {
+			ChapterItem *ci = [[self tableData] objectAtIndex:i];
 			[a addObject:[ci title]];
 		}
 	}
 	return [a autorelease];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title 
+			   atIndex:(NSInteger)index {
+	if ( index == 0 ) {
+		[tableView scrollRectToVisible:tableView.tableHeaderView.bounds animated:NO]; 
+		return -1;
+	} else {
+		return index-1;
+	}
 }
 
 #pragma mark -
@@ -218,23 +248,18 @@
 	[self.filteredListContent removeAllObjects]; // First clear the filtered array.
 	// Search the main list for products whose type matches the scope (if selected) and 
 	// whose name matches searchText; add items tha match to the filtered array.
-	NSMutableArray *fc = [[NSMutableArray alloc] init];
-	for (int i=0; i<[[self dataList] count]; i++ ) {
-		ChapterItem *ci = [[self dataList] objectAtIndex:i];
+	for (int i=0; i<[[self tableData] count]; i++ ) {
+		ChapterItem *ci = [[self tableData] objectAtIndex:i];
 		for (UnitItem *ui in [ci units]) {
 			NSComparisonResult result = 
 			[ui.title compare:searchText 
 					  options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) 
 						range:NSMakeRange(0, [searchText length])];
 			if (result == NSOrderedSame) {
-				[fc addObject:ui];
-				//[self.filteredListContent addObject:ui];
+				[self.filteredListContent addObject:ui];
 			}
 		}
 	}
-	if ([fc count] > 0 )
-		[self setFilteredListContent:fc];
-	[self setTableView: [self.searchDisplayController searchResultsTableView]];
 }
 
 @end
