@@ -17,7 +17,8 @@
 
 @property (nonatomic, retain) FMDatabase *db;
 
-- (NSMutableArray *) getSections;
+//- (NSMutableArray *) getSections; // commented out because no one use this function.
+- (NSMutableArray *) getChapters;
 - (NSMutableArray *) getUnitsInChapterID: (NSInteger)chapterID;
 - (NSMutableArray *) getUnitsInOrder;
 - (NSMutableArray *) getUnitsInBookmarked;

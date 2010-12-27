@@ -25,4 +25,5 @@
 @property (nonatomic, retain) UIBarButtonItem *bookmarkBtn;
 
 - (id) initWithUnitID:(NSInteger)pUnitID;
+
 @end

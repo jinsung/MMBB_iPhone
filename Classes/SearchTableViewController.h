@@ -10,7 +10,7 @@
 
 
 @interface SearchTableViewController : UITableViewController {
-
+	IBOutlet UISearchBar *searchBar;
 }
 
 @end

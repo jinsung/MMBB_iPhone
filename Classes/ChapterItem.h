@@ -12,11 +12,13 @@
 @interface ChapterItem : NSObject {
 	NSInteger id;
 	NSString *title;
+	NSString *sectionTitle;
 	NSString *subtitle;
 	NSMutableArray *units;
 }
 @property (nonatomic) NSInteger id;
 @property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *sectionTitle;
 @property (nonatomic, retain) NSString *subtitle;
 @property (nonatomic, retain) NSMutableArray *units;
 

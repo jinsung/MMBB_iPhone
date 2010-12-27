@@ -11,10 +11,11 @@
 
 @implementation ChapterItem
 
-@synthesize id, title, subtitle, units;
+@synthesize id, title, subtitle, units, sectionTitle;
 
 - (void) dealloc {
 	[title release];
+	[sectionTitle release];
 	[subtitle release];
 	[units release];
 	[super dealloc];

@@ -3,7 +3,7 @@
 //  MMBB
 //
 //  Created by Jin Sung Yoo on 11/21/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 Jin Sung Yoo. All rights reserved.
 //
 
 #import "SearchNavController.h"
@@ -22,6 +22,12 @@
 	//	[tbi setImage:img];
 	
     return self;
+}
+
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+	return YES;
 }
 
 - (void)dealloc {

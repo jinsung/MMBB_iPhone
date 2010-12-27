@@ -18,8 +18,9 @@
 - (void) forward;
 - (void) back;
 - (void) bookmark: (UIBarButtonItem *) sender;
-- (void)loadWithUnitID: (NSInteger) newId;
+- (void) loadWithUnitID: (NSInteger) newId;
 - (void) updateToolbarBtns;
+- (void) rotateView:(CGFloat) radian;
 
 - (UIBarButtonItem *)backButton;
 - (CGImageRef)createBackArrowImageRef;
@@ -39,9 +40,13 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-	if ( self.interfaceOrientation == UIInterfaceOrientationPortrait ||
-		 self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown )
+	if ( self.interfaceOrientation == UIInterfaceOrientationPortrait ) {
 		[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+		[self rotateView:90];
+	} else if ( self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+		[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+		[self rotateView:270];
+	}
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -88,7 +93,25 @@
 	imageView = nil;
 }
 
+- (void)rotateView:(CGFloat) radian {
+	[UIView beginAnimations:@"View Flip" context:nil];
+	[UIView setAnimationDuration:0.5];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	
+	self.navigationController.view.transform = CGAffineTransformIdentity;
+	self.navigationController.view.transform = CGAffineTransformMakeRotation(radian * M_PI / 180);
+	self.navigationController.view.bounds = CGRectMake(0.0, 0.0, 480, 320);
+	self.navigationController.view.center = CGPointMake(160.0f, 240.0f);
+	[UIView commitAnimations];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
+	if ( self.interfaceOrientation == UIInterfaceOrientationPortrait ||
+		self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ) {
+		[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+		[self rotateView:0];
+	}
+	
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
 	[[[self navigationController] navigationBar] setBarStyle:UIBarStyleDefault];
 	[[[self navigationController] navigationBar] setTranslucent:NO];
@@ -142,8 +165,11 @@
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || 
-			interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    if (interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+		return YES;
+	} else {
+		return NO;
+	}
 }
 
 - (void)setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated {

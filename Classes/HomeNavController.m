@@ -18,10 +18,16 @@
 	[tbi setTitle:NSLocalizedString(@"Home",@"dummy")];
 	
 	// create a UIImage from a file.
-	//	UIImage *img = [UIImage imageNamed:@"HomeIco.png"];
-	//	[tbi setImage:img];
+	UIImage *img = [UIImage imageNamed:@"house.png"];
+	[tbi setImage:img];
 
     return self;
+}
+
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+	return YES;
 }
 
 - (void)dealloc {

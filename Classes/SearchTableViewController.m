@@ -11,12 +11,19 @@
 
 @implementation SearchTableViewController
 
+-(id) init 
+{
+	self = [super initWithStyle:UITableViewStylePlain];
+	if (!self) 
+		return nil;	
+	return self;
+}
 
-- (id)initWithFrame:(CGRect)frame {
-    if ((self = [super initWithFrame:frame])) {
-        // Initialization code
-    }
-    return self;
+-(void) viewDidLoad
+{
+	[super viewDidLoad];
+	self.tableView.tableHeaderView = searchBar;
+	
 }
 
 /*
@@ -28,6 +35,7 @@
 */
 
 - (void)dealloc {
+	[searchBar release];
     [super dealloc];
 }
 

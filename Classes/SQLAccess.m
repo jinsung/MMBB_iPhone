@@ -64,6 +64,7 @@ static NSString *kUnitTableName = @"Unit";
 	return self;
 }
 
+/*
 - (NSMutableArray *) getSections {
 	NSMutableArray *a = [[NSMutableArray alloc] init];
 	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@", 
@@ -77,16 +78,41 @@ static NSString *kUnitTableName = @"Unit";
 		NSString *secSql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE section_id=%d", 
 							kChapterTableName, currentSectionID];
 		FMResultSet *secRs = [db executeQuery:secSql];
-		NSMutableArray *chapters = [[[NSMutableArray alloc] init] autorelease];
+		NSMutableArray *chapters = [[NSMutableArray alloc] init];
 		while ([secRs next]) {
-			ChapterItem *chapter = [[[ChapterItem alloc] init] autorelease];
+			ChapterItem *chapter = [[ChapterItem alloc] init];
 			[chapter setTitle:[secRs stringForColumn:@"title"]];
 			[chapter setId:[secRs intForColumn:@"id"]];
 			[chapters addObject:chapter];
+			[chapter release], chapter=nil;
 		}
 		[si setChapters:chapters];
+		[chapters release], chapters=nil;
 		[a addObject:si];
 	}
+	return [a autorelease];
+}
+*/
+- (NSMutableArray *) getChapters {
+	NSMutableArray *a = [[NSMutableArray alloc] init];
+	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@", 
+					 kChapterTableName];
+	FMResultSet *rs = [db executeQuery:sql];
+	while ([rs next]) {
+		ChapterItem *chapter = [[ChapterItem alloc] init];
+		[chapter setId:[rs intForColumn:@"id"]];
+		[chapter setTitle:[rs stringForColumn:@"title"]];
+		
+		NSInteger currentSectionID = [rs intForColumn:@"section_id"];
+		NSString *sectionSql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE id=%d", 
+								kSectionTableName, currentSectionID];
+		FMResultSet *sectionRs = [db executeQuery:sectionSql];
+		while ([sectionRs next]) {
+			[chapter setSectionTitle:[sectionRs stringForColumn:@"title"]];
+		}
+		[a addObject:chapter];
+		[chapter release], chapter=nil;
+	}	
 	return [a autorelease];
 }
 
@@ -171,7 +197,6 @@ static NSString *kUnitTableName = @"Unit";
 - (BOOL) updateBookmarkUnitWithID: (NSInteger) unitId isBookmark: (NSInteger) bookmark {
 	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET is_bookmarked=%d WHERE id=%d", 
 					 kUnitTableName, bookmark, unitId ];
-
 	return [db executeUpdate:sql];
 }
 

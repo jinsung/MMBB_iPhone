@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMBBTableController.h"
 
 
-@interface HomeTableViewController : UITableViewController {
-	NSMutableArray *sections;
+@interface HomeTableViewController : MMBBTableController {
+
 	NSInteger selectedTabIndex;
+	UISegmentedControl *segmentedControl;
 }
 
-@property (nonatomic, retain) NSMutableArray *sections;
 @property (nonatomic) NSInteger selectedTabIndex;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedControl;
+
+- (IBAction) segmentAction: (id) sender;
 
 @end
