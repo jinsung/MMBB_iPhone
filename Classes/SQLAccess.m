@@ -102,6 +102,7 @@ static NSString *kUnitTableName = @"Unit";
 		ChapterItem *chapter = [[ChapterItem alloc] init];
 		[chapter setId:[rs intForColumn:@"id"]];
 		[chapter setTitle:[rs stringForColumn:@"title"]];
+		[chapter setUnits:[self getUnitsInChapterID:chapter.id]];
 		
 		NSInteger currentSectionID = [rs intForColumn:@"section_id"];
 		NSString *sectionSql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE id=%d", 

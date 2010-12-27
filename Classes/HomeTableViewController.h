@@ -11,7 +11,6 @@
 
 
 @interface HomeTableViewController : MMBBTableController {
-
 	NSInteger selectedTabIndex;
 	UISegmentedControl *segmentedControl;
 }

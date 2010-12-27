@@ -40,7 +40,7 @@
 - (NSMutableArray *) dataList {
 	NSMutableArray *list = [self.tableData copy];
 	if (self.tableView == self.searchDisplayController.searchResultsTableView) {
-		list = [self.filteredSections copy];
+		list = [self.filteredListContent copy];
 	}
 	return [list autorelease];
 }
@@ -151,15 +151,18 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	ChapterItem *ci = [[self dataList] objectAtIndex:section];
-	return [ci.units count];
+	if (tableView == self.searchDisplayController.searchResultsTableView) {
+		return [self.filteredListContent count];
+	} else {
+		ChapterItem *ci = [[self dataList] objectAtIndex:section];
+		return [ci.units count];
+	}
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView 
          cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
-	
 	// Get an instance of a HomepwnerItemCell - either an unused one or a new one
 	TOCItemCell *cell = (TOCItemCell *)[self.tableView 
 										dequeueReusableCellWithIdentifier:@"TOCItemCell"];
@@ -175,8 +178,14 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	SectionItem * si = [[self dataList] objectAtIndex:section];
-	return si.title;
+	ChapterItem * ci = [[self dataList] objectAtIndex:section];
+	NSString *sectiontitle;
+	if (self.selectedTabIndex == 0) {
+		sectiontitle = [NSString stringWithFormat:@"%@ - %@", ci.sectionTitle, ci.title];
+	} else {
+		sectiontitle = ci.title;
+	}
+	return sectiontitle;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -196,7 +205,7 @@
 			ChapterItem *ci = [[self dataList] objectAtIndex:i];
 			[a addObject:[ci title]];
 		}
-		return a;
+		return [a autorelease];
 	} else {
 		return nil;
 	}
@@ -208,10 +217,21 @@
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
 	// Update the filtered array based on the search text and scope.
-	[self.filteredSections removeAllObjects]; // First clear the filtered array.
+	[self.filteredListContent removeAllObjects]; // First clear the filtered array.
 
 	// Search the main list for products whose type matches the scope (if selected) and 
 	// whose name matches searchText; add items tha match to the filtered array.
+	for (int i=0; i<[[self dataList] count]; i++ ) {
+		ChapterItem *ci = [[self dataList] objectAtIndex:i];
+		for (UnitItem *ui in [ci units]) {
+			NSComparisonResult result = 
+			[ui.title compare:searchText 
+					  options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) 
+						range:NSMakeRange(0, [searchText length])];
+			if (result == NSOrderedAscending)
+				[self.filteredListContent addObject:ui];
+		}
+	}
 }
 
 @end
