@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MMBBTableController.h"
+#import "SearchNavController.h"
 
 
-@interface HomeTableViewController : MMBBTableController {
+@interface HomeTableViewController : MMBBTableController <ModelViewDelegate> {
 	NSInteger selectedTabIndex;
 	UISegmentedControl *segmentedControl;
 }

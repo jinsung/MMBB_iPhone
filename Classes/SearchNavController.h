@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ModelViewDelegate <NSObject>
+@required
+- (void) modelViewDone: (BOOL)success;
+@end
 
 @interface SearchNavController : UINavigationController {
-	
+	id <ModelViewDelegate> mvdelegate;
 }
+
+@property (retain) id mvdelegate;
 
 @end

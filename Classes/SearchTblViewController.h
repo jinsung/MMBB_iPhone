@@ -7,24 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMBBTableController.h"
 
 
-@interface SearchTblViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate> {
-	UITableView *_tableView;
-	UISearchBar *_searchBar;
-	NSMutableArray *_filteredRows;
-	NSMutableArray *_copyFilteredRows;
-	BOOL _searching;
-	BOOL _letUserSelectRow;
-	UISearchDisplayController *searchDisplayController;
+@interface SearchTblViewController : MMBBTableController {
+
 }
 
-@property(nonatomic, retain) UISearchDisplayController *searchDisplayController;
-@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) NSMutableArray *filteredRows;
-@property (nonatomic, retain) NSMutableArray *copyFilteredRows;
-@property (nonatomic) BOOL searching;
-@property (nonatomic) BOOL letUserSelectRow;
+
 
 @end

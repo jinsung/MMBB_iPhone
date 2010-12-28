@@ -8,9 +8,9 @@
 
 #import "SearchNavController.h"
 
-
 @implementation SearchNavController
 
+@synthesize mvdelegate;
 
 - (id)init {
 	self = [super init];

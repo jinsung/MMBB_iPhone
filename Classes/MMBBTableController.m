@@ -7,7 +7,9 @@
 //
 
 #import "MMBBTableController.h"
-
+#import "ChapterItem.h"
+#import "UnitItem.h"
+#import "TOCItemCell.h"
 
 @implementation MMBBTableController
 
@@ -49,11 +51,72 @@ letUserSelectRow=_letUserSelectRow;
     // e.g. self.myOutlet = nil;
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		return 1;
+	} else {
+		return [[self tableData] count];
+	}
+}
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		return [self.filteredListContent count];
+	} else {
+		ChapterItem *ci = [[self tableData] objectAtIndex:section];
+		return [ci.units count];
+	}
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+	// Get an instance of a HomepwnerItemCell - either an unused one or a new one
+	TOCItemCell *cell = (TOCItemCell *)[self.tableView 
+										dequeueReusableCellWithIdentifier:@"TOCItemCell"];
+	if (!cell)
+		cell = [[[TOCItemCell alloc] initWithStyle:UITableViewCellStyleDefault 
+								   reuseIdentifier:@"TOCItemCell"] autorelease];
+	
+	// Instead of setting each label directly, we pass it a table items object
+	UnitItem *ui = nil;
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
+	} else {
+		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];	
+		ui = [ci.units objectAtIndex:[indexPath row]];
+	}
+	[cell setTitle:[ui title]];
+	return cell;
+}
+
 #pragma mark -
 #pragma mark Content Filtering
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
+	// Update the filtered array based on the search text and scope.
+	[self.filteredListContent removeAllObjects]; // First clear the filtered array.
+	// Search the main list for products whose type matches the scope (if selected) and 
+	// whose name matches searchText; add items tha match to the filtered array.
+	for (int i=0; i<[[self tableData] count]; i++ ) {
+		ChapterItem *ci = [[self tableData] objectAtIndex:i];
+		for (UnitItem *ui in [ci units]) {
+			NSComparisonResult result = 
+			[ui.title compare:searchText 
+					  options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) 
+						range:NSMakeRange(0, [searchText length])];
+			if (result == NSOrderedSame) {
+				[self.filteredListContent addObject:ui];
+			}
+		}
+	}
 }
 
 #pragma mark -
