@@ -11,11 +11,11 @@
 #import "TOCItemCell.h"
 #import "ChapterItem.h"
 #import "UnitItem.h"
-#import "SearchTblViewController.h"
+#import "BookmarkAdderTblViewController.h"
 #import "UnitViewer.h"
 
 @interface HomeTableViewController (Private)
-
+- (void) initData;
 - (void) addBookmark;
 
 @end
@@ -46,6 +46,9 @@
 {
 	[super viewDidLoad];
 	
+	//Set the title
+	[[self navigationItem] setTitle: NSLocalizedString(@"MMBB",@"dummy")];
+	
 	// setup segment controlls
 	[segmentedControl setTitle:NSLocalizedString(@"TableOfContent", "dummy") forSegmentAtIndex:0];
 	[segmentedControl setTitle:NSLocalizedString(@"Term", "dummy") forSegmentAtIndex:1];
@@ -68,6 +71,19 @@
 	[self setSelectedTabIndex: segmentedControl.selectedSegmentIndex];
 	[self.tableData removeAllObjects];
 	[self.filteredListContent removeAllObjects];
+	[self initData];
+	// create a filtered list that will contain products for the search results table.
+	NSInteger numOfItems = 0;
+	for (ChapterItem *ci in [self tableData]){
+		numOfItems += [ci.units count];
+	}
+	self.filteredListContent = [NSMutableArray arrayWithCapacity:numOfItems];
+	[self.tableView scrollRectToVisible:self.tableView.tableHeaderView.bounds animated:NO]; 
+	
+	[self.tableView reloadData];
+}
+
+- (void) initData {
 	switch ( self.selectedTabIndex ) {
 		case 0:
 			self.tableData = [[MMBBAppDelegate sql] getChapters];
@@ -89,21 +105,13 @@
 			}
 			
 			UIBarButtonItem *addButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd 
-																						target:self action:@selector(addBookmark)];
+																						   target:self action:@selector(addBookmark)];
 			[[self navigationItem] setRightBarButtonItem:addButtonItem];
 			[addButtonItem release];
 			break;
 	}
-	// create a filtered list that will contain products for the search results table.
-	NSInteger numOfItems = 0;
-	for (ChapterItem *ci in [self tableData]){
-		numOfItems += [ci.units count];
-	}
-	self.filteredListContent = [NSMutableArray arrayWithCapacity:numOfItems];
-	[self.tableView scrollRectToVisible:self.tableView.tableHeaderView.bounds animated:NO]; 
-	
-	[self.tableView reloadData];
 }
+
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
 	[super setEditing:editing animated:animated];
@@ -135,17 +143,19 @@
 }
 
 - (void) addBookmark {
-	UIViewController *searchViewController = [[SearchTblViewController alloc] 
-											  initWithNibName:@"SearchTblViewController" 
+	UIViewController *bmaViewController = [[BookmarkAdderTblViewController alloc] 
+											  initWithNibName:@"BookmarkAdderTblViewController" 
 											  bundle:nil ];
-	SearchNavController *searchNavController = [[SearchNavController alloc]
-												   initWithRootViewController:searchViewController];
-	[searchNavController setMvdelegate:self];
-	[self presentModalViewController: searchNavController animated: YES];
-	[searchViewController release], searchViewController = nil;
+	BookmarkAdderNavController *bmaNavController = [[BookmarkAdderNavController alloc]
+												   initWithRootViewController:bmaViewController];
+	[bmaNavController setMvdelegate:self];
+	[self presentModalViewController: bmaNavController animated: YES];
+	[bmaViewController release], bmaViewController = nil;
 }
 
 - (void) modelViewDone: (BOOL)success {
+	[self initData];
+	[self.tableView reloadData];
 	[self dismissModalViewControllerAnimated:YES];
 }
 

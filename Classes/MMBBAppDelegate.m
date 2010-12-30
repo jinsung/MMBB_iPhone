@@ -9,8 +9,6 @@
 #import "MMBBAppDelegate.h"
 #import "HomeTableViewController.h"
 #import "HomeNavController.h"
-#import "SearchTblViewController.h"
-#import "SearchNavController.h"
 
 #import "Constants.h"
 
@@ -37,18 +35,18 @@ static SQLAccess *sql;
 	// its stack contains only itemsViewController
 	UINavigationController *homeNavController = [[HomeNavController alloc] 
 											 initWithRootViewController:homeViewController];
-	[[homeNavController navigationBar] setTintColor:[Constants mmbbColor]];
 	
+	/*
 	UIViewController *searchViewController = [[SearchTblViewController alloc] 
 											  initWithNibName:@"SearchTblViewController" 
 													   bundle:nil ];
 	UINavigationController *searchNavController = 
 		[[SearchNavController alloc]
 		   initWithRootViewController:searchViewController];
-	
+	*/
 	// make an array containing the two view controllers
 	NSArray *viewControlles = 
-		[NSArray arrayWithObjects:homeNavController, searchNavController, nil];
+		[NSArray arrayWithObjects:homeNavController, nil];
 	
 	// attach them to the tab bar controller
 	[tabBarController setViewControllers:viewControlles];
@@ -56,7 +54,7 @@ static SQLAccess *sql;
 	[window setRootViewController:tabBarController];
     [window makeKeyAndVisible];
     
-	[searchViewController release];
+	//[searchViewController release];
 	[homeViewController release];
 	[homeNavController release];
 	[viewControlles release];

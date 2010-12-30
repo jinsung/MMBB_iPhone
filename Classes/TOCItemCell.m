@@ -55,6 +55,11 @@
 	[titleLabel setText: title];
 }
 
+- (void)setButton:(NSString *) buttonType 
+{
+//	[self add
+}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
 	[super setSelected:selected animated:animated];

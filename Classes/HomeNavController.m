@@ -20,7 +20,7 @@
 	// create a UIImage from a file.
 	UIImage *img = [UIImage imageNamed:@"house.png"];
 	[tbi setImage:img];
-
+	
     return self;
 }
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MMBBTableController.h"
-#import "SearchNavController.h"
+#import "BookmarkAdderNavController.h"
 
 
 @interface HomeTableViewController : MMBBTableController <ModelViewDelegate> {

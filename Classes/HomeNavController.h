@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMBBNavController.h"
 
-
-@interface HomeNavController : UINavigationController {
+@interface HomeNavController : MMBBNavController {
 
 }
 
