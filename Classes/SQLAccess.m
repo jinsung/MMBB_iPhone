@@ -10,10 +10,12 @@
 #import "SectionItem.h"
 #import "ChapterItem.h"
 #import "UnitItem.h"
+#import "QuestionItem.h"
 
 @interface SQLAccess (Private)
 - (NSMutableArray *) getUnitsWithSQL: (NSString *) sql;
 - (UnitItem *) getUnitItem: (FMResultSet *) rs;
+- (QuestionItem *) getQuestionItem: (FMResultSet *) rs;
 @end
 
 
@@ -22,6 +24,7 @@
 static NSString *kSectionTableName = @"Section";
 static NSString *kChapterTableName = @"Chapter";
 static NSString *kUnitTableName = @"Unit";
+static NSString *kQuestionTableName = @"Question";
 
 @synthesize db;
 
@@ -124,8 +127,6 @@ static NSString *kUnitTableName = @"Unit";
 	FMResultSet *rs = [db executeQuery:sql];
 	while ([rs next]) {
 		UnitItem *ui = [self getUnitItem:rs];
-		[ui setId:[rs intForColumn:@"id"]];
-		[ui setTitle:[rs stringForColumn: @"title"]];
 		[a addObject:ui];
 	}
 	return [a autorelease];
@@ -147,26 +148,6 @@ static NSString *kUnitTableName = @"Unit";
 		}
 	}
 	
-	return [a autorelease];
-}
-
-- (NSMutableArray *) getUnitsInBookmarked {
-	NSMutableArray *a = [[NSMutableArray alloc] init];
-	NSArray *ganadaArray = [NSArray arrayWithObjects:@"ㄱ", @"ㄴ", @"ㄷ", @"ㄹ", @"ㅁ", @"ㅂ", @"ㅅ", 
-							@"ㅇ", @"ㅈ", @"ㅊ", @"ㅋ", @"ㅌ", @"ㅍ", @"ㅎ", nil];
-	for (int i=0; i<ganadaArray.count; i++) {
-		NSString *sql = 
-			[NSString stringWithFormat:@"SELECT * FROM %@ WHERE alphabet_order=%d AND is_bookmarked=%d ORDER BY title ASC", 
-						 kUnitTableName, i, 1];
-		NSMutableArray *sa = [self getUnitsWithSQL: sql];
-		if( sa.count > 0 ) {
-			ChapterItem *chapter = [[ChapterItem alloc] init];
-			[chapter setId:i];
-			[chapter setTitle:[ganadaArray objectAtIndex:i]];
-			[chapter setUnits:sa];
-			[a addObject:chapter];
-		}
-	}
 	return [a autorelease];
 }
 
@@ -195,10 +176,67 @@ static NSString *kUnitTableName = @"Unit";
 	return [ui autorelease];
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark BOOKMARK
+
 - (BOOL) updateBookmarkUnitWithID: (NSInteger) unitId isBookmark: (NSInteger) bookmark {
 	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET is_bookmarked=%d WHERE id=%d", 
 					 kUnitTableName, bookmark, unitId ];
 	return [db executeUpdate:sql];
+}
+
+- (NSMutableArray *) getUnitsInBookmarked {
+	NSMutableArray *a = [[NSMutableArray alloc] init];
+	NSArray *ganadaArray = [NSArray arrayWithObjects:@"ㄱ", @"ㄴ", @"ㄷ", @"ㄹ", @"ㅁ", @"ㅂ", @"ㅅ", 
+							@"ㅇ", @"ㅈ", @"ㅊ", @"ㅋ", @"ㅌ", @"ㅍ", @"ㅎ", nil];
+	for (int i=0; i<ganadaArray.count; i++) {
+		NSString *sql = 
+		[NSString stringWithFormat:@"SELECT * FROM %@ WHERE alphabet_order=%d AND is_bookmarked=%d ORDER BY title ASC", 
+		 kUnitTableName, i, 1];
+		NSMutableArray *sa = [self getUnitsWithSQL: sql];
+		if( sa.count > 0 ) {
+			ChapterItem *chapter = [[ChapterItem alloc] init];
+			[chapter setId:i];
+			[chapter setTitle:[ganadaArray objectAtIndex:i]];
+			[chapter setUnits:sa];
+			[a addObject:chapter];
+		}
+	}
+	return [a autorelease];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark QUESTION 
+
+- (NSMutableArray *) getQuestionInChapter: (NSInteger) chapterID withType: (NSInteger) typeID{
+	NSMutableArray *a = [[NSMutableArray alloc] init];
+	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE chapter_id=%d AND type=%d",
+					 kQuestionTableName, chapterID, typeID];
+	FMResultSet *rs = [db executeQuery:sql];
+	while ([rs next]) {
+		QuestionItem *question = [self getQuestionItem:rs];
+		[a addObject:question];
+	}
+	return [a autorelease];
+}
+
+- (BOOL) updateUserAnswer: (NSInteger) answer forQuestionID:(NSInteger) questionID {
+	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer=%d WHERE id=%d", 
+					 kQuestionTableName, answer, questionID ];
+	return [db executeUpdate:sql];
+}
+
+- (QuestionItem *) getQuestionItem: (FMResultSet *) rs {
+	QuestionItem *question = [[QuestionItem alloc] init];
+	[question setId:[rs intForColumn:@"id"]];
+	[question setIndex:[rs intForColumn: @"q_index"]];
+	[question setType:[rs intForColumn: @"type"]];
+	[question setChapterID:[rs intForColumn: @"chapter_id"]];
+	[question setCorrectAnswer:[rs intForColumn:@"correct_answer"]];
+	[question setUserAnswer:[rs intForColumn:@"answer"]];
+	return [question autorelease];
 }
 
 - (void) dealloc {

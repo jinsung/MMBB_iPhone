@@ -24,5 +24,6 @@
 - (NSMutableArray *) getUnitsInBookmarked;
 - (UnitItem *) getUnitItemByID: (NSInteger) unitID;
 - (BOOL) updateBookmarkUnitWithID: (NSInteger) unitId isBookmark: (NSInteger) bookmark;
-
+- (NSMutableArray *) getQuestionInChapter: (NSInteger) chapterID withType: (NSInteger) typeID;
+- (BOOL) updateUserAnswer: (NSInteger) answer forQuestionID:(NSInteger) questionID;
 @end

@@ -84,18 +84,15 @@
 }
 
 - (void) initData {
+	[self setEditing:NO animated:NO];
+	[[self navigationItem] setLeftBarButtonItem:nil];
+	[[self navigationItem] setRightBarButtonItem:nil];
 	switch ( self.selectedTabIndex ) {
 		case 0:
 			self.tableData = [[MMBBAppDelegate sql] getChapters];
-			[self setEditing:NO animated:NO];
-			[[self navigationItem] setLeftBarButtonItem:nil];
-			[[self navigationItem] setRightBarButtonItem:nil];
 			break;
 		case 1:
 			self.tableData = [[MMBBAppDelegate sql] getUnitsInOrder];
-			[self setEditing:NO animated:NO];
-			[[self navigationItem] setLeftBarButtonItem:nil];
-			[[self navigationItem] setRightBarButtonItem:nil];
 			break;
 		case 2:
 			self.tableData = [[MMBBAppDelegate sql] getUnitsInBookmarked];
@@ -112,6 +109,29 @@
 	}
 }
 
+#pragma mark -
+#pragma mark Bookmark Adder.
+
+- (void) addBookmark {
+	UIViewController *bmaViewController = [[BookmarkAdderTblViewController alloc] 
+											  initWithNibName:@"BookmarkAdderTblViewController" 
+											  bundle:nil ];
+	BookmarkAdderNavController *bmaNavController = [[BookmarkAdderNavController alloc]
+												   initWithRootViewController:bmaViewController];
+	[bmaNavController setMvdelegate:self];
+	[self presentModalViewController: bmaNavController animated: YES];
+	[bmaViewController release], bmaViewController = nil;
+}
+
+- (void) modelViewDone: (BOOL)success {
+	[self initData];
+	[self.tableView reloadData];
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark UITableViewDataSource
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
 	[super setEditing:editing animated:animated];
@@ -120,7 +140,7 @@
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
-	forRowAtIndexPath:(NSIndexPath *)indexPath {
+forRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	if( self.selectedTabIndex == 2 ) {
 		if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -142,27 +162,6 @@
 	}
 }
 
-- (void) addBookmark {
-	UIViewController *bmaViewController = [[BookmarkAdderTblViewController alloc] 
-											  initWithNibName:@"BookmarkAdderTblViewController" 
-											  bundle:nil ];
-	BookmarkAdderNavController *bmaNavController = [[BookmarkAdderNavController alloc]
-												   initWithRootViewController:bmaViewController];
-	[bmaNavController setMvdelegate:self];
-	[self presentModalViewController: bmaNavController animated: YES];
-	[bmaViewController release], bmaViewController = nil;
-}
-
-- (void) modelViewDone: (BOOL)success {
-	[self initData];
-	[self.tableView reloadData];
-	[self dismissModalViewControllerAnimated:YES];
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark -
-#pragma mark Table view data source
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
 		return nil;
@@ -182,7 +181,7 @@
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 	UnitItem *ui = nil;
 	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
-		ui = [self.filteredListContent objectAtIndex:[indexPath row]];		
+		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
 	} else {
 		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];
 		ui = [[ci units] objectAtIndex:[indexPath row]];

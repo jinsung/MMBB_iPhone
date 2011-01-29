@@ -1,0 +1,5 @@
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/ChapterItem.m:14: error: no declaration of property 'sectionTitle' found in the interface
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/ChapterItem.m: In function '-[ChapterItem dealloc]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/ChapterItem.m:18: error: 'sectionTitle' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/ChapterItem.m:18: error: (Each undeclared identifier is reported only once
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/ChapterItem.m:18: error: for each function it appears in.)

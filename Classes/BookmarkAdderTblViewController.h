@@ -10,7 +10,7 @@
 #import "MMBBTableController.h"
 
 
-@interface BookmarkAdderTblViewController : MMBBTableController <UITableViewDelegate> {
+@interface BookmarkAdderTblViewController : MMBBTableController {
 
 }
 

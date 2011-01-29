@@ -1,0 +1,3 @@
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m: In function '-[SQLAccess updateUserAnswer:forQuestionID:]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m:225: warning: conflicting types for '-(BOOL)updateUserAnswer:(NSInteger)answer forQuestionID:(NSInteger)questionID'
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.h:28: warning: previous declaration of '-(void)updateUserAnswer:(NSInteger)answer forQuestionID:(NSInteger)questionID'

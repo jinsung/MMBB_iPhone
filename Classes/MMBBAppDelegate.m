@@ -9,8 +9,8 @@
 #import "MMBBAppDelegate.h"
 #import "HomeTableViewController.h"
 #import "HomeNavController.h"
-
-#import "Constants.h"
+#import "QATableViewController.h"
+#import "QANavController.h"
 
 static SQLAccess *sql;
 
@@ -34,19 +34,18 @@ static SQLAccess *sql;
 	// Create an instance of a UINavigationController
 	// its stack contains only itemsViewController
 	UINavigationController *homeNavController = [[HomeNavController alloc] 
-											 initWithRootViewController:homeViewController];
+												 initWithRootViewController:homeViewController];
 	
-	/*
-	UIViewController *searchViewController = [[SearchTblViewController alloc] 
-											  initWithNibName:@"SearchTblViewController" 
+	
+	UIViewController *qaViewController = [[QATableViewController alloc] 
+										  initWithNibName:@"QATableViewController" 
 													   bundle:nil ];
-	UINavigationController *searchNavController = 
-		[[SearchNavController alloc]
-		   initWithRootViewController:searchViewController];
-	*/
+	UINavigationController *qaNavController = [[QANavController alloc]
+											   initWithRootViewController:qaViewController];
+	
 	// make an array containing the two view controllers
 	NSArray *viewControlles = 
-		[NSArray arrayWithObjects:homeNavController, nil];
+		[NSArray arrayWithObjects:homeNavController, qaNavController, nil];
 	
 	// attach them to the tab bar controller
 	[tabBarController setViewControllers:viewControlles];
