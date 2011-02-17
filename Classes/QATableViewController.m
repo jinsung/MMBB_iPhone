@@ -102,7 +102,7 @@
 	QuestionPagesController *qp = [[QuestionPagesController alloc] 
 										  initWithNibName:@"QuestionPagesController" 
 										  bundle:nil ];
-	qp.questions = [[MMBBAppDelegate sql] getQuestionInChapter:ci.id withType: segmentedControl.selectedSegmentIndex + 1];
+	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInChapter:ci.id withType: segmentedControl.selectedSegmentIndex + 1];
 	[qp setHidesBottomBarWhenPushed: YES];
 	[self.navigationController pushViewController:qp animated:YES];
 	[qp release];

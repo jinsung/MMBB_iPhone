@@ -9,7 +9,7 @@
 #import "MMBBAppDelegate.h"
 #import "HomeTableViewController.h"
 #import "HomeNavController.h"
-#import "QATableViewController.h"
+#import "QAMenuPageController.h"
 #import "QANavController.h"
 
 static SQLAccess *sql;
@@ -37,11 +37,11 @@ static SQLAccess *sql;
 												 initWithRootViewController:homeViewController];
 	
 	
-	UIViewController *qaViewController = [[QATableViewController alloc] 
-										  initWithNibName:@"QATableViewController" 
+	UIViewController *qaPageMenuController = [[QAMenuPageController alloc] 
+										  initWithNibName:@"QAMenuPageController" 
 													   bundle:nil ];
 	UINavigationController *qaNavController = [[QANavController alloc]
-											   initWithRootViewController:qaViewController];
+											   initWithRootViewController:qaPageMenuController];
 	
 	// make an array containing the two view controllers
 	NSArray *viewControlles = 

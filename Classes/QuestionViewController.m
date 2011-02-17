@@ -7,12 +7,15 @@
 //
 
 #import "QuestionViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
+@interface QuestionViewController (Private)
+//- (UIImage *)addGlowToImage:(UIImage*) page;
+@end
 
 @implementation QuestionViewController
 
 @synthesize question, qImage, tableView;
-
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -38,8 +41,15 @@
 	}
 	NSString *path = [[NSBundle mainBundle] pathForResource:file
 													 ofType:@"png" inDirectory:dir];
-	
+	qImage.layer.cornerRadius = 10.0f;
+	qImage.layer.masksToBounds = YES;
+	qImage.layer.borderColor = [[UIColor whiteColor] CGColor];
+	qImage.layer.backgroundColor = [[UIColor grayColor] CGColor];
+	qImage.layer.borderWidth = 1.0f;
+//	qImage.layer.shadowOpacity = 1;
 	qImage.image = [UIImage imageWithContentsOfFile:path];
+	
+
 }
 
 /*
