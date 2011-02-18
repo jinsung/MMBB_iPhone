@@ -1,7 +1,7 @@
 TMMBB
 v7
 r0
-t319668597.728674
+t319682421.065108
 cCheck dependencies
 cProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/Info.plist MMBB-Info.plist
 cCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/MainWindow.xib
@@ -23,6 +23,10 @@ cCpResource build/Debug-iphonesimulator/MMBB.app/Default.png Images/Assets/Defau
 cCpResource build/Debug-iphonesimulator/MMBB.app/Icon.png Images/Assets/Icon.png
 cCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.xib
 cCpResource build/Debug-iphonesimulator/MMBB.app/pageControllerBG.png Images/Assets/pageControllerBG.png
+cCpResource build/Debug-iphonesimulator/MMBB.app/quiz_btn_normal.png Images/Assets/quiz_btn_normal.png
+cCpResource build/Debug-iphonesimulator/MMBB.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png
+cCpResource build/Debug-iphonesimulator/MMBB.app/quiz_btn_wrong.png Images/Assets/quiz_btn_wrong.png
+cCpResource build/Debug-iphonesimulator/MMBB.app/questionOverlay.png Images/Assets/questionOverlay.png
 cProcessPCH /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch.gch MMBB_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/main.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/MMBBAppDelegate.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -526,9 +530,9 @@ i"MMBBAppDelegate.h"
 i"QuestionPagesController.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib
-c000000004D5D89EC0000000000006765
-t1297975788
-s26469
+c000000004D5D9B3E000000000000674E
+t1297980222
+s26446
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QANavController.h
 c000000004D1D18C300000000000000FF
@@ -566,8 +570,8 @@ t1297551485
 s23938
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.h
-c000000004D322CED0000000000000241
-t1295133933
+c000000004D5D9F950000000000000241
+t1297981333
 s577
 i<Foundation/Foundation.h>
 
@@ -578,44 +582,45 @@ s265
 i"QuestionItem.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.h
-c000000004D55975200000000000002ED
-t1297454930
-s749
+c000000004D5D952F0000000000000149
+t1297978671
+s329
 i<UIKit/UIKit.h>
 i"MMBBPagesController.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m
-c000000004D5747900000000000000E67
-t1297565584
-s3687
+c000000004D5D95190000000000000B69
+t1297978649
+s2921
 i"QuestionPagesController.h"
 i"QuestionViewController.h"
 i"AnswerSheetViewController.h"
 i"MMBBAppDelegate.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib
-c000000004D5D89EE00000000000086B1
-t1297975790
-s34481
+c000000004D5D97800000000000005CFB
+t1297979264
+s23803
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.h
-c000000004D3B897300000000000001F1
-t1295747443
-s497
+c000000004D5D95350000000000000394
+t1297978677
+s916
 i<UIKit/UIKit.h>
 i"QuestionItem.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m
-c000000004D5717450000000000000946
-t1297553221
-s2374
+c000000004D5DA1DC0000000000000CC7
+t1297981916
+s3271
 i"QuestionViewController.h"
 i<QuartzCore/QuartzCore.h>
+i"MMBBAppDelegate.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib
-c000000004D531E0A0000000000005804
-t1297292810
-s22532
+c000000004D5DB2EF00000000000088BD
+t1297986287
+s35005
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/RespondedImageView.h
 c000000004D573E270000000000000196
@@ -816,9 +821,29 @@ t1287166148
 s2898
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png
-c000000004D56FD28000000000000022F
-t1297546536
+c000000004D5DBFE8000000000000022F
+t1297989608
 s559
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/questionOverlay.png
+c000000004D5DBF190000000000000699
+t1297989401
+s1689
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png
+c000000004D5D8C5D000000000000021B
+t1297976413
+s539
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png
+c000000004D5D8C9E000000000000022A
+t1297976478
+s554
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_wrong.png
+c000000004D5D8C7A000000000000022D
+t1297976442
+s557
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Default.png
 c00000000000000000000000000000000
@@ -913,11 +938,11 @@ t1289231282
 s1690794
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app
-t1297975797
-s952
+t1297989621
+s1088
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app.dSYM
-t1297975797
+t1297985649
 s102
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/01
@@ -977,8 +1002,8 @@ t2
 s0
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB
-t1297975797
-s199080
+t1297985648
+s199196
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB-Info.plist
 t1292793604
@@ -997,8 +1022,8 @@ t1297974933
 s931
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QAMenuPageController.nib
-t1297975797
-s2057
+t1297980234
+s2039
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QATableViewController.nib
 t1297552225
@@ -1009,12 +1034,12 @@ t2
 s0
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QuestionPagesController.nib
-t1297975797
-s2552
+t1297979273
+s1520
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QuestionViewController.nib
-t1297292815
-s1464
+t1297986293
+s3008
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/SearchNavController.nib
 t1290810433
@@ -1045,12 +1070,28 @@ t1297133851
 s18432
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/pageControllerBG.png
-t1297551415
+t1297989621
 s559
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/questionOverlay.png
+t1297989621
+s1689
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/questions
 t1297552224
 s102
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/quiz_btn_normal.png
+t1297977339
+s539
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/quiz_btn_pick.png
+t1297977339
+s554
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/quiz_btn_wrong.png
+t1297977339
+s557
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/명명백백.app
 t1297133634
@@ -1141,8 +1182,8 @@ t1297133491
 s185144
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerSheetViewController.o
-t1297975797
-s46132
+t1297981663
+s46040
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/ArrayTableController.o
 t2
@@ -1234,35 +1275,35 @@ t1297565224
 s46480
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QAMenuPageController.o
-t1297975797
-s55512
+t1297978765
+s55420
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QANavController.o
 t1297533962
 s40320
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QATableViewController.o
-t1297975797
-s56868
+t1297978765
+s56776
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionItem.o
-t1297133855
+t1297981663
 s11332
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionPagesController.o
-t1297975797
-s58660
+t1297981662
+s45460
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionViewController.o
-t1297553222
-s47900
+t1297985648
+s61972
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/RespondedImageView.o
 t1297563186
 s39420
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SQLAccess.o
-t1297133854
+t1297981662
 s31680
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SearchNavController.o
@@ -1350,14 +1391,14 @@ s947
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies319668596#319668596#0(0"0(0#1#0"8620655680#0"0#
+lSLF07#2@18"Check dependencies319682421#319682421#0(0"0(0#1#0"8621859584#0"0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerSheetViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m normal i386 objective-c com.apple.compilers.gcc.4_0
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerSheetViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319668597.351664
-e319668597.475078
+s319674463.085932
+e319674463.176057
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerSheetViewController.o
@@ -1366,7 +1407,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@92"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m319668597#319668597#0(0"0(0#0#84"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m8611868736#2021"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerSheetViewController.o0#
+lSLF07#2@92"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m319674463#319674463#0(0"0(0#0#84"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m8623698176#2021"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerSheetViewController.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/ArrayTableController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/ArrayTableController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s310476336.260076
@@ -1735,8 +1776,8 @@ CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QAMenuPageController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319668597.475180
-e319668597.588216
+s319671565.420736
+e319671565.520955
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QAMenuPageController.o
@@ -1745,7 +1786,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@87"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m319668597#319668597#0(0"0(0#0#79"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m8624283648#2011"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QAMenuPageController.o0#
+lSLF07#2@87"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m319671565#319671565#0(0"0(0#0#79"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m8624494240#2011"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QAMenuPageController.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QANavController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QANavController.m normal i386 objective-c com.apple.compilers.gcc.4_0
 r0
@@ -1767,8 +1808,8 @@ CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QATableViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319668597.238439
-e319668597.351392
+s319671565.177065
+e319671565.322612
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QATableViewController.o
@@ -1777,14 +1818,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@88"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m319668597#319668597#0(0"0(0#0#80"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m8614050240#2013"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QATableViewController.o0#
+lSLF07#2@88"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m319671565#319671565#0(0"0(0#0#80"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m8598539072#2013"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QATableViewController.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionItem.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m normal i386 objective-c com.apple.compilers.gcc.4_0
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionItem.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318826655.486527
-e318826655.552309
+s319674463.010526
+e319674463.085833
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionItem.o
@@ -1793,14 +1834,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m318826655#318826655#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m8622299488#1995"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionItem.o0#
+lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m319674463#319674463#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m8621781312#1995"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionItem.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionPagesController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m normal i386 objective-c com.apple.compilers.gcc.4_0
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionPagesController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319668597.340313
-e319668597.504954
+s319674462.773889
+e319674462.905722
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionPagesController.o
@@ -1809,14 +1850,14 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m319668597#319668597#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m8613732512#2017"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionPagesController.o0#
+lSLF07#2@90"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m319674462#319674462#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m8596669472#2017"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionPagesController.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m normal i386 objective-c com.apple.compilers.gcc.4_0
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319246022.171414
-e319246022.971607
+s319678448.195288
+e319678448.537925
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionViewController.o
@@ -1825,7 +1866,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m319246022#319246022#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m8624966656#2015"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionViewController.o0#
+lSLF07#2@89"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m319678448#319678448#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m8621047648#2015"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/QuestionViewController.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/RespondedImageView.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/RespondedImageView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319255986.729853
@@ -1844,8 +1885,8 @@ CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/
 r0
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SQLAccess.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318826654.478436
-e318826654.612429
+s319674462.724215
+e319674463.010439
 r1
 xCompileC
 xbuild/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SQLAccess.o
@@ -1854,7 +1895,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m318826654#318826654#0(0"0(0#0#68"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m8618087680#1989"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SQLAccess.o0#
+lSLF07#2@76"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m319674462#319674463#0(0"0(0#0#68"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m8623964256#1989"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SQLAccess.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SQLAccess.o0#
 
 CCompileC build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/SearchNavController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SearchNavController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s315442322.074892
@@ -2019,12 +2060,12 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewControll
 lSLF07#2@47"CompileXIB Classes/QAMenuItemViewController.xib319667732#319667733#0(0"0(0#0#85"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.xib8621649504#633"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QAMenuItemViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib
-s319668596.610760
-e319668597.219098
+s319673033.869712
+e319673035.017835
 r1
 xCompileXIB
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib
-lSLF07#2@43"CompileXIB Classes/QAMenuPageController.xib319668596#319668597#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib8623651456#625"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QAMenuPageController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@43"CompileXIB Classes/QAMenuPageController.xib319673033#319673035#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib8596032128#625"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QAMenuPageController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuPageController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.xib
 s319245024.444222
@@ -2035,20 +2076,20 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.
 lSLF07#2@44"CompileXIB Classes/QATableViewController.xib319245024#319245025#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.xib8620877888#627"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QATableViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QATableViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib
-s319668596.597963
-e319668597.235546
+s319672072.754267
+e319672073.176726
 r1
 xCompileXIB
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib
-lSLF07#2@46"CompileXIB Classes/QuestionPagesController.xib319668596#319668597#0(0"0(0#0#84"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib8624269088#631"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QuestionPagesController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@46"CompileXIB Classes/QuestionPagesController.xib319672072#319672073#0(0"0(0#0#84"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib8616040192#631"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QuestionPagesController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib
-s318985612.025689
-e318985615.452939
+s319679092.568640
+e319679093.127270
 r1
 xCompileXIB
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib
-lSLF07#2@45"CompileXIB Classes/QuestionViewController.xib318985612#318985615#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib3419200169540805632#629"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QuestionViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@45"CompileXIB Classes/QuestionViewController.xib319679092#319679093#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib8622042112#629"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/QuestionViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/SearchTblViewController.xib
 s315200450.056939
@@ -2280,13 +2321,22 @@ x../../../Personal/work/mmbb/VISUAL/CUT/pageControllerBG.png
 lSLF07#2@64"Copy ../../../Personal/work/mmbb/VISUAL/CUT/pageControllerBG.png319239476#319239476#0(0"0(0#0#108"/Users/jinsung/Documents/workspace/CocoApps/MMBB/../../../Personal/work/mmbb/VISUAL/CUT/pageControllerBG.png8620876256#544"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/../../../Personal/work/mmbb/VISUAL/CUT/pageControllerBG.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
 
 CCpResource build/Debug-iphonesimulator/MMBB.app/pageControllerBG.png Images/Assets/pageControllerBG.png
-s319244215.459033
-e319244215.628638
+s319682421.034192
+e319682421.058875
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/MMBB.app/pageControllerBG.png
 xImages/Assets/pageControllerBG.png
-lSLF07#2@39"Copy Images/Assets/pageControllerBG.png319244215#319244215#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png8620489408#519"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
+lSLF07#2@39"Copy Images/Assets/pageControllerBG.png319682421#319682421#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png8613347872#519"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
+
+CCpResource build/Debug-iphonesimulator/MMBB.app/questionOverlay.png Images/Assets/questionOverlay.png
+s319682421.035249
+e319682421.058610
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/MMBB.app/questionOverlay.png
+xImages/Assets/questionOverlay.png
+lSLF07#2@38"Copy Images/Assets/questionOverlay.png319682421#319682421#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/questionOverlay.png8603979040#518"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/questionOverlay.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
 
 CCpResource build/Debug-iphonesimulator/MMBB.app/questions Images/questions
 s319245024.450157
@@ -2296,6 +2346,33 @@ xCpResource
 xbuild/Debug-iphonesimulator/MMBB.app/questions
 xImages/questions
 lSLF07#2@21"Copy Images/questions319245024#319245024#0(0"0(0#0#65"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/questions8618078144#501"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/questions /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
+
+CCpResource build/Debug-iphonesimulator/MMBB.app/quiz_btn_normal.png Images/Assets/quiz_btn_normal.png
+s319670139.479889
+e319670139.560070
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/MMBB.app/quiz_btn_normal.png
+xImages/Assets/quiz_btn_normal.png
+lSLF07#2@38"Copy Images/Assets/quiz_btn_normal.png319670139#319670139#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png8603264480#518"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
+
+CCpResource build/Debug-iphonesimulator/MMBB.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png
+s319670139.504270
+e319670139.560211
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/MMBB.app/quiz_btn_pick.png
+xImages/Assets/quiz_btn_pick.png
+lSLF07#2@36"Copy Images/Assets/quiz_btn_pick.png319670139#319670139#0(0"0(0#0#80"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png8624148352#516"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
+
+CCpResource build/Debug-iphonesimulator/MMBB.app/quiz_btn_wrong.png Images/Assets/quiz_btn_wrong.png
+s319670139.505171
+e319670139.559830
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/MMBB.app/quiz_btn_wrong.png
+xImages/Assets/quiz_btn_wrong.png
+lSLF07#2@37"Copy Images/Assets/quiz_btn_wrong.png319670139#319670139#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_wrong.png8623894240#517"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_wrong.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
 
 CCpResource build/Debug-iphonesimulator/명명백백.app/1.png Images/Units/1.png
 r0
@@ -2346,26 +2423,26 @@ xImages/questions
 lSLF07#2@21"Copy Images/questions318826288#318826288#0(0"0(0#0#65"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/questions8620574784#533"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/questions /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/명명백백.app0#
 
 CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB
-s319668597.667889
-e319668597.725574
+s319678449.169455
+e319678449.270125
 r1
 xGenerateDSYMFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app.dSYM
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB
-lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/MMBB.app.dSYM build/Debug-iphonesimulator/MMBB.app/MMBB319668597#319668597#0(0"0(0#0#90"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB8624150880#404"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app.dSYM0#
+lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/MMBB.app.dSYM build/Debug-iphonesimulator/MMBB.app/MMBB319678449#319678449#0(0"0(0#0#90"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB8622297600#404"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app.dSYM0#
 
 CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/명명백백.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/명명백백.app/명명백백
 r0
 
 CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB normal i386
-s319668597.604457
-e319668597.667783
+s319678448.538054
+e319678449.169225
 r1
 xLd
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB
 xnormal
 xi386
-lSLF07#2@95"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB319668597#319668597#0(0"0(0#0#0"8621561280#947"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/MMBB.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB0#
+lSLF07#2@95"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB319678448#319678449#0(0"0(0#0#0"8623806112#947"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/Objects-normal/i386/MMBB.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app/MMBB0#
 
 CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/명명백백.app/명명백백 normal i386
 r0
@@ -2455,12 +2532,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@26"Precompile MMBB_Prefix.pch318826653#318826654#0(0"0(0#0#64"/Users/jinsung/Documents/workspace/CocoApps/MMBB/MMBB_Prefix.pch8621252256#1856"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/MMBB-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources/i386 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Debug-iphonesimulator/MMBB.build/DerivedSources -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/MMBB_Prefix.pch -o /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dqyqvozlvuqzbobcofiabssvujrp/MMBB_Prefix.pch.gch0#
 
 CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app
-s319668597.725661
-e319668597.728622
+s319682421.061499
+e319682421.065064
 r1
 xTouch
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app
-lSLF07#2@91"Touch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app319668597#319668597#0(0"0(0#0#0"8624005024#295"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
+lSLF07#2@91"Touch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app319682421#319682421#0(0"0(0#0#0"8621968864#295"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/MMBB.app0#
 
 CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Debug-iphonesimulator/명명백백.app
 s318826291.935567

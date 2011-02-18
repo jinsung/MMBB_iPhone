@@ -8,14 +8,15 @@
 
 #import "QuestionViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "MMBBAppDelegate.h"
 
 @interface QuestionViewController (Private)
-//- (UIImage *)addGlowToImage:(UIImage*) page;
+- (void)updateQuestionBtn;
 @end
 
 @implementation QuestionViewController
 
-@synthesize question, qImage, tableView;
+@synthesize question, qImage, tableView, aBtn1, aBtn2, aBtn3, aBtn4, aBtn5;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -46,10 +47,31 @@
 	qImage.layer.borderColor = [[UIColor whiteColor] CGColor];
 	qImage.layer.backgroundColor = [[UIColor grayColor] CGColor];
 	qImage.layer.borderWidth = 1.0f;
-//	qImage.layer.shadowOpacity = 1;
 	qImage.image = [UIImage imageWithContentsOfFile:path];
 	
+	// update quiz button with answer.
+	[self updateQuestionBtn];
+}
 
+- (void)updateQuestionBtn {
+	if (question.userAnswer>0) {
+		NSArray *aBtns = [NSArray arrayWithObjects: aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, nil];
+		UIButton *btn = [aBtns objectAtIndex:question.userAnswer-1];
+		btn.selected = YES;
+	}
+}
+
+- (IBAction)answerBtnPressed:(UIButton *)sender {
+	//NSLog([NSString stringWithFormat:@"anserBtnPressed - sender tag: %d", sender.tag]);
+	question.userAnswer = sender.tag;
+	[[MMBBAppDelegate sql] updateUserAnswer:sender.tag forQuestionID: question.id ];
+	// answer buttons.
+	NSArray *aBtns = [NSArray arrayWithObjects: aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, nil];
+	for (unsigned i=0; i<[aBtns count]; i++) {
+		UIButton *btn = [aBtns objectAtIndex:i];
+		btn.selected = NO;
+	}
+	sender.selected = YES;
 }
 
 /*
@@ -75,6 +97,11 @@
 
 
 - (void)dealloc {
+	[aBtn1 release]; 
+	[aBtn2 release];
+	[aBtn3 release]; 
+	[aBtn4 release];
+	[aBtn5 release];	
 	[tableView release];
 	[qImage release];
 	[question release];

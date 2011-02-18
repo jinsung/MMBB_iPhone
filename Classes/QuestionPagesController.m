@@ -21,8 +21,6 @@
 
 @implementation QuestionPagesController
 
-@synthesize aBtn1, aBtn2, aBtn3, aBtn4, aBtn5;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
 				
@@ -40,12 +38,7 @@
 }
 
 - (void)dealloc {
-	[aBtn1 release]; 
-	[aBtn2 release];
-	[aBtn3 release]; 
-	[aBtn4 release];
-	[aBtn5 release];
-    [super dealloc];
+	[super dealloc];
 }
 
 - (void)loadScrollViewWithPage:(int)page
@@ -108,21 +101,6 @@
 		AnswerSheetViewController* controller = [self.viewControllers objectAtIndex:page];
 		[controller update:[self pageDataArray]];
 	}
-}
-
-- (IBAction)answerBtnPressed:(UIButton *)sender {
-	//NSLog([NSString stringWithFormat:@"anserBtnPressed - sender tag: %d", sender.tag]);
-	int page = self.pageControl.currentPage;
-	QuestionItem *currentQuestion = [pageDataArray objectAtIndex:page];
-	currentQuestion.userAnswer = sender.tag;
-	[[MMBBAppDelegate sql] updateUserAnswer:sender.tag forQuestionID: currentQuestion.id ];
-	// answer buttons.
-	NSArray *aBtns = [NSArray arrayWithObjects: aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, nil];
-	for (unsigned i=0; i<[aBtns count]; i++) {
-		UIButton *btn = [aBtns objectAtIndex:i];
-		btn.selected = NO;
-	}
-	sender.selected = YES;
 }
 
 
