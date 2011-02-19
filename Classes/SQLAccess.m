@@ -222,6 +222,12 @@ static NSString *kQuestionTableName = @"Question";
 	return [a autorelease];
 }
 
+- (BOOL) updateUserSolved: (NSInteger) isSolved inChater: (NSInteger) chapterID withType: (NSInteger) typeID {
+	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer_page_visited=%d WHERE chapter_id=%d AND type=%d",
+					 kQuestionTableName, isSolved, chapterID, typeID];
+	return [db executeUpdate:sql];
+}
+
 - (BOOL) updateUserAnswer: (NSInteger) answer forQuestionID:(NSInteger) questionID {
 	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer=%d WHERE id=%d", 
 					 kQuestionTableName, answer, questionID ];
@@ -236,6 +242,7 @@ static NSString *kQuestionTableName = @"Question";
 	[question setChapterID:[rs intForColumn: @"chapter_id"]];
 	[question setCorrectAnswer:[rs intForColumn:@"correct_answer"]];
 	[question setUserAnswer:[rs intForColumn:@"answer"]];
+	[question setAnswerPageVisited:[rs intForColumn:@"answer_page_visited"]];
 	return [question autorelease];
 }
 

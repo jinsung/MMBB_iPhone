@@ -10,8 +10,6 @@
 
 @implementation QuestionItem
 
-@synthesize id, index, 
-			chapterID, type, 
-			correctAnswer, userAnswer;
+@synthesize id, index, chapterID, type, correctAnswer, userAnswer, answerPageVisited;
 
 @end

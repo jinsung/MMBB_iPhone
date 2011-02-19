@@ -16,6 +16,7 @@
 
 @interface QuestionPagesController (Private)
 - (void)scrollViewDidScroll:(UIScrollView *)sender;
+- (void)setQuestionsSolved: (BOOL) reset;
 @end
 
 
@@ -100,8 +101,24 @@
 	if (page == [pageDataArray count]) {
 		AnswerSheetViewController* controller = [self.viewControllers objectAtIndex:page];
 		[controller update:[self pageDataArray]];
+		[self setQuestionsSolved:NO];
+	} else {
+		QuestionViewController* controller = [self.viewControllers objectAtIndex:page];
+		[controller update];
 	}
 }
 
+- (void)setQuestionsSolved: (BOOL) reset {
+	QuestionItem *q;
+	for (int i=0; i<[self.pageDataArray count]; i++) {
+		q = [self.pageDataArray objectAtIndex:i];
+		if (reset)
+			q.answerPageVisited = NO;
+		else 
+			q.answerPageVisited = YES;
+	}
+	NSInteger solved = !reset;
+	[[MMBBAppDelegate sql] updateUserSolved: solved inChater: q.chapterID withType: q.type];
+}
 
 @end

@@ -10,7 +10,7 @@
 #import "QuestionItem.h"
 
 
-@interface QuestionViewController : UIViewController {
+@interface QuestionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
 	QuestionItem *question;
 	UITableView *tableView;
 	UIImageView *qImage;
@@ -19,6 +19,8 @@
 	UIButton *aBtn3;
 	UIButton *aBtn4;
 	UIButton *aBtn5;
+	UITableViewCell *answerIndicatorCell;
+	UIButton *infoBtn;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *aBtn1;
@@ -29,6 +31,9 @@
 @property (nonatomic, retain) QuestionItem *question;
 @property (nonatomic, retain) IBOutlet UIImageView *qImage;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet UITableViewCell *answerIndicatorCell;
+@property (nonatomic, retain) IBOutlet UIButton *infoBtn;
 
 - (IBAction)answerBtnPressed:(UIButton *)sender;
+- (void)update;
 @end
