@@ -1,8 +1,0 @@
-In file included from /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m:9:
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.h:29: error: property 'answer_page_visited' with 'retain' attribute must be of object type
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.h:29: error: property 'userAnswer' with 'retain' attribute must be of object type
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m:13: error: no declaration of property 'answerPageVisited' found in the interface
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m:15: warning: property 'answer_page_visited' requires method '-answer_page_visited' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m:15: warning: property 'answer_page_visited' requires the method 'setAnswer_page_visited:' to be defined - use @synthesize, @dynamic or provide a method implementation
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m: In function '-[QuestionItem setUserAnswer:]':
-/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m:13: warning: passing argument 4 of 'objc_setProperty' makes pointer from integer without a cast

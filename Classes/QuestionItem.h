@@ -16,6 +16,7 @@
 	NSInteger correctAnswer;
 	NSInteger userAnswer;
 	NSInteger answerPageVisited;
+	NSString *answerDesc;
 }
 
 @property (nonatomic) NSInteger id;
@@ -25,5 +26,6 @@
 @property (nonatomic) NSInteger correctAnswer;
 @property (nonatomic) NSInteger userAnswer;
 @property (nonatomic) NSInteger answerPageVisited;
+@property (nonatomic, retain) NSString *answerDesc;
 
 @end

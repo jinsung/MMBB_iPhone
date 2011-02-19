@@ -17,7 +17,8 @@
 
 @implementation QuestionViewController
 
-@synthesize question, qImage, tableView, aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, answerIndicatorCell, infoBtn;
+@synthesize question, qImage, tableView, aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, 
+			answerIndicatorCell, infoBtn, answerLabel, contentsVC, contentView;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -46,11 +47,16 @@
 	
 	qImage.image = [UIImage imageWithContentsOfFile:path];
 	
+//contentsVC.view.frame.origin = CGPointMake(0, 0);
+	[[self contentView] addSubview: [contentsVC view]];
+
+	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 	// update quiz button with answer.
 	[self update];
 }
 
 - (void)update {
+	[self dismissModalViewControllerAnimated:YES];
 	[self updateAnswerBtns];
 }
 
@@ -95,6 +101,19 @@
 	sender.selected = YES;
 }
 
+- (IBAction)infoBtnPressed:(UIButton *)sender {
+	QADescriptionFlipsideViewController *descVC = [[QADescriptionFlipsideViewController alloc] init];
+	descVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+	descVC.delegate = self;
+	[contentsVC presentModalViewController:descVC animated:YES];
+	[descVC release];
+	descVC = nil;
+}
+
+- (void)flipsideViewControllerDidFinish:(MMBBFlipsideViewController *)controller {
+	[contentsVC dismissModalViewControllerAnimated:YES];
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
 #pragma mark Table view data source
@@ -122,13 +141,14 @@
 	if (!cell)
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
 								   reuseIdentifier:@"TOCItemCell"] autorelease];
-	
 	if (question.userAnswer>0 && question.answerPageVisited==1) {
 		if (indexPath.row==0) {
 			cell = [self answerIndicatorCell];
-			NSString *answer = [NSString stringWithFormat:@"%@: %d", NSLocalizedString(@"정답", @"dummy"), question.correctAnswer];
+			NSString *answer = [NSString stringWithFormat:@"%@: %d", 
+								NSLocalizedString(@"정답", @"dummy"), question.correctAnswer];
 			[cell addSubview:[self infoBtn]];
-			[cell.textLabel setText:answer];
+			[cell addSubview:[self answerLabel]];
+			[answerLabel setText: answer];
 		} else {
 			[cell addSubview:qImage];
 		}
@@ -150,9 +170,6 @@
 		return qImage.frame.size.height;
 	}
 }
-
-#pragma mark -
-#pragma mark Content Filtering
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -178,6 +195,9 @@
 	[question release];
 	[answerIndicatorCell release];
 	[infoBtn release];
+	[answerLabel release];
+	[contentsVC release];
+	[contentView release];
     [super dealloc];
 }
 

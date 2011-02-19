@@ -1,0 +1,21 @@
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m: In function '-[QADescriptionFlipsideViewController init]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: error: 'pc' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: error: (Each undeclared identifier is reported only once
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: error: for each function it appears in.)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: warning: 'QADescriptionFlipsideViewController' may not respond to '-setPageController:'
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: warning: (Messages without a matching method signature
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: warning: will be assumed to return 'id' and accept
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:29: warning: '...' as arguments.)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m: In function '-[QADescriptionFlipsideViewController tableView:numberOfRowsInSection:]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:51: error: 'question' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:56: warning: control reaches end of non-void function
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m: In function '-[QADescriptionFlipsideViewController tableView:cellForRowAtIndexPath:]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:63: error: request for member 'tableView' in something not a structure or union
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:68: error: 'question' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:70: warning: 'QADescriptionFlipsideViewController' may not respond to '-answerIndicatorCell'
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:73: warning: 'QADescriptionFlipsideViewController' may not respond to '-infoBtn'
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:74: warning: 'QADescriptionFlipsideViewController' may not respond to '-answerLabel'
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:75: error: 'answerLabel' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m: In function '-[QADescriptionFlipsideViewController tableView:heightForRowAtIndexPath:]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:87: error: 'question' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m:96: warning: control reaches end of non-void function
