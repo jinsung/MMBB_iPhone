@@ -1,0 +1,5 @@
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m: In function '-[AnswerBtnsViewController update]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m:40: warning: 'QuestionView' may not respond to '-update'
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m:40: warning: (Messages without a matching method signature
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m:40: warning: will be assumed to return 'id' and accept
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m:40: warning: '...' as arguments.)

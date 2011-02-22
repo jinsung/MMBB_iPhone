@@ -126,8 +126,7 @@ static NSString *kQuestionTableName = @"Question";
 					 kUnitTableName, chapterID];
 	FMResultSet *rs = [db executeQuery:sql];
 	while ([rs next]) {
-		UnitItem *ui = [self getUnitItem:rs];
-		[a addObject:ui];
+		[a addObject:[self getUnitItem:rs]];
 	}
 	return [a autorelease];
 }
@@ -145,6 +144,7 @@ static NSString *kQuestionTableName = @"Question";
 			[chapter setTitle:[ganadaArray objectAtIndex:i]];
 			[chapter setUnits:sa];
 			[a addObject:chapter];
+			[chapter release];
 		}
 	}
 	
@@ -162,8 +162,7 @@ static NSString *kQuestionTableName = @"Question";
 	FMResultSet *rs = [db executeQuery:sql];
 	NSMutableArray *sa = [[NSMutableArray alloc] init];
 	while ([rs next]) {
-		UnitItem *ui = [self getUnitItem:rs];
-		[sa addObject:ui];
+		[sa addObject:[self getUnitItem:rs]];
 	}
 	return [sa autorelease];
 }
@@ -201,6 +200,7 @@ static NSString *kQuestionTableName = @"Question";
 			[chapter setTitle:[ganadaArray objectAtIndex:i]];
 			[chapter setUnits:sa];
 			[a addObject:chapter];
+			[chapter release];
 		}
 	}
 	return [a autorelease];
@@ -243,6 +243,7 @@ static NSString *kQuestionTableName = @"Question";
 	[question setCorrectAnswer:[rs intForColumn:@"correct_answer"]];
 	[question setUserAnswer:[rs intForColumn:@"answer"]];
 	[question setAnswerPageVisited:[rs intForColumn:@"answer_page_visited"]];
+	[question setAnswerDesc:[rs stringForColumn:@"answer_description"]];
 	return [question autorelease];
 }
 

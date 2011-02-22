@@ -15,7 +15,7 @@
 	UIScrollView *scrollView;
 	UIPageControl *pageControl;
 	NSMutableArray *viewControllers;
-	
+	NSInteger pageNumberBuffer;
 	// To be used when scrolls originate from the UIPageControl
     BOOL pageControlUsed;
 }
@@ -24,6 +24,7 @@
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, retain) NSMutableArray *viewControllers;
+@property (nonatomic) NSInteger pageNumberBuffer;
 
 - (void)continueChangePage:(NSInteger) page;
 - (void)loadScrollViewWithPage:(int)page;

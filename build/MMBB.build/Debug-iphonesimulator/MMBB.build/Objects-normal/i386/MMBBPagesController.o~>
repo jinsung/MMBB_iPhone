@@ -1,0 +1,5 @@
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBPagesController.m:13: error: no declaration of property 'pageNumberBuffer' found in the interface
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBPagesController.m: In function '-[MMBBPagesController scrollViewDidScroll:]':
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBPagesController.m:94: error: 'pageNumberBuffer' undeclared (first use in this function)
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBPagesController.m:94: error: (Each undeclared identifier is reported only once
+/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBPagesController.m:94: error: for each function it appears in.)

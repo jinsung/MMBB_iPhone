@@ -1,0 +1,1 @@
+/Users/jinsung/Jins_Applications/BetaBuilder.app/Contents/Resources/README

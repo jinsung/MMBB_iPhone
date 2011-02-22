@@ -11,7 +11,7 @@
 
 @implementation AnswerSheetViewController
 
-@synthesize pageController, userAnswerLabel, answerLabel;
+@synthesize pageController, totalLabel, totalTitleLabel, quizNumberTitleLabel;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithPageController: (QuestionPagesController *) pc {
@@ -21,13 +21,11 @@
     return self;
 }
 
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
+	totalTitleLabel.text = NSLocalizedString(@"총점", @"dummy");
+	quizNumberTitleLabel.text =NSLocalizedString(@"틀린문제", @"dummy");
 }
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -44,26 +42,34 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (void) update: (NSMutableArray *) questions {
-	NSMutableString *answers = [[NSMutableString alloc] initWithString:@"answers: "];
-	for (unsigned i=0; i<[questions count]; i++) {
+//	NSMutableString *answers = [[NSMutableString alloc] initWithString:@"answers: "];
+	NSInteger numberOfCorrect = 0;
+	for (NSInteger i=0; i<[questions count]; i++) {
 		QuestionItem *item = [questions objectAtIndex:i];
-		[answers appendString:[NSString stringWithFormat:@"%d", item.userAnswer]];
+		UILabel *quizNumLable = [[UILabel alloc] init];
+		quizNumLable.text = [NSString stringWithFormat:@"%d", i+1];
+		
+		quizNumLable.frame = CGRectOffset(quizNumberTitleLabel.frame, 16*(i+1) + 37, 0);
+		[self.view addSubview:quizNumLable];
+		quizNumLable.backgroundColor = [UIColor clearColor];
+		if (item.correctAnswer==item.userAnswer) {
+			numberOfCorrect++;
+		} else {
+			quizNumLable.textColor = [UIColor redColor];
+		}
+		[quizNumLable release];
 	}
-	userAnswerLabel.text = answers;	
-	[answers release];
+	NSString *totalString = [NSString stringWithFormat:@"%d / %d", numberOfCorrect, [questions count]];
+	totalLabel.text = totalString;	
+//	[answers release];
 }
 
 - (void)dealloc {
 	[pageController release];
-	[userAnswerLabel release];
-	[answerLabel release];
+	[totalLabel release];
+	[totalTitleLabel release];
+	[quizNumberTitleLabel release];
     [super dealloc];
 }
 

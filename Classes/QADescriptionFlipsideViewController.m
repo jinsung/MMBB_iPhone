@@ -8,10 +8,13 @@
 
 #import "QADescriptionFlipsideViewController.h"
 
+@interface QADescriptionFlipsideViewController (Private)
+-(void) setupDescTextView;
+@end
 
 @implementation QADescriptionFlipsideViewController
 
-@synthesize descLabel;
+@synthesize question, answerIndicatorCell, descCell, infoBtn, answerLabel, descTextView;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -24,19 +27,20 @@
 }
 */
 
-- (id) init {
-	if ((self = [super initWithNibName:@"QADescriptionFlipsideViewController" bundle:nil])) {
-        [self setPageController:pc];
+- (id)initWithQuestionItem: (QuestionItem *) qi{
+	if (self = [super initWithNibName:@"QADescriptionFlipsideViewController" bundle:nil]) {
+		self.question = qi;
     }
     return self;
 }
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[self setupDescTextView];
 }
-*/
+
+- (IBAction)flipBtnPressed:(UIButton *)sender {
+	[delegate flipsideViewControllerDidFinish:self];
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
@@ -60,11 +64,14 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
 	// Get an instance of a HomepwnerItemCell - either an unused one or a new one
-	UITableViewCell *cell = (UITableViewCell *)[self.tableView 
+	UITableViewCell *cell = (UITableViewCell *)[tableView 
 												dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-	if (!cell)
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
-									   reuseIdentifier:@"TOCItemCell"] autorelease];
+	if (!cell) {
+		//cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+		//							   reuseIdentifier:@"TOCItemCell"] autorelease];
+		cell = [self descCell];
+	}
+
 	if (question.userAnswer>0 && question.answerPageVisited==1) {
 		if (indexPath.row==0) {
 			cell = [self answerIndicatorCell];
@@ -74,12 +81,21 @@
 			[cell addSubview:[self answerLabel]];
 			[answerLabel setText: answer];
 		} else {
-			[cell addSubview:descLabel];
+			//[self setupDescTextView];
 		}
 	} else {
-		[cell addSubview:descLabel];
+		//[self setupDescTextView];
 	}
 	return cell;
+}
+
+- (void) setupDescTextView {
+	NSString *descString = question.answerDesc;
+	NSString *saveString = [descString stringByReplacingOccurrencesOfString: @"\\n" withString: @"\n"];
+	[descTextView setText:saveString];
+	CGRect frame = descTextView.frame;
+	frame.size.height = descTextView.contentSize.height;
+	descTextView.frame = frame;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -88,10 +104,10 @@
 		if (indexPath.row==0) {
 			return 44;
 		} else {
-			return descLabel.frame.size.height + 10;
+			return descTextView.frame.size.height + 10;
 		}
 	} else {
-		return descLabel.frame.size.height + 10;
+		return descTextView.frame.size.height + 10;
 	}
 }
 
@@ -109,7 +125,10 @@
 }
 
 - (void)dealloc {
-	[descLabel release];
+	[descCell release];
+	[question release];
+	[answerIndicatorCell release];
+	[descTextView release];
     [super dealloc];
 }
 

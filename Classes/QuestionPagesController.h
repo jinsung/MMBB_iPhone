@@ -10,9 +10,7 @@
 #import "MMBBPagesController.h"
 
 
-@interface QuestionPagesController : MMBBPagesController {
-	
-	// answer buttons
+@interface QuestionPagesController : MMBBPagesController {	
 }
 
 - (IBAction)changePage:(id)sender;

@@ -7,7 +7,7 @@
 //
 
 #import "QuestionPagesController.h"
-#import "QuestionViewController.h"
+#import "AnswerBtnsViewController.h"
 #import "AnswerSheetViewController.h"
 #import "MMBBAppDelegate.h"
 
@@ -64,10 +64,10 @@
 		controller = [self.viewControllers objectAtIndex:page];
 		if ((NSNull *)controller == [NSNull null])
 		{
-			controller = [[QuestionViewController alloc] 
-						  initWithNibName:@"QuestionViewController" 
+			controller = [[AnswerBtnsViewController alloc] 
+						  initWithNibName:@"AnswerBtnsViewController" 
 						  bundle:nil ];
-			((QuestionViewController *)controller).question 
+			((AnswerBtnsViewController *)controller).question 
 				= [pageDataArray objectAtIndex:page];
 			[self.viewControllers replaceObjectAtIndex:page withObject:controller];
 			[controller release];
@@ -78,9 +78,9 @@
 
 - (IBAction)changePage:(id)sender
 {
-    int page = self.pageControl.currentPage;
-	
+	int page = self.pageControl.currentPage;
 	[self continueChangePage:page];
+	pageNumberBuffer = page;
 	
 	// update the scroll view to the appropriate page
     CGRect frame = self.scrollView.frame;
@@ -103,7 +103,7 @@
 		[controller update:[self pageDataArray]];
 		[self setQuestionsSolved:NO];
 	} else {
-		QuestionViewController* controller = [self.viewControllers objectAtIndex:page];
+		AnswerBtnsViewController* controller = [self.viewControllers objectAtIndex:page];
 		[controller update];
 	}
 }

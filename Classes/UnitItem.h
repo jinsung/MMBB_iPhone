@@ -12,12 +12,12 @@
 @interface UnitItem : NSObject {
 	NSInteger id;
 	NSString *title;
-	NSString *subtitle;
+	//NSString *subtitle;
 	NSInteger isBookmarked;
 }
 @property (nonatomic) NSInteger id;
 @property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *subtitle;
+//@property (nonatomic, retain) NSString *subtitle;
 @property (nonatomic) NSInteger isBookmarked;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation MMBBPagesController
 
-@synthesize pageDataArray, scrollView, pageControl, viewControllers;
+@synthesize pageDataArray, scrollView, pageControl, viewControllers, pageNumberBuffer;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -91,7 +91,11 @@
     int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     self.pageControl.currentPage = page;
     
-	[self continueChangePage:page];    
+	if (pageNumberBuffer != self.pageControl.currentPage) {
+		[self continueChangePage:page];
+		pageNumberBuffer = page;
+	}
+	  
     // A possible optimization would be to unload the views+controllers which are no longer visible
 }
 
