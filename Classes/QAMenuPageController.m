@@ -18,13 +18,15 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization.
-		self.pageDataArray = [[MMBBAppDelegate sql] getChapters];
+		
     }
     return self;
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	self.pageDataArray = [[MMBBAppDelegate sql] getChapters];
+	self.pageControl.numberOfPages = [pageDataArray count];
 	[super viewDidLoad];
 	
 	//Set the title
@@ -60,7 +62,7 @@
 {
 	if (page < 0) 
 		return;
-	if (page > [pageDataArray count] - 1) 
+	if (page > [self.pageDataArray count] - 1) 
 		return;
 	
 	UIViewController *controller;
@@ -68,7 +70,7 @@
 	if ((NSNull *)controller == [NSNull null])
 	{
 		controller = [[QAMenuItemViewController alloc]
-					  initWithItemData:[pageDataArray objectAtIndex:page]];
+					  initWithItemData:[self.pageDataArray objectAtIndex:page]];
 		((QAMenuItemViewController *)controller).idelegate = self;
 		[self.viewControllers replaceObjectAtIndex:page withObject:controller];
 		[self addControllerOnScroller:controller withPageNumber:page];

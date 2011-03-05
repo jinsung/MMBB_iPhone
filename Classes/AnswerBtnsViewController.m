@@ -54,6 +54,9 @@
 }
 
 - (IBAction)answerBtnPressed:(UIButton *)sender {
+	if (question.userAnswer > 0 && question.answerPageVisited) 
+		return;
+	
 	question.userAnswer = sender.tag;
 	[[MMBBAppDelegate sql] updateUserAnswer:sender.tag forQuestionID: question.id ];
 	// answer buttons.

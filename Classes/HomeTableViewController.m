@@ -133,15 +133,23 @@
 #pragma mark -
 #pragma mark UITableViewDataSource
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+	if( self.selectedTabIndex == 2 ) 
+		return YES;
+	else 
+		return NO;
+}
+
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
-	[super setEditing:editing animated:animated];
-    [self.tableView setEditing:editing animated:YES];
+	if( self.selectedTabIndex == 2 ) {
+		[super setEditing:editing animated:animated];
+		[self.tableView setEditing:editing animated:YES];
+	}
 }
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tv commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
 forRowAtIndexPath:(NSIndexPath *)indexPath {
-	
 	if( self.selectedTabIndex == 2 ) {
 		if (editingStyle == UITableViewCellEditingStyleDelete) {
 			ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];
@@ -159,7 +167,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 				}
 			}
 		}
-	}
+	} 
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -175,6 +183,64 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 		}
 		return sectiontitle;
 	}
+}
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		return [self.filteredListContent count];
+	} else {
+		ChapterItem *ci = [[self tableData] objectAtIndex:section];
+		return [ci.units count];
+	}
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+	// Get an instance of a HomepwnerItemCell - either an unused one or a new one
+	TOCItemCell *cell = (TOCItemCell *)[self.tableView 
+										dequeueReusableCellWithIdentifier:@"TOCItemCell"];
+	if (!cell)
+		cell = [[[TOCItemCell alloc] initWithStyle:UITableViewCellStyleDefault 
+								   reuseIdentifier:@"TOCItemCell"] autorelease];
+	
+	// Instead of setting each label directly, we pass it a table items object
+	UnitItem *ui = nil;
+	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
+		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
+	} else {
+		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];	
+		ui = [ci.units objectAtIndex:[indexPath row]];
+	}
+	if (self.selectedTabIndex == 1) {
+		[cell setTitle:[NSString stringWithFormat:@"%@", [ui title]]];
+	} else {
+		if (ui.unitType > 0) {
+			NSString *unitTypeName;
+			switch (ui.unitType) {
+				case 1:
+					unitTypeName = NSLocalizedString(@"Special", @"dummy");
+					break;
+				case 2:
+					unitTypeName = NSLocalizedString(@"More", @"dummy");
+					break;
+				case 3:
+					unitTypeName = NSLocalizedString(@"Bouns", @"dummy");
+					break;
+				case 4:
+					unitTypeName = NSLocalizedString(@"Mini", @"dummy");
+					break;
+				default:
+					break;
+			}
+			[cell setTitle:[NSString stringWithFormat:@"%@ %d. %@", unitTypeName, [ui unitNum], [ui title]]];
+		} else {
+			[cell setTitle:[NSString stringWithFormat:@"%d. %@", [ui unitNum], [ui title]]];
+		}
+	}
+	return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

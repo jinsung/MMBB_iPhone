@@ -73,13 +73,26 @@
 	UnitItem * thisUnitItem = [[MMBBAppDelegate sql] getUnitItemByID:newId];
 	[self setUnitItem: thisUnitItem];
 
-	NSString *dir = @"";
-	NSString *file = [NSString stringWithFormat:@"%d", [[self unitItem] id]]; 
+	NSString *dir = @"";	
+	NSString *file;
+	if (thisUnitItem.unitType > 0 ) {
+		NSString *unitTypeCode = [NSString stringWithFormat:@"-%d", [[self unitItem] unitType]];
+		file = [NSString stringWithFormat:@"%d-%d%s", [[self unitItem] chapterID], [[self unitItem] unitNum], unitTypeCode]; 
+	} else {
+		file = [NSString stringWithFormat:@"%d-%d", [[self unitItem] chapterID], [[self unitItem] unitNum]]; 
+	}
 	NSString *path = [[NSBundle mainBundle] pathForResource:file
 													 ofType:@"png" inDirectory:dir];
+	UIImage *image = [UIImage imageWithContentsOfFile:path];
+	CGFloat width = image.size.width/2.0;
+	CGFloat height = image.size.height/2.0;
+	CGRect bound = CGRectMake(0, 0, width, height);
+
+	//[image setBounds: bound];
 	UIImageView *imageView = [[UIImageView alloc] 
 							  initWithImage:[UIImage imageWithContentsOfFile:path]];
-	
+	imageView.frame = bound;
+	imageView.contentMode = UIViewContentModeScaleAspectFit;
 	[scrollView setContentSize:[imageView bounds].size];
 	NSArray *oldImages = [scrollView subviews];
 	for (int i=0; i<oldImages.count; i++) {

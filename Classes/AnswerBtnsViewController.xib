@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="20"/>
+			<integer value="12"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -106,8 +106,7 @@
 									<double key="NSSize">18</double>
 									<int key="NSfFlags">16</int>
 								</object>
-								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
-								<bool key="IBUIAdjustsImageWhenDisabled">NO</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<string key="IBUITitleShadowOffset">{1, 2}</string>
 								<string key="IBUIDisabledTitle">1</string>
 								<string key="IBUINormalTitle">1</string>
@@ -150,8 +149,7 @@
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="364522748"/>
-								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
-								<bool key="IBUIAdjustsImageWhenDisabled">NO</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<string key="IBUITitleShadowOffset">{1, 2}</string>
 								<string key="IBUIHighlightedTitle">2</string>
 								<string key="IBUIDisabledTitle">2</string>
@@ -184,8 +182,7 @@
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="364522748"/>
-								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
-								<bool key="IBUIAdjustsImageWhenDisabled">NO</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<string key="IBUITitleShadowOffset">{1, 2}</string>
 								<string key="IBUIDisabledTitle">3</string>
 								<string key="IBUINormalTitle">3</string>
@@ -216,8 +213,7 @@
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="364522748"/>
-								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
-								<bool key="IBUIAdjustsImageWhenDisabled">NO</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<string key="IBUITitleShadowOffset">{1, 2}</string>
 								<string key="IBUIDisabledTitle">4</string>
 								<string key="IBUINormalTitle">4</string>
@@ -248,8 +244,7 @@
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<reference key="IBUIFont" ref="364522748"/>
-								<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
-								<bool key="IBUIAdjustsImageWhenDisabled">NO</bool>
+								<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 								<string key="IBUITitleShadowOffset">{1, 2}</string>
 								<string key="IBUIDisabledTitle">5</string>
 								<string key="IBUINormalTitle">5</string>

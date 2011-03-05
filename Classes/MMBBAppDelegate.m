@@ -42,21 +42,21 @@ static SQLAccess *sql;
 													   bundle:nil ];
 	UINavigationController *qaNavController = [[QANavController alloc]
 											   initWithRootViewController:qaPageMenuController];
-	[qaPageMenuController release];
+
 	// make an array containing the two view controllers
 	NSArray *viewControlles = 
 		[NSArray arrayWithObjects:homeNavController, qaNavController, nil];
-	[qaNavController release];
+
 	// attach them to the tab bar controller
 	[tabBarController setViewControllers:viewControlles];
-
 	[window setRootViewController:tabBarController];
     [window makeKeyAndVisible];
     
 	//[searchViewController release];
 	[homeViewController release];
 	[homeNavController release];
-	
+	[qaPageMenuController release];	
+	[qaNavController release];
     return YES;
 }
 

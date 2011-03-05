@@ -65,12 +65,7 @@ letUserSelectRow=_letUserSelectRow;
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
-		return [self.filteredListContent count];
-	} else {
-		ChapterItem *ci = [[self tableData] objectAtIndex:section];
-		return [ci.units count];
-	}
+	return 0;
 }
 
 // Customize the appearance of table view cells.
@@ -84,17 +79,9 @@ letUserSelectRow=_letUserSelectRow;
 		cell = [[[TOCItemCell alloc] initWithStyle:UITableViewCellStyleDefault 
 								   reuseIdentifier:@"TOCItemCell"] autorelease];
 	
-	// Instead of setting each label directly, we pass it a table items object
-	UnitItem *ui = nil;
-	if ([self tableView] == self.searchDisplayController.searchResultsTableView) {
-		ui = [self.filteredListContent objectAtIndex:[indexPath row]];
-	} else {
-		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];	
-		ui = [ci.units objectAtIndex:[indexPath row]];
-	}
-	[cell setTitle:[ui title]];
 	return cell;
 }
+
 
 #pragma mark -
 #pragma mark Content Filtering

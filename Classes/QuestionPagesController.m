@@ -35,6 +35,7 @@
 }
 
 - (void)viewDidLoad {
+	self.pageControl.numberOfPages = [pageDataArray count] + 1;
 	[super viewDidLoad];
 }
 

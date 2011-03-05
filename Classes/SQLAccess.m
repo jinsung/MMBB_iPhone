@@ -171,7 +171,10 @@ static NSString *kQuestionTableName = @"Question";
 	UnitItem * ui = [[UnitItem alloc] init];
 	[ui setTitle:[rs stringForColumn: @"title"]];
 	[ui setId:[rs intForColumn: @"id"]];
+	[ui setUnitNum:[rs intForColumn:@"unit_num"]];
+	[ui setChapterID:[rs intForColumn: @"chapter_id"]];
 	[ui setIsBookmarked:[rs intForColumn:@"is_bookmarked"]];
+	[ui setUnitType:[rs intForColumn:@"unit_type"]];
 	return [ui autorelease];
 }
 

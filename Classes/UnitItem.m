@@ -11,11 +11,10 @@
 
 @implementation UnitItem
 
-@synthesize id, title, isBookmarked;
+@synthesize id, chapterID, title, isBookmarked, unitNum, unitType;
 
 - (void) dealloc {
 	[title release];
-	//[subtitle release];
 	[super dealloc];
 }
 

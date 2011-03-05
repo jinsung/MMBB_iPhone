@@ -33,9 +33,8 @@
 	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * ([pageDataArray count]+1), 
 											 self.scrollView.frame.size.height);
 	
-	self.pageControl.numberOfPages = [pageDataArray count] + 1;
 	self.pageControl.currentPage = 0;
-	//	[pageControl updateCurrentPageDisplay];
+	[pageControl updateCurrentPageDisplay];
     
 	// pages are created on demand
 	// load the visible page
@@ -119,11 +118,22 @@
 	// do nothing.
 }
 
+
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	// Return YES for supported orientations
+	return YES;
+}
+
 - (void)dealloc {
 	[viewControllers release];
+	viewControllers=nil;
     [scrollView release];
+	scrollView=nil;
     [pageControl release];
+	pageControl=nil;
 	[pageDataArray release];
+	pageDataArray=nil;
     [super dealloc];
 }
 
