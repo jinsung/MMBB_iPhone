@@ -45,7 +45,7 @@
 					<object class="IBUITableView" id="311078509">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, -72}, {320, 337}}</string>
+						<string key="NSFrame">{{0, 76}, {320, 337}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -65,7 +65,7 @@
 					<object class="IBUIImageView" id="839328963">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, -72}, {320, 337}}</string>
+						<string key="NSFrame">{{0, 76}, {320, 337}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -357,7 +357,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>QuestionView</string>
 					<string>UIResponder</string>
-					<string>{{12, 32}, {320, 480}}</string>
+					<string>{{36, 50}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{353, 174}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

@@ -54,6 +54,7 @@
 								   initWithNibName:@"QuestionPagesController" bundle:nil ];
 	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInChapter:sender.itemData.id
 														  withType:segmentedControl.selectedSegmentIndex + 1];
+	qp.chapterData = sender.itemData;
 	[qp setHidesBottomBarWhenPushed: YES];
 	
 	if (segmentedControl.selectedSegmentIndex == 0) {

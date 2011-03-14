@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="1"/>
 			<integer value="7"/>
 			<integer value="17"/>
 		</object>
@@ -46,9 +47,8 @@
 					<object class="IBUITableView" id="322355081">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 75}, {320, 337}}</string>
+						<string key="NSFrame">{{0, 76}, {320, 337}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC45MTc2NDcwNTg4IDAuOTUyOTQxMTc2NSAwLjk1Njg2Mjc0NTEAA</bytes>
@@ -65,10 +65,9 @@
 					</object>
 					<object class="IBUIImageView" id="771657163">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">310</int>
-						<string key="NSFrame">{{0, 75}, {320, 337}}</string>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrame">{{0, 76}, {320, 337}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -80,10 +79,9 @@
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
+					<bytes key="NSWhite">MAA</bytes>
 					<object class="NSColorSpace" key="NSCustomColorSpace">
 						<int key="NSID">2</int>
 					</object>
@@ -338,8 +336,8 @@ dGUgY29uc2NpZW50IHRvIGZhY3RvciB0dW0gcG9lbiBsZWd1bSBvZGlvcXVlIGNpdml1ZGEuA</strin
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="771657163"/>
 							<reference ref="322355081"/>
+							<reference ref="771657163"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -377,11 +375,9 @@ dGUgY29uc2NpZW50IHRvIGZhY3RvciB0dW0gcG9lbiBsZWd1bSBvZGlvcXVlIGNpdml1ZGEuA</strin
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
 						<reference key="object" ref="322355081"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="771657163"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -397,6 +393,11 @@ dGUgY29uc2NpZW50IHRvIGZhY3RvciB0dW0gcG9lbiBsZWd1bSBvZGlvcXVlIGNpdml1ZGEuA</strin
 						<int key="objectID">17</int>
 						<reference key="object" ref="601507006"/>
 						<reference key="parent" ref="92019980"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">13</int>
+						<reference key="object" ref="771657163"/>
+						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
 			</object>
@@ -426,13 +427,13 @@ dGUgY29uc2NpZW50IHRvIGZhY3RvciB0dW0gcG9lbiBsZWd1bSBvZGlvcXVlIGNpdml1ZGEuA</strin
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>QADescriptionFlipsideViewController</string>
 					<string>UIResponder</string>
-					<string>{{31, 41}, {320, 480}}</string>
+					<string>{{338, 229}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw52AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw80AAA</bytes>
 					</object>
-					<string>{{233, 206}, {320, 290}}</string>
+					<string>{{111, 148}, {320, 290}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -827,7 +828,7 @@ dGUgY29uc2NpZW50IHRvIGZhY3RvciB0dW0gcG9lbiBsZWd1bSBvZGlvcXVlIGNpdml1ZGEuA</strin
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{320, 44}</string>
 				<string>{35, 36}</string>
-				<string>{322, 340}</string>
+				<string>{320, 337}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>

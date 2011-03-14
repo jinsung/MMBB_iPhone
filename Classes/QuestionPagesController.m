@@ -22,6 +22,8 @@
 
 @implementation QuestionPagesController
 
+@synthesize chapterData, chapterInfoLable;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
 		
@@ -35,11 +37,17 @@
 }
 
 - (void)viewDidLoad {
+	NSString *chapterTitleText = [NSString stringWithFormat:@"%d. %@", 
+								  chapterData.id, chapterData.title];
+	chapterInfoLable.text = chapterTitleText;
+	
 	self.pageControl.numberOfPages = [pageDataArray count] + 1;
 	[super viewDidLoad];
 }
 
 - (void)dealloc {
+	[chapterInfoLable release];
+	[chapterData release];
 	[super dealloc];
 }
 

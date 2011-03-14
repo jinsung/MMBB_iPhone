@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="1"/>
+			<integer value="10"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -50,7 +50,7 @@
 							<object class="IBUIImageView" id="170030784">
 								<reference key="NSNextResponder" ref="294463107"/>
 								<int key="NSvFlags">310</int>
-								<string key="NSFrame">{{0, -1}, {320, 385}}</string>
+								<string key="NSFrameSize">{320, 385}</string>
 								<reference key="NSSuperview" ref="294463107"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -609,7 +609,7 @@
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{194, 36}</string>
-				<string>{322, 340}</string>
+				<string>{320, 337}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>

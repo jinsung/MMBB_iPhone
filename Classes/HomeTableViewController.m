@@ -218,7 +218,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 		[cell setTitle:[NSString stringWithFormat:@"%@", [ui title]]];
 	} else {
 		if (ui.unitType > 0) {
-			NSString *unitTypeName;
+			NSString *unitTypeName = @"";
 			switch (ui.unitType) {
 				case 1:
 					unitTypeName = NSLocalizedString(@"Special", @"dummy");
