@@ -13,7 +13,8 @@
 @implementation QAMenuPageController
 @synthesize selectedTabIndex, segmentedControl;
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+// The designated initializer. Override if you create the controller programmatically 
+// and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -54,6 +55,13 @@
 	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInChapter:sender.itemData.id
 														  withType:segmentedControl.selectedSegmentIndex + 1];
 	[qp setHidesBottomBarWhenPushed: YES];
+	
+	if (segmentedControl.selectedSegmentIndex == 0) {
+		[[qp navigationItem] setTitle:NSLocalizedString(@"정문일침", "dummy")];
+	} else {
+		[[qp navigationItem] setTitle:NSLocalizedString(@"일망타진", "dummy")];
+	}
+
 	[self.navigationController pushViewController:qp animated:YES];
 	[qp release];
 }

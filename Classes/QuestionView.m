@@ -48,13 +48,18 @@
 	[self.tableView reloadData];
 }
 
-/*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
-*/
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+	
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+}
 
 - (IBAction)infoBtnPressed:(UIButton *)sender {
 	QADescriptionFlipsideViewController *descVC = 
@@ -116,9 +121,12 @@
 			[cell addSubview:[self answerLabel]];
 			[answerLabel setText: answer];
 		} else {
+			cell.autoresizesSubviews = YES;
+			//cell.indentationLevel
 			[cell addSubview:qImage];
 		}
 	} else {
+		cell.autoresizesSubviews = YES;
 		[cell addSubview:qImage];
 	}
 	return cell;

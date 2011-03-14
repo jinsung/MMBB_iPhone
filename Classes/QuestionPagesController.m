@@ -24,7 +24,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-				
+		
 	}
 	return self;
 }
@@ -59,7 +59,6 @@
 			[self.viewControllers replaceObjectAtIndex:page withObject:controller];
 			[controller release];
 		}
-		
 	} else {
 		// replace the placeholder if necessary
 		controller = [self.viewControllers objectAtIndex:page];
