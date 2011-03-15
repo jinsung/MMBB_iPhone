@@ -114,8 +114,10 @@
 	if (question.userAnswer>0 && question.answerPageVisited==1) {
 		if (indexPath.row==0) {
 			cell = [self answerIndicatorCell];
-			NSString *answer = [NSString stringWithFormat:@"%@: %d", 
-								NSLocalizedString(@"정답", @"dummy"), question.correctAnswer];
+			NSString *answerStringID = 
+				[NSString stringWithFormat:@"%@%d", @"Answer", question.correctAnswer];
+			NSString *answer = [NSString stringWithFormat:@"%@ : %@", 
+								NSLocalizedString(@"정답", @"dummy"), NSLocalizedString(answerStringID, @"dummy")];
 			[cell addSubview:[self infoBtn]];
 			[self.answerLabel setText: question.answerDesc];
 			[cell addSubview:[self answerLabel]];

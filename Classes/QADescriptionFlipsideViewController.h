@@ -16,6 +16,7 @@
 	UITableViewCell *descCell;
 	UIButton *infoBtn;
 	UILabel *answerLabel;
+	UILabel *wrongAnswerLable;
 	UITextView *descTextView;
 }
 
@@ -24,6 +25,7 @@
 @property (nonatomic, retain) IBOutlet UITableViewCell *descCell;
 @property (nonatomic, retain) IBOutlet UIButton *infoBtn;
 @property (nonatomic, retain) IBOutlet UILabel *answerLabel;
+@property (nonatomic, retain) IBOutlet UILabel *wrongAnswerLabel;
 @property (nonatomic, retain) IBOutlet UITextView *descTextView;
 
 - (id)initWithQuestionItem: (QuestionItem *) qi;

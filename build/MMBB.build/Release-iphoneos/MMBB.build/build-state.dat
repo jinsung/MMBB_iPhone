@@ -1,7 +1,7 @@
 TMMBB
 v7
 r0
-t321771509.814571
+t321849862.483292
 cCheck dependencies
 cCpResource build/Release-iphoneos/명명백백.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Info.plist MMBB-Info.plist
@@ -78,7 +78,6 @@ cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/Resp
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QADescriptionFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionView.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백 normal armv6
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/main.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBAppDelegate.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/HomeTableViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/HomeTableViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
@@ -108,6 +107,7 @@ cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBB
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QAMenuItemViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/RespondedImageView.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/RespondedImageView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QADescriptionFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백 normal armv6
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionView.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백 normal armv7
@@ -399,8 +399,8 @@ s537
 i<UIKit/UIKit.h>
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m
-c000000004D6014470000000000000580
-t1298142279
+c000000004D7ED2580000000000000580
+t1300157016
 s1408
 i"MMBBFlipsideViewController.h"
 
@@ -446,23 +446,23 @@ i"UnitItem.h"
 i"TOCItemCell.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.h
-c000000004D613FEE00000000000003FC
-t1298218990
-s1020
+c000000004D7ECC58000000000000045A
+t1300155480
+s1114
 i<UIKit/UIKit.h>
 i"MMBBFlipsideViewController.h"
 i"QuestionItem.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m
-c000000004D61E5AA0000000000000EF5
-t1298261418
-s3829
+c000000004D7ED27B00000000000011C2
+t1300157051
+s4546
 i"QADescriptionFlipsideViewController.h"
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib
-c000000004D7D97850000000000009382
-t1300076421
-s37762
+c000000004D7ED1F2000000000000A213
+t1300156914
+s41491
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.h
 c000000004D5746020000000000000280
@@ -856,9 +856,9 @@ t1295128492
 s102
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/Korean.lproj/Localizable.strings
-c000000004D72BF320000000000000168
-t1299365682
-s360
+c000000004D7ECDF200000000000001D0
+t1300155890
+s464
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/MMBB-Info.plist
 c000000004D0E7700000000000000038B
@@ -878,7 +878,7 @@ t1288552437
 s8441
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerBtnsViewController.o
-t1300078447
+t1300156304
 s56000
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerSheetViewController.o
@@ -939,7 +939,7 @@ t1300078445
 s55656
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBFlipsideViewController.o
-t1300078448
+t1300157053
 s36736
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBNavController.o
@@ -955,8 +955,8 @@ t1300078447
 s57720
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QADescriptionFlipsideViewController.o
-t1300078448
-s56296
+t1300157053
+s58116
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QAMenuItemViewController.o
 t1300078448
@@ -979,12 +979,12 @@ t1300078447
 s12944
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionPagesController.o
-t1300078447
+t1300156304
 s52340
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionView.o
-t1300078448
-s59300
+t1300156304
+s59332
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionViewController.o
 t2
@@ -1019,6 +1019,10 @@ t1300078445
 s6532
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백
+t1300157060
+s185304
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백
 t1300078453
 s184644
 
@@ -1027,8 +1031,13 @@ c000000004D7D9F42000000000000105C
 t1300078402
 s4188
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백.LinkFileList
+c000000004D7D9F42000000000000105C
+t1300078402
+s4188
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerBtnsViewController.o
-t1300078452
+t1300156305
 s56012
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerSheetViewController.o
@@ -1089,7 +1098,7 @@ t1300078448
 s55692
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBFlipsideViewController.o
-t1300078453
+t1300157053
 s36752
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBNavController.o
@@ -1105,8 +1114,8 @@ t1300078451
 s57680
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QADescriptionFlipsideViewController.o
-t1300078453
-s56280
+t1300157053
+s58132
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QAMenuItemViewController.o
 t1300078453
@@ -1129,12 +1138,12 @@ t1300078452
 s12952
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionPagesController.o
-t1300078451
+t1300156305
 s52120
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionView.o
-t1300078454
-s59428
+t1300156305
+s59456
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionViewController.o
 t2
@@ -1169,8 +1178,17 @@ t1300078448
 s6508
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백
+t1300157060
+s184552
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백
 t1300078454
 s183892
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백.LinkFileList
+c000000004D7D9F42000000000000105C
+t1300078402
+s4188
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백.LinkFileList
 c000000004D7D9F42000000000000105C
@@ -1180,6 +1198,10 @@ s4188
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/com.apple.build-tools.platform.validate
 t2
 s0
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent
+t1300078454
+s414
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent
 t1300078454
@@ -1273,9 +1295,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078709
 s1666
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+t1300157062
+s1666
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM
+t1300157060
+s102
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM
 t1300078454
 s102
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-1.png
+t1300078444
+s1130179
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-1.png
 t1300078444
@@ -1285,9 +1319,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078433
 s1021719
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-10.png
+t1300078433
+s1021719
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-11.png
 t1300078434
 s1036970
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-11.png
+t1300078434
+s1036970
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-12.png
+t1300078436
+s722303
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-12.png
 t1300078436
@@ -1297,9 +1343,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078436
 s620852
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-13.png
+t1300078436
+s620852
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-14.png
 t1300078439
 s732003
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-14.png
+t1300078439
+s732003
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-15.png
+t1300078439
+s870049
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-15.png
 t1300078439
@@ -1309,9 +1367,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078413
 s1252031
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-2.png
+t1300078413
+s1252031
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-3.png
 t1300078411
 s1397077
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-3.png
+t1300078411
+s1397077
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-4.png
+t1300078416
+s982268
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-4.png
 t1300078416
@@ -1321,9 +1391,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078423
 s2686267
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-5.png
+t1300078423
+s2686267
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-6.png
 t1300078420
 s952598
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-6.png
+t1300078420
+s952598
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-7.png
+t1300078425
+s1068363
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-7.png
 t1300078425
@@ -1333,9 +1415,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078428
 s1044750
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-8.png
+t1300078428
+s1044750
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-9.png
 t1300078430
 s1234536
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-9.png
+t1300078430
+s1234536
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/AnswerBtnsViewController.nib
+t1300078404
+s3424
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/AnswerBtnsViewController.nib
 t1300078404
@@ -1345,9 +1439,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078404
 s2072
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/AnswerSheetViewController.nib
+t1300078404
+s2072
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/BookmarkAdderTblViewController.nib
 t1300078403
 s1680
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/BookmarkAdderTblViewController.nib
+t1300078403
+s1680
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Default.png
+t1300078405
+s98235
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Default.png
 t1300078405
@@ -1357,6 +1463,14 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078403
 s2518
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/HomeTableViewController.nib
+t1300078403
+s2518
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Icon.png
+t1300078405
+s9345
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Icon.png
 t1300078405
 s9345
@@ -1364,6 +1478,14 @@ s9345
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Info.plist
 t1300078402
 s812
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Info.plist
+t1300078402
+s812
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Korean.lproj/Localizable.strings
+t1300156302
+s391
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Korean.lproj/Localizable.strings
 t1300078402
@@ -1373,6 +1495,14 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078403
 s981
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/MainWindow.nib
+t1300078403
+s981
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/PkgInfo
+t1300078402
+s8
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/PkgInfo
 t1300078402
 s8
@@ -1380,6 +1510,14 @@ s8
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QADescriptionFlipsideViewController.nib
 t1300078406
 s4221
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QADescriptionFlipsideViewController.nib
+t1300156933
+s4538
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QAMenuItemViewController.nib
+t1300078405
+s931
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QAMenuItemViewController.nib
 t1300078405
@@ -1389,9 +1527,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078404
 s2046
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QAMenuPageController.nib
+t1300078404
+s2046
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QATableViewController.nib
 t1300078403
 s1893
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QATableViewController.nib
+t1300078403
+s1893
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QuestionPagesController.nib
+t1300078404
+s1861
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QuestionPagesController.nib
 t1300078404
@@ -1401,9 +1551,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078406
 s3208
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QuestionView.nib
+t1300078406
+s3208
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/ResourceRules.plist
 t1300078402
 s485
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/ResourceRules.plist
+t1300078402
+s485
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_desc_title.png
+t1300078406
+s1764
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_desc_title.png
 t1300078406
@@ -1413,9 +1575,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078405
 s377
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_indicator_cell_bg.png
+t1300078405
+s377
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/bttn_flip.png
 t1300078405
 s1487
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/bttn_flip.png
+t1300078405
+s1487
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/embedded.mobileprovision
+t1300078454
+s7234
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/embedded.mobileprovision
 t1300078454
@@ -1425,9 +1599,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078403
 s2916
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/house.png
+t1300078403
+s2916
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/mmbb.db
 t1300078402
 s26624
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/mmbb.db
+t1300078402
+s26624
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/pageControllerBG.png
+t1300078405
+s616
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/pageControllerBG.png
 t1300078405
@@ -1437,9 +1623,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078405
 s1908
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/questionOverlay.png
+t1300078405
+s1908
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/questions
 t1300078404
 s102
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/questions
+t1300078404
+s102
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_normal.png
+t1300078405
+s894
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_normal.png
 t1300078405
@@ -1449,9 +1647,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 t1300078405
 s917
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_pick.png
+t1300078405
+s917
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_wrong.png
 t1300078405
 s953
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_wrong.png
+t1300078405
+s953
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백
+t1300157060
+s387904
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백
 t1300078454
@@ -1496,7 +1706,7 @@ s947
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies321771508#321771509#0(0"0(0#1#0"8604235904#0"0#
+lSLF07#2@18"Check dependencies321849852#321849853#0(0"0(0#1#0"8620300640#0"0#
 
 CCodeSign /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
 s321771509.226501
@@ -1507,9 +1717,17 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 o/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app: replacing existing signature
 lSLF07#2@72"CodeSign build/Release-iphoneos/명명백백.app321771509#321771509#0(143"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app: replacing existing signature0(0#0#112"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app8628589664#773"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Jungmin Oh (945X667PXJ)" --resource-rules=/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/ResourceRules.plist --entitlements /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app0#
 
+CCodeSign /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+s321849860.701508
+e321849862.055536
+r1
+xCodeSign
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+lSLF07#2@72"CodeSign build/Release-iphoneos/명명백백.app321849860#321849862#0(0"0(0#0#112"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app8617161600#773"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Jungmin Oh (945X667PXJ)" --resource-rules=/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/ResourceRules.plist --entitlements /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app0#
+
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerBtnsViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s321771247.609621
-e321771247.839027
+s321849102.631145
+e321849104.281335
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerBtnsViewController.o
@@ -1518,7 +1736,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m321771247#321771247#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m8626371808#1999"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerBtnsViewController.o0#
+lSLF07#2@91"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m321849102#321849104#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m8610578944#1999"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerBtnsViewController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/AnswerSheetViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s321771247.839128
@@ -1677,8 +1895,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@82"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m321771245#321771245#0(0"0(0#0#74"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m8628124576#1981"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBAppDelegate.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s321771248.332881
-e321771248.431346
+s321849853.477827
+e321849853.581919
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBFlipsideViewController.o
@@ -1687,7 +1905,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@93"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m321771248#321771248#0(0"0(0#0#85"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m8625834944#2003"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBFlipsideViewController.o0#
+lSLF07#2@93"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m321849853#321849853#0(0"0(0#0#85"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m8604325952#2003"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBFlipsideViewController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBNavController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBNavController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s321771247.412422
@@ -1729,8 +1947,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBTableController.m321771247#321771247#0(0"0(0#0#78"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBTableController.m8625366432#1989"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBTableController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBBTableController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QADescriptionFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s321771248.274429
-e321771248.498632
+s321849853.475716
+e321849853.728447
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QADescriptionFlipsideViewController.o
@@ -1739,7 +1957,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@102"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m321771248#321771248#0(0"0(0#0#94"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m8628789312#2021"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QADescriptionFlipsideViewController.o0#
+lSLF07#2@102"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m321849853#321849853#0(0"0(0#0#94"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m8606268768#2021"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QADescriptionFlipsideViewController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QAMenuItemViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s321771248.067178
@@ -1797,8 +2015,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m321771247#321771247#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m8624347168#1975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionItem.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionPagesController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s321771247.567541
-e321771247.756049
+s321849102.629983
+e321849104.279520
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionPagesController.o
@@ -1807,11 +2025,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m321771247#321771247#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m8627099904#1997"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionPagesController.o0#
+lSLF07#2@90"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m321849102#321849104#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m8613150368#1997"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionPagesController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionView.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s321771248.431447
-e321771248.742552
+s321849104.281501
+e321849104.547469
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionView.o
@@ -1820,7 +2038,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m321771248#321771248#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m8625112192#1975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionView.o0#
+lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m321849104#321849104#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m8617380224#1975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionView.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/QuestionViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -1917,8 +2135,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@63"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/main.m321771245#321771245#0(0"0(0#0#55"/Users/jinsung/Documents/workspace/CocoApps/MMBB/main.m8628358528#1951"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv6 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-dofaxtgheonnwearalsdrnzitidi/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/main.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/main.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerBtnsViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321771251.932630
-e321771252.122952
+s321849104.547564
+e321849105.200153
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerBtnsViewController.o
@@ -1927,7 +2145,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m321771251#321771252#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m8622167328#1999"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerBtnsViewController.o0#
+lSLF07#2@91"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m321849104#321849105#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m8616188800#1999"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerBtnsViewController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/AnswerSheetViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerSheetViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s321771252.212864
@@ -2086,8 +2304,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@82"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m321771248#321771248#0(0"0(0#0#74"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m8624059744#1981"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBAppDelegate.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBAppDelegate.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321771253.706797
-e321771253.816851
+s321849853.828401
+e321849853.917706
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBFlipsideViewController.o
@@ -2096,7 +2314,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@93"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m321771253#321771253#0(0"0(0#0#85"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m8621891616#2003"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBFlipsideViewController.o0#
+lSLF07#2@93"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m321849853#321849853#0(0"0(0#0#85"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m8617284352#2003"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBFlipsideViewController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBNavController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBNavController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s321771251.608259
@@ -2138,8 +2356,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBTableController.m321771251#321771251#0(0"0(0#0#78"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBTableController.m8625126240#1989"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/MMBBTableController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBBTableController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QADescriptionFlipsideViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321771253.417939
-e321771253.706695
+s321849853.584117
+e321849853.828304
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QADescriptionFlipsideViewController.o
@@ -2148,7 +2366,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@102"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m321771253#321771253#0(0"0(0#0#94"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m8624727296#2021"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QADescriptionFlipsideViewController.o0#
+lSLF07#2@102"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m321849853#321849853#0(0"0(0#0#94"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m8617281152#2021"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QADescriptionFlipsideViewController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QAMenuItemViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s321771252.955245
@@ -2206,8 +2424,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m321771252#321771252#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m8628527360#1975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionItem.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionItem.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionPagesController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321771251.773853
-e321771251.932526
+s321849104.347881
+e321849105.165101
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionPagesController.o
@@ -2216,11 +2434,11 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m321771251#321771251#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m8627886080#1997"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionPagesController.o0#
+lSLF07#2@90"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m321849104#321849105#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m4841160976978751488#1997"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionPagesController.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionPagesController.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionView.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321771253.792567
-e321771254.047578
+s321849105.200343
+e321849105.536292
 r1
 xCompileC
 xbuild/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionView.o
@@ -2229,7 +2447,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m321771253#321771254#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m8621263200#1975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionView.o0#
+lSLF07#2@79"Compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m321849105#321849105#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m8605863936#1975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.1 -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-generated-files.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-own-target-headers.hmap -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-all-target-headers.hmap -iquote /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백-project-headers.hmap -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/include -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources/armv7 -I/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Da/DakV9MQdGSiqGEgHvwYo4Htg6Go/-Caches-/com.apple.Xcode.1047273773/SharedPrecompiledHeaders/MMBB_Prefix-btzlpmmecxtxoreoocluhkqgydfu/MMBB_Prefix.pch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionView.m -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionView.o0#
 
 CCompileC build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/QuestionViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QuestionViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -2350,12 +2568,14 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/BookmarkAdderTblViewCo
 lSLF07#2@53"CompileXIB Classes/BookmarkAdderTblViewController.xib321771202#321771203#0(0"0(0#0#91"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/BookmarkAdderTblViewController.xib8625650048#651"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/BookmarkAdderTblViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/BookmarkAdderTblViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib
-s321771205.491324
-e321771206.161457
+s321849732.503141
+e321849733.092872
 r1
 xCompileXIB
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib
-lSLF07#2@58"CompileXIB Classes/QADescriptionFlipsideViewController.xib321771205#321771206#0(0"0(0#0#96"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib8624691520#661"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QADescriptionFlipsideViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk0#
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@58"CompileXIB Classes/QADescriptionFlipsideViewController.xib321849732#321849733#0(168"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#96"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib8620682240#661"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/QADescriptionFlipsideViewController.nib /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QADescriptionFlipsideViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk0#
 
 CCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/QAMenuItemViewController.xib
 s321771205.060647
@@ -2437,6 +2657,12 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Units/1/1-1.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-1.png Images/Units/1/1-1.png321771239#321771244#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-1.png8626300512#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-1.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-1.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-1.png Images/Units/1/1-1.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-10.png Images/Units/1/1-10.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-10.png Images/Units/1/1-10.png
 s321771228.483247
 e321771233.206640
@@ -2445,6 +2671,9 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-10.png
 xImages/Units/1/1-10.png
 lSLF07#2@108"CopyPNGFile build/Release-iphoneos/명명백백.app/1-10.png Images/Units/1/1-10.png321771228#321771233#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-10.png8628397888#632"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-10.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-10.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-11.png Images/Units/1/1-11.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-11.png Images/Units/1/1-11.png
 s321771230.545755
@@ -2464,6 +2693,9 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Units/1/1-12.png
 lSLF07#2@108"CopyPNGFile build/Release-iphoneos/명명백백.app/1-12.png Images/Units/1/1-12.png321771233#321771236#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-12.png8628048032#632"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-12.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-12.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-12.png Images/Units/1/1-12.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-13.png Images/Units/1/1-13.png
 s321771234.391849
 e321771236.745324
@@ -2473,6 +2705,12 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Units/1/1-13.png
 lSLF07#2@108"CopyPNGFile build/Release-iphoneos/명명백백.app/1-13.png Images/Units/1/1-13.png321771234#321771236#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-13.png8627848128#632"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-13.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-13.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-13.png Images/Units/1/1-13.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-14.png Images/Units/1/1-14.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-14.png Images/Units/1/1-14.png
 s321771236.312705
 e321771239.508535
@@ -2481,6 +2719,9 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-14.png
 xImages/Units/1/1-14.png
 lSLF07#2@108"CopyPNGFile build/Release-iphoneos/명명백백.app/1-14.png Images/Units/1/1-14.png321771236#321771239#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-14.png8627354624#632"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-14.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-14.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-15.png Images/Units/1/1-15.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-15.png Images/Units/1/1-15.png
 s321771236.745412
@@ -2500,6 +2741,12 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Units/1/1-2.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-2.png Images/Units/1/1-2.png321771206#321771213#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-2.png8625513568#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-2.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-2.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-2.png Images/Units/1/1-2.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-3.png Images/Units/1/1-3.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-3.png Images/Units/1/1-3.png
 s321771206.296109
 e321771211.829252
@@ -2518,6 +2765,9 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Units/1/1-4.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-4.png Images/Units/1/1-4.png321771211#321771216#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-4.png8633061472#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-4.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-4.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-4.png Images/Units/1/1-4.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-5.png Images/Units/1/1-5.png
 s321771213.162680
 e321771223.764620
@@ -2526,6 +2776,12 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-5.png
 xImages/Units/1/1-5.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-5.png Images/Units/1/1-5.png321771213#321771223#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-5.png8602156928#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-5.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-5.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-5.png Images/Units/1/1-5.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-6.png Images/Units/1/1-6.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-6.png Images/Units/1/1-6.png
 s321771216.665644
@@ -2537,6 +2793,9 @@ xImages/Units/1/1-6.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-6.png Images/Units/1/1-6.png321771216#321771220#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-6.png8632503456#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-6.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-6.png0#
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-7.png Images/Units/1/1-7.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-7.png Images/Units/1/1-7.png
 s321771220.539967
 e321771225.239151
 r1
@@ -2544,6 +2803,9 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-7.png
 xImages/Units/1/1-7.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-7.png Images/Units/1/1-7.png321771220#321771225#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-7.png8606448544#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-7.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-7.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-8.png Images/Units/1/1-8.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-8.png Images/Units/1/1-8.png
 s321771223.764825
@@ -2563,6 +2825,9 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Units/1/1-9.png
 lSLF07#2@106"CopyPNGFile build/Release-iphoneos/명명백백.app/1-9.png Images/Units/1/1-9.png321771225#321771230#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-9.png8628828064#630"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-9.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-9.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/1-9.png Images/Units/1/1-9.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Default.png Images/Assets/Default.png
 s321771204.811023
 e321771205.246257
@@ -2572,6 +2837,9 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Assets/Default.png
 lSLF07#2@113"CopyPNGFile build/Release-iphoneos/명명백백.app/Default.png Images/Assets/Default.png321771204#321771205#0(0"0(0#0#74"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Default.png8632116384#637"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Default.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Default.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Default.png Images/Assets/Default.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Icon.png Images/Assets/Icon.png
 s321771205.007119
 e321771205.060560
@@ -2580,6 +2848,12 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Icon.png
 xImages/Assets/Icon.png
 lSLF07#2@107"CopyPNGFile build/Release-iphoneos/명명백백.app/Icon.png Images/Assets/Icon.png321771205#321771205#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Icon.png8629622464#631"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Icon.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Icon.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Icon.png Images/Assets/Icon.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_desc_title.png Images/Assets/answer_desc_title.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_desc_title.png Images/Assets/answer_desc_title.png
 s321771206.161586
@@ -2599,6 +2873,9 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Assets/answer_indicator_cell_bg.png
 lSLF07#2@147"CopyPNGFile build/Release-iphoneos/명명백백.app/answer_indicator_cell_bg.png Images/Assets/answer_indicator_cell_bg.png321771205#321771205#0(0"0(0#0#91"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/answer_indicator_cell_bg.png8624957760#671"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/answer_indicator_cell_bg.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_indicator_cell_bg.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/answer_indicator_cell_bg.png Images/Assets/answer_indicator_cell_bg.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/bttn_flip.png Images/Assets/bttn_flip.png
 s321771205.494474
 e321771205.550907
@@ -2607,6 +2884,12 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/bttn_flip.png
 xImages/Assets/bttn_flip.png
 lSLF07#2@117"CopyPNGFile build/Release-iphoneos/명명백백.app/bttn_flip.png Images/Assets/bttn_flip.png321771205#321771205#0(0"0(0#0#76"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/bttn_flip.png8624414944#641"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/bttn_flip.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/bttn_flip.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/bttn_flip.png Images/Assets/bttn_flip.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/house.png Images/Assets/house.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/house.png Images/Assets/house.png
 s321771203.181888
@@ -2626,6 +2909,12 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Assets/pageControllerBG.png
 lSLF07#2@131"CopyPNGFile build/Release-iphoneos/명명백백.app/pageControllerBG.png Images/Assets/pageControllerBG.png321771205#321771205#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png8627519616#655"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/pageControllerBG.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/pageControllerBG.png Images/Assets/pageControllerBG.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/questionOverlay.png Images/Assets/questionOverlay.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/questionOverlay.png Images/Assets/questionOverlay.png
 s321771205.433298
 e321771205.491235
@@ -2644,6 +2933,12 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/며�
 xImages/Assets/quiz_btn_normal.png
 lSLF07#2@129"CopyPNGFile build/Release-iphoneos/명명백백.app/quiz_btn_normal.png Images/Assets/quiz_btn_normal.png321771205#321771205#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png8626490464#653"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_normal.png0#
 
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_normal.png Images/Assets/quiz_btn_normal.png
+r0
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png
+r0
+
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png
 s321771205.338208
 e321771205.382017
@@ -2652,6 +2947,9 @@ xCopyPNGFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_pick.png
 xImages/Assets/quiz_btn_pick.png
 lSLF07#2@125"CopyPNGFile build/Release-iphoneos/명명백백.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png321771205#321771205#0(0"0(0#0#80"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png8626121024#649"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_pick.png0#
+
+CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_wrong.png Images/Assets/quiz_btn_wrong.png
+r0
 
 CCopyPNGFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/quiz_btn_wrong.png Images/Assets/quiz_btn_wrong.png
 s321771205.382121
@@ -2667,6 +2965,15 @@ r0
 
 CCopyStringsFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/MMBB.app/Korean.lproj/Localizable.strings Korean.lproj/Localizable.strings
 r0
+
+CCopyStringsFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Korean.lproj/Localizable.strings Korean.lproj/Localizable.strings
+s321849102.247404
+e321849102.628048
+r1
+xCopyStringsFile
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Korean.lproj/Localizable.strings
+xKorean.lproj/Localizable.strings
+lSLF07#2@37"Copy Korean.lproj/Localizable.strings321849102#321849102#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Korean.lproj/Localizable.strings31244212048494700#530"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary Korean.lproj/Localizable.strings --outdir /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Korean.lproj0#
 
 CCopyStringsFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Korean.lproj/Localizable.strings Korean.lproj/Localizable.strings
 s321771202.671687
@@ -2687,6 +2994,9 @@ CCpResource build/Release-iphoneos/MMBB.app/questions Images/questions
 r0
 
 CCpResource build/Release-iphoneos/명명백백.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+r0
+
+CCpResource build/Release-iphoneos/명명백백.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
 s321771202.626363
 e321771202.662667
 r1
@@ -2703,6 +3013,12 @@ xCpResource
 xbuild/Release-iphoneos/명명백백.app/mmbb.db
 xmmbb.db
 lSLF07#2@12"Copy mmbb.db321771202#321771202#0(0"0(0#0#56"/Users/jinsung/Documents/workspace/CocoApps/MMBB/mmbb.db8625813312#533"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/mmbb.db /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app0#
+
+CCpResource build/Release-iphoneos/명명백백.app/mmbb.db mmbb.db
+r0
+
+CCpResource build/Release-iphoneos/명명백백.app/questions Images/questions
+r0
 
 CCpResource build/Release-iphoneos/명명백백.app/questions Images/questions
 s321771204.339958
@@ -2726,6 +3042,16 @@ xnormal
 xarmv6 armv7
 lSLF07#2@143"CreateUniversalBinary build/Release-iphoneos/명명백백.app/명명백백 normal "armv6 armv7"321771254#321771254#0(0"0(0#0#60"/Users/jinsung/Documents/workspace/CocoApps/MMBB/armv6 armv78603799680#668"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백 /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백 -output /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백0#
 
+CCreateUniversalBinary /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백 normal "armv6 armv7"
+s321849860.323042
+e321849860.392662
+r1
+xCreateUniversalBinary
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백
+xnormal
+xarmv6 armv7
+lSLF07#2@143"CreateUniversalBinary build/Release-iphoneos/명명백백.app/명명백백 normal "armv6 armv7"321849860#321849860#0(0"0(0#0#60"/Users/jinsung/Documents/workspace/CocoApps/MMBB/armv6 armv78617043424#668"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백 /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백 -output /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백0#
+
 CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/MMBB.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/MMBB.app/MMBB
 r0
 
@@ -2737,6 +3063,15 @@ xGenerateDSYMFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백
 lSLF07#2@186"GenerateDSYMFile build/Release-iphoneos/명명백백.app.dSYM build/Release-iphoneos/명명백백.app/명명백백321771254#321771254#0(0"0(0#0#149"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백8603192512#483"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM0#
+
+CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백
+s321849860.392775
+e321849860.651213
+r1
+xGenerateDSYMFile
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백
+lSLF07#2@186"GenerateDSYMFile build/Release-iphoneos/명명백백.app.dSYM build/Release-iphoneos/명명백백.app/명명백백321849860#321849860#0(0"0(0#0#149"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백8616568960#483"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/명명백백 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app.dSYM0#
 
 CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/MMBB normal armv6
 r0
@@ -2751,6 +3086,16 @@ xnormal
 xarmv6
 lSLF07#2@156"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백321771248#321771253#0(0"0(0#0#0"8628105248#975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백.LinkFileList -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백0#
 
+CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백 normal armv6
+s321849853.728523
+e321849860.318830
+r1
+xLd
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백
+xnormal
+xarmv6
+lSLF07#2@156"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백321849853#321849860#0(0"0(0#0#0"8614640672#975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백.LinkFileList -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv6/명명백백0#
+
 CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/MMBB normal armv7
 r0
 
@@ -2764,7 +3109,20 @@ xnormal
 xarmv7
 lSLF07#2@156"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백321771254#321771254#0(0"0(0#0#0"8619702816#975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백.LinkFileList -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백0#
 
+CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백 normal armv7
+s321849853.917897
+e321849860.322941
+r1
+xLd
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백
+xnormal
+xarmv7
+lSLF07#2@156"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백321849853#321849860#0(0"0(0#0#0"8616986496#975"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv IPHONEOS_DEPLOYMENT_TARGET 4.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백.LinkFileList -dead_strip -miphoneos-version-min=4.1 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/Objects-normal/armv7/명명백백0#
+
 CProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/MMBB.app/Info.plist MMBB-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Info.plist MMBB-Info.plist
 r0
 
 CProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/Info.plist MMBB-Info.plist
@@ -2817,6 +3175,9 @@ x/Users/jinsung/Library/MobileDevice/Provisioning Profiles/BCF9CA86-7385-4726-86
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/embedded.mobileprovision
 lSLF07#2@225"ProcessProductPackaging "/Users/jinsung/Library/MobileDevice/Provisioning Profiles/BCF9CA86-7385-4726-865D-CABD7D84FD9E.mobileprovision" build/Release-iphoneos/명명백백.app/embedded.mobileprovision321771254#321771254#0(0"0(0#0#137"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/embedded.mobileprovision8620665056#476"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jinsung/Library/MobileDevice/Provisioning Profiles/BCF9CA86-7385-4726-865D-CABD7D84FD9E.mobileprovision" -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/embedded.mobileprovision0#
 
+CProcessProductPackaging "/Users/jinsung/Library/MobileDevice/Provisioning Profiles/BCF9CA86-7385-4726-865D-CABD7D84FD9E.mobileprovision" /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app/embedded.mobileprovision
+r0
+
 CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent
 s321771254.322395
 e321771254.365278
@@ -2826,8 +3187,19 @@ x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitleme
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent
 lSLF07#2@200"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent321771254#321771254#0(0"0(0#0#136"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent8602971616#477"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent0#
 
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphoneos/MMBB.build/명명백백.xcent
+r0
+
 CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/MMBB.app
 r0
+
+CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+s321849860.651362
+e321849860.701311
+r1
+xTouch
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+lSLF07#2@118"Touch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app321849860#321849860#0(0"0(0#0#0"8619776672#315"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app0#
 
 CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
 s321771254.317421
@@ -2848,4 +3220,13 @@ xValidate
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
 o2011-03-14 00:58:29.781 Validation[71084:607] *** Warning: Defaulting to the standard codesign tool
 lSLF07#2@72"Validate build/Release-iphoneos/명명백백.app321771509#321771509#0(100"2011-03-14 00:58:29.781 Validation[71084:607] *** Warning: Defaulting to the standard codesign tool0(0#0#112"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app8621656800#424"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app0#
+
+CValidate /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+s321849862.055734
+e321849862.483243
+r1
+xValidate
+x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app
+o2011-03-14 22:44:22.290 Validation[19417:607] *** Warning: Defaulting to the standard codesign tool
+lSLF07#2@72"Validate build/Release-iphoneos/명명백백.app321849862#321849862#0(100"2011-03-14 22:44:22.290 Validation[19417:607] *** Warning: Defaulting to the standard codesign tool0(0#0#112"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app8619417920#424"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphoneos/명명백백.app0#
 

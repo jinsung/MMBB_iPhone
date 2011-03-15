@@ -14,7 +14,8 @@
 
 @implementation QADescriptionFlipsideViewController
 
-@synthesize question, answerIndicatorCell, descCell, infoBtn, answerLabel, descTextView;
+@synthesize question, answerIndicatorCell, descCell, 
+infoBtn, answerLabel, wrongAnswerLabel, descTextView;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -26,6 +27,16 @@
     return self;
 }
 */
+- (void)dealloc {
+	[question release];	
+	[answerIndicatorCell release];
+	[descCell release];
+	[infoBtn release];
+	[answerLabel release];
+	[wrongAnswerLable release];
+	[descTextView release];
+    [super dealloc];
+}
 
 - (id)initWithQuestionItem: (QuestionItem *) qi{
 	if (self = [super initWithNibName:@"QADescriptionFlipsideViewController" bundle:nil]) {
@@ -39,7 +50,7 @@
 }
 
 - (IBAction)flipBtnPressed:(UIButton *)sender {
-	[delegate flipsideViewControllerDidFinish:self];
+	[self.delegate flipsideViewControllerDidFinish:self];
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -75,11 +86,26 @@
 	if (question.userAnswer>0 && question.answerPageVisited==1) {
 		if (indexPath.row==0) {
 			cell = [self answerIndicatorCell];
-			NSString *answer = [NSString stringWithFormat:@"%@: %d", 
-								NSLocalizedString(@"정답", @"dummy"), question.correctAnswer];
 			[cell addSubview:[self infoBtn]];
 			[cell addSubview:[self answerLabel]];
-			[answerLabel setText: answer];
+			NSString *correctAnswerStringID = @"";
+			
+			if (question.userAnswer == question.correctAnswer) {
+
+				correctAnswerStringID =	[NSString stringWithFormat:@"%@%d", @"Answer", question.correctAnswer];
+				[answerLabel setText: NSLocalizedString(correctAnswerStringID, @"dummy")];
+				[wrongAnswerLable setText:@""];
+			} else {
+				[wrongAnswerLable setHidden:NO];
+				correctAnswerStringID =	
+					[NSString stringWithFormat:@"%@%d", @"Answer", question.correctAnswer];
+				NSString *wrongAnswerStringID = 
+					[NSString stringWithFormat:@"%@%d", @"Answer", question.userAnswer];
+				[wrongAnswerLable setText: NSLocalizedString(wrongAnswerStringID, @"dummy")];
+				[answerLabel setText: [NSString stringWithFormat:@"%@ %@", NSLocalizedString(correctAnswerStringID, @"dummy"), 
+									   NSLocalizedString(@"ArrowMark", @"dummy")]];
+			}
+
 		} else {
 			//[self setupDescTextView];
 		}
@@ -123,14 +149,5 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
-- (void)dealloc {
-	[descCell release];
-	[question release];
-	[answerIndicatorCell release];
-	[descTextView release];
-    [super dealloc];
-}
-
 
 @end
