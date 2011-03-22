@@ -16,8 +16,7 @@ static SQLAccess *sql;
 
 @implementation MMBBAppDelegate
 
-@synthesize window;
-@synthesize tabBarController;
+@synthesize window, tabBarController;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -26,7 +25,7 @@ static SQLAccess *sql;
 	didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    tabBarController = [[UITabBarController alloc] init];
+    tabBarController = [[MMBBTabBarController alloc] init];
 	
 	// create view controllers
 	UIViewController *homeViewController = [[HomeTableViewController alloc] init];
@@ -57,7 +56,12 @@ static SQLAccess *sql;
 	[homeNavController release];
 	[qaPageMenuController release];	
 	[qaNavController release];
+	[tabBarController release];
     return YES;
+}
+
+- (void) setOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	tabBarController.globalInterfaceOrientation = interfaceOrientation;
 }
 
 + (SQLAccess *) sql {
@@ -117,8 +121,8 @@ static SQLAccess *sql;
 
 
 - (void)dealloc {
-    [window release];
 	[tabBarController release];
+    [window release];
     [super dealloc];
 }
 

@@ -231,6 +231,12 @@ static NSString *kQuestionTableName = @"Question";
 	return [db executeUpdate:sql];
 }
 
+- (BOOL) resetQuestionsInChapter: (NSInteger) chapterID withType: (NSInteger) typeID {
+	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer_page_visited=0, answer=0 WHERE chapter_id=%d AND type=%d",
+					 kQuestionTableName, chapterID, typeID];
+	return [db executeUpdate:sql];
+}
+
 - (BOOL) updateUserAnswer: (NSInteger) answer forQuestionID:(NSInteger) questionID {
 	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer=%d WHERE id=%d", 
 					 kQuestionTableName, answer, questionID ];

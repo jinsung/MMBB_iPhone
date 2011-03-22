@@ -13,15 +13,25 @@
 	id idelegate;
 	ChapterItem *itemData;
 	UIImageView *rimageView;
+	UIButton *startBtn;
+	UIButton *resetBtn;
+	UIButton *getAnswerBtn;
 }
 
 @property (nonatomic, retain) id idelegate;
 @property (nonatomic, retain) ChapterItem *itemData;
 @property (nonatomic, retain) IBOutlet UIImageView *rimageView;
+@property (nonatomic, retain) IBOutlet UIButton	*startBtn;
+@property (nonatomic, retain) IBOutlet UIButton	*resetBtn;
+@property (nonatomic, retain) IBOutlet UIButton	*getAnswerBtn;
 
 - (id)initWithItemData:(ChapterItem *)data;
+- (void)update: (BOOL) solved;
+- (IBAction) startBtnTouched: (UIButton *) sender;
+- (IBAction) resetBtnTouched: (UIButton *) sender;
+
 @end
 
 @protocol QAMenuItemViewControllerDelegate
-- (void) pageTouched:(QAMenuItemViewController *) sender;
+- (void) startQuizTouched:(QAMenuItemViewController *) sender withReset: (BOOL) isReset;
 @end

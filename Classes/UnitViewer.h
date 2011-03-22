@@ -10,7 +10,7 @@
 #import "ContentScrollView.h"
 #import "UnitItem.h"
 
-@interface UnitViewer : UIViewController {
+@interface UnitViewer : UIViewController <UIScrollViewDelegate> {
 	UnitItem *unitItem;
 	ContentScrollView *scrollView;
 	UIBarButtonItem *backBtn;
@@ -25,5 +25,6 @@
 @property (nonatomic, retain) UIBarButtonItem *bookmarkBtn;
 
 - (id) initWithUnitID:(NSInteger)pUnitID;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
 
 @end

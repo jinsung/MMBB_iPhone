@@ -12,14 +12,15 @@
 #import "QAMenuItemViewController.h"
 
 @interface QAMenuPageController : MMBBPagesController <QAMenuItemViewControllerDelegate> {
-	NSInteger selectedTabIndex;
+	NSInteger currentPageIndex;
 	UISegmentedControl *segmentedControl;
+	
 }
 
-@property (nonatomic) NSInteger selectedTabIndex;
+@property (nonatomic) NSInteger currentPageIndex;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedControl;
 //@property (nonatomic, retain) NSMutableArray *pageData;
-- (void) pageTouched:(QAMenuItemViewController *) respondedImageView;
+- (void) startQuizTouched:(QAMenuItemViewController *) sender withReset: (BOOL) isReset;
 
-//- (IBAction) segmentAction: (id) sender;
+- (IBAction) segmentAction: (id) sender;
 @end

@@ -8,15 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "SQLAccess.h"
+#import "MMBBTabBarController.h"
 
 @interface MMBBAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;
-	UITabBarController* tabBarController;
+	MMBBTabBarController *tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) UITabBarController *tabBarController;
+@property (nonatomic, retain) MMBBTabBarController *tabBarController;
 
+- (void) setOrientation:(UIInterfaceOrientation)interfaceOrientation;
 + (SQLAccess *) sql;
+
 @end
 

@@ -1,7 +1,7 @@
 TMMBB
 v7
 r0
-t321850509.872785
+t321936552.619582
 cCheck dependencies
 cProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Info.plist MMBB-Info.plist
 cCompileXIB /Users/jinsung/Documents/workspace/CocoApps/MMBB/MainWindow.xib
@@ -1110,7 +1110,7 @@ t1297133450
 s748
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM
-t1297133450
+t1300157709
 s102
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM
@@ -1121,9 +1121,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s906493
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-1.png
+t1300157077
+s906493
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-10.png
 t1300157077
 s844729
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-10.png
+t1300157077
+s844729
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-11.png
+t1300157077
+s856963
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-11.png
 t1300157077
@@ -1133,9 +1145,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s597120
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-12.png
+t1300157077
+s597120
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-13.png
 t1300157077
 s521090
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-13.png
+t1300157077
+s521090
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-14.png
+t1300157077
+s607115
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-14.png
 t1300157077
@@ -1145,9 +1169,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s692014
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-15.png
+t1300157077
+s692014
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-2.png
 t1300157077
 s1020527
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-2.png
+t1300157077
+s1020527
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-3.png
+t1300157077
+s1129114
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-3.png
 t1300157077
@@ -1157,9 +1193,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s809602
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-4.png
+t1300157077
+s809602
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-5.png
 t1300157077
 s2202334
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-5.png
+t1300157077
+s2202334
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-6.png
+t1300157077
+s769276
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-6.png
 t1300157077
@@ -1169,9 +1217,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s876903
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-7.png
+t1300157077
+s876903
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-8.png
 t1300157078
 s863810
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-8.png
+t1300157078
+s863810
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-9.png
+t1300157078
+s1007841
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/1-9.png
 t1300157078
@@ -1193,9 +1253,13 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157076
 s3427
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/AnswerBtnsViewController.nib
+t1300157076
+s3427
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/AnswerSheetViewController.nib
-t1297133446
-s1283
+t1300157076
+s2073
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/AnswerSheetViewController.nib
 t1300157076
@@ -1210,7 +1274,7 @@ t1297048202
 s1680
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Default.png
-t1297133446
+t1300157077
 s81050
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Default.png
@@ -1218,8 +1282,8 @@ t1300157077
 s81050
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/HomeTableViewController.nib
-t1297133445
-s2512
+t1300157075
+s2517
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/HomeTableViewController.nib
 t1300157075
@@ -1242,8 +1306,8 @@ t1297133441
 s616
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings
-t1297048201
-s185
+t1300157075
+s391
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings
 t1300157075
@@ -1273,6 +1337,14 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s4539
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QADescriptionFlipsideViewController.nib
+t1300157077
+s4539
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QAMenuItemViewController.nib
+t1300157077
+s931
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QAMenuItemViewController.nib
 t1300157077
 s931
@@ -1286,7 +1358,7 @@ t1297133446
 s764
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QATableViewController.nib
-t1297048203
+t1300157075
 s1893
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QATableViewController.nib
@@ -1294,12 +1366,16 @@ t1300157075
 s1893
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QuestionPagesController.nib
-t1297133446
-s2438
+t1300157076
+s1861
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QuestionPagesController.nib
 t1300157076
 s1861
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QuestionView.nib
+t1300157078
+s3212
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/QuestionView.nib
 t1300157078
@@ -1313,9 +1389,21 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s1570
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/answer_desc_title.png
+t1300157077
+s1570
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/answer_indicator_cell_bg.png
 t1300157077
 s325
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/answer_indicator_cell_bg.png
+t1300157077
+s325
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/bttn_flip.png
+t1300157077
+s1453
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/bttn_flip.png
 t1300157077
@@ -1330,8 +1418,8 @@ t1297133445
 s2898
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/mmbb.db
-t1297133442
-s18432
+t1300157075
+s26624
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/mmbb.db
 t1300157075
@@ -1340,6 +1428,14 @@ s26624
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/pageControllerBG.png
 t1300157077
 s559
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/pageControllerBG.png
+t1300157077
+s559
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/questionOverlay.png
+t1300157077
+s1632
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/questionOverlay.png
 t1300157077
@@ -1357,6 +1453,14 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s539
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/quiz_btn_normal.png
+t1300157077
+s539
+
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/quiz_btn_pick.png
+t1300157077
+s554
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/quiz_btn_pick.png
 t1300157077
 s554
@@ -1365,9 +1469,13 @@ N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 t1300157077
 s557
 
+N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/quiz_btn_wrong.png
+t1300157077
+s557
+
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
-t1297133450
-s164064
+t1300157709
+s209208
 
 N/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
 t1300157709
@@ -1400,7 +1508,7 @@ s947
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies321850508#321850509#0(0"0(0#1#0"8615520448#0"0#
+lSLF07#2@18"Check dependencies321936552#321936552#0(0"0(0#1#0"3343187568374212096#0"0#
 
 CCompileC build/MMBB.build/Release-iphonesimulator/MMBB.build/Objects-normal/i386/AnswerBtnsViewController.o /Users/jinsung/Documents/workspace/CocoApps/MMBB/Classes/AnswerBtnsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s321849880.651391
@@ -1963,15 +2071,6 @@ xKorean.lproj/Localizable.strings
 lSLF07#2@37"Copy Korean.lproj/Localizable.strings317703446#317703446#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Korean.lproj/Localizable.strings8602809152#512"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary Korean.lproj/Localizable.strings --outdir /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/Korean.lproj0#
 
 CCopyStringsFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings Korean.lproj/Localizable.strings
-s321849875.218770
-e321849875.267407
-r1
-xCopyStringsFile
-x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings
-xKorean.lproj/Localizable.strings
-lSLF07#2@37"Copy Korean.lproj/Localizable.strings321849875#321849875#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Korean.lproj/Localizable.strings8623271744#544"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary Korean.lproj/Localizable.strings --outdir /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj0#
-
-CCopyStringsFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings Korean.lproj/Localizable.strings
 s318741001.770180
 e318741001.876800
 r1
@@ -1979,6 +2078,9 @@ xCopyStringsFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings
 xKorean.lproj/Localizable.strings
 lSLF07#2@37"Copy Korean.lproj/Localizable.strings318741001#318741002#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Korean.lproj/Localizable.strings8619131136#544"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary Korean.lproj/Localizable.strings --outdir /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj0#
+
+CCopyStringsFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Korean.lproj/Localizable.strings Korean.lproj/Localizable.strings
+r0
 
 CCpResource build/Release-iphonesimulator/MMBB.app/1.png Images/Units/1.png
 s318295105.349839
@@ -2073,6 +2175,9 @@ xbuild/Release-iphonesimulator/명명백백.app/1-1.png
 xImages/Units/1/1-1.png
 lSLF07#2@27"Copy Images/Units/1/1-1.png321849877#321849877#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-1.png8607325536#562"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-1.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/1-1.png Images/Units/1/1-1.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/1-10.png Images/Units/1/1-10.png
 s321849877.804493
 e321849877.903359
@@ -2081,6 +2186,12 @@ xCpResource
 xbuild/Release-iphonesimulator/명명백백.app/1-10.png
 xImages/Units/1/1-10.png
 lSLF07#2@28"Copy Images/Units/1/1-10.png321849877#321849877#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-10.png8614526976#563"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-10.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-10.png Images/Units/1/1-10.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-11.png Images/Units/1/1-11.png
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/1-11.png Images/Units/1/1-11.png
 s321849877.839589
@@ -2100,6 +2211,12 @@ xbuild/Release-iphonesimulator/명명백백.app/1-12.png
 xImages/Units/1/1-12.png
 lSLF07#2@28"Copy Images/Units/1/1-12.png321849877#321849877#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-12.png8617001152#563"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-12.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/1-12.png Images/Units/1/1-12.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-13.png Images/Units/1/1-13.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/1-13.png Images/Units/1/1-13.png
 s321849877.887195
 e321849877.914530
@@ -2118,6 +2235,9 @@ xbuild/Release-iphonesimulator/명명백백.app/1-14.png
 xImages/Units/1/1-14.png
 lSLF07#2@28"Copy Images/Units/1/1-14.png321849877#321849877#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-14.png8615775008#563"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-14.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/1-14.png Images/Units/1/1-14.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/1-15.png Images/Units/1/1-15.png
 s321849877.905053
 e321849877.928390
@@ -2126,6 +2246,12 @@ xCpResource
 xbuild/Release-iphonesimulator/명명백백.app/1-15.png
 xImages/Units/1/1-15.png
 lSLF07#2@28"Copy Images/Units/1/1-15.png321849877#321849877#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-15.png8614100768#563"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-15.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-15.png Images/Units/1/1-15.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-2.png Images/Units/1/1-2.png
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/1-2.png Images/Units/1/1-2.png
 s321849877.778443
@@ -2145,6 +2271,12 @@ xbuild/Release-iphonesimulator/명명백백.app/1-3.png
 xImages/Units/1/1-3.png
 lSLF07#2@27"Copy Images/Units/1/1-3.png321849877#321849877#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-3.png8616278720#562"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-3.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/1-3.png Images/Units/1/1-3.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-4.png Images/Units/1/1-4.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/1-4.png Images/Units/1/1-4.png
 s321849877.781383
 e321849877.886997
@@ -2162,6 +2294,12 @@ xCpResource
 xbuild/Release-iphonesimulator/명명백백.app/1-5.png
 xImages/Units/1/1-5.png
 lSLF07#2@27"Copy Images/Units/1/1-5.png321849877#321849877#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-5.png8614916160#562"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-5.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-5.png Images/Units/1/1-5.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-6.png Images/Units/1/1-6.png
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/1-6.png Images/Units/1/1-6.png
 s321849877.786282
@@ -2181,6 +2319,12 @@ xbuild/Release-iphonesimulator/명명백백.app/1-7.png
 xImages/Units/1/1-7.png
 lSLF07#2@27"Copy Images/Units/1/1-7.png321849877#321849877#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-7.png8609594496#562"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-7.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/1-7.png Images/Units/1/1-7.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-8.png Images/Units/1/1-8.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/1-8.png Images/Units/1/1-8.png
 s321849877.791203
 e321849878.030590
@@ -2189,6 +2333,9 @@ xCpResource
 xbuild/Release-iphonesimulator/명명백백.app/1-8.png
 xImages/Units/1/1-8.png
 lSLF07#2@27"Copy Images/Units/1/1-8.png321849877#321849878#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-8.png8607440640#562"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Units/1/1-8.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+
+CCpResource build/Release-iphonesimulator/명명백백.app/1-9.png Images/Units/1/1-9.png
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/1-9.png Images/Units/1/1-9.png
 s321849877.796508
@@ -2235,6 +2382,9 @@ xbuild/Release-iphonesimulator/명명백백.app/Default.
 xImages/Assets/Default.png
 lSLF07#2@30"Copy Images/Assets/Default.png321849877#321849877#0(0"0(0#0#74"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Default.png8615515296#565"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Default.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/Default.png Images/Assets/Default.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/Default.png Images/Default.png
 s318741004.269463
 e318741004.275368
@@ -2262,6 +2412,9 @@ xbuild/Release-iphonesimulator/명명백백.app/Icon.png
 xImages/Assets/Icon.png
 lSLF07#2@27"Copy Images/Assets/Icon.png321849877#321849877#0(0"0(0#0#71"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Icon.png8614991264#562"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/Icon.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/Icon.png Images/Assets/Icon.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/answer_desc_title.png Images/Assets/answer_desc_title.png
 s321849877.777478
 e321849877.804406
@@ -2271,6 +2424,12 @@ xbuild/Release-iphonesimulator/명명백백.app/answer_d
 xImages/Assets/answer_desc_title.png
 lSLF07#2@40"Copy Images/Assets/answer_desc_title.png321849877#321849877#0(0"0(0#0#84"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/answer_desc_title.png8617085952#575"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/answer_desc_title.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/answer_desc_title.png Images/Assets/answer_desc_title.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/answer_indicator_cell_bg.png Images/Assets/answer_indicator_cell_bg.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/answer_indicator_cell_bg.png Images/Assets/answer_indicator_cell_bg.png
 s321849877.156196
 e321849877.210022
@@ -2279,6 +2438,9 @@ xCpResource
 xbuild/Release-iphonesimulator/명명백백.app/answer_indicator_cell_bg.png
 xImages/Assets/answer_indicator_cell_bg.png
 lSLF07#2@47"Copy Images/Assets/answer_indicator_cell_bg.png321849877#321849877#0(0"0(0#0#91"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/answer_indicator_cell_bg.png8609613312#582"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/answer_indicator_cell_bg.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+
+CCpResource build/Release-iphonesimulator/명명백백.app/bttn_flip.png Images/Assets/bttn_flip.png
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/bttn_flip.png Images/Assets/bttn_flip.png
 s321849877.480553
@@ -2298,6 +2460,9 @@ xbuild/Release-iphonesimulator/명명백백.app/house.pn
 xImages/Assets/house.png
 lSLF07#2@28"Copy Images/Assets/house.png321849875#321849875#0(0"0(0#0#72"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/house.png8619696512#563"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/house.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/house.png Images/Assets/house.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/house.png Images/house.png
 s318826245.306899
 e318826245.340049
@@ -2308,13 +2473,7 @@ xImages/house.png
 lSLF07#2@21"Copy Images/house.png318826245#318826245#0(0"0(0#0#65"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/house.png8619381600#556"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/house.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
 CCpResource build/Release-iphonesimulator/명명백백.app/mmbb.db mmbb.db
-s321849875.219564
-e321849875.267555
-r1
-xCpResource
-xbuild/Release-iphonesimulator/명명백백.app/mmbb.db
-xmmbb.db
-lSLF07#2@12"Copy mmbb.db321849875#321849875#0(0"0(0#0#56"/Users/jinsung/Documents/workspace/CocoApps/MMBB/mmbb.db8620246016#547"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/mmbb.db /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/mmbb.db mmbb.db
 s318826242.595101
@@ -2334,6 +2493,12 @@ xbuild/Release-iphonesimulator/명명백백.app/pageCont
 xImages/Assets/pageControllerBG.png
 lSLF07#2@39"Copy Images/Assets/pageControllerBG.png321849877#321849877#0(0"0(0#0#83"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png8614319488#574"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/pageControllerBG.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/pageControllerBG.png Images/Assets/pageControllerBG.png
+r0
+
+CCpResource build/Release-iphonesimulator/명명백백.app/questionOverlay.png Images/Assets/questionOverlay.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/questionOverlay.png Images/Assets/questionOverlay.png
 s321849877.151220
 e321849877.211462
@@ -2344,13 +2509,7 @@ xImages/Assets/questionOverlay.png
 lSLF07#2@38"Copy Images/Assets/questionOverlay.png321849877#321849877#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/questionOverlay.png8610641152#573"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/questionOverlay.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
 CCpResource build/Release-iphonesimulator/명명백백.app/questions Images/questions
-s318741003.800239
-e318741003.952434
-r1
-xCpResource
-xbuild/Release-iphonesimulator/명명백백.app/questions
-xImages/questions
-lSLF07#2@21"Copy Images/questions318741003#318741003#0(0"0(0#0#65"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/questions8628697120#556"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/questions /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+r0
 
 CCpResource build/Release-iphonesimulator/명명백백.app/questions Images/questions
 r0
@@ -2364,6 +2523,9 @@ xbuild/Release-iphonesimulator/명명백백.app/quiz_btn
 xImages/Assets/quiz_btn_normal.png
 lSLF07#2@38"Copy Images/Assets/quiz_btn_normal.png321849877#321849877#0(0"0(0#0#82"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png8614270400#573"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_normal.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/quiz_btn_normal.png Images/Assets/quiz_btn_normal.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png
 s321849877.134657
 e321849877.162844
@@ -2373,6 +2535,9 @@ xbuild/Release-iphonesimulator/명명백백.app/quiz_btn
 xImages/Assets/quiz_btn_pick.png
 lSLF07#2@36"Copy Images/Assets/quiz_btn_pick.png321849877#321849877#0(0"0(0#0#80"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png8613833888#571"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_pick.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
 
+CCpResource build/Release-iphonesimulator/명명백백.app/quiz_btn_pick.png Images/Assets/quiz_btn_pick.png
+r0
+
 CCpResource build/Release-iphonesimulator/명명백백.app/quiz_btn_wrong.png Images/Assets/quiz_btn_wrong.png
 s321849877.137002
 e321849877.202434
@@ -2381,6 +2546,9 @@ xCpResource
 xbuild/Release-iphonesimulator/명명백백.app/quiz_btn_wrong.png
 xImages/Assets/quiz_btn_wrong.png
 lSLF07#2@37"Copy Images/Assets/quiz_btn_wrong.png321849877#321849877#0(0"0(0#0#81"/Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_wrong.png8613629536#572"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/jinsung/Documents/workspace/CocoApps/MMBB/Images/Assets/quiz_btn_wrong.png /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+
+CCpResource build/Release-iphonesimulator/명명백백.app/quiz_btn_wrong.png Images/Assets/quiz_btn_wrong.png
+r0
 
 CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/MMBB
 s318740399.322982
@@ -2392,15 +2560,6 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 lSLF07#2@104"GenerateDSYMFile build/Release-iphonesimulator/MMBB.app.dSYM build/Release-iphonesimulator/MMBB.app/MMBB318740399#318740399#0(0"0(0#0#92"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/MMBB8623099328#408"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/MMBB -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app.dSYM0#
 
 CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
-s318741950.168357
-e318741950.326514
-r1
-xGenerateDSYMFile
-x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM
-x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
-lSLF07#2@200"GenerateDSYMFile build/Release-iphonesimulator/명명백백.app.dSYM build/Release-iphonesimulator/명명백백.app/명명백백318741950#318741950#0(0"0(0#0#156"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백8625279136#504"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM0#
-
-CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
 s321850509.744430
 e321850509.869035
 r1
@@ -2408,6 +2567,9 @@ xGenerateDSYMFile
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM
 x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
 lSLF07#2@200"GenerateDSYMFile build/Release-iphonesimulator/명명백백.app.dSYM build/Release-iphonesimulator/명명백백.app/명명백백321850509#321850509#0(0"0(0#0#156"/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백8623334400#504"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM0#
+
+CGenerateDSYMFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app.dSYM /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
+r0
 
 CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/MMBB normal i386
 s318740398.162345
@@ -2420,16 +2582,6 @@ xi386
 lSLF07#2@97"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/MMBB318740398#318740399#0(0"0(0#0#0"8606483008#955"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphonesimulator/MMBB.build/Objects-normal/i386/MMBB.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/MMBB0#
 
 CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백 normal i386
-s318741950.053913
-e318741950.168254
-r1
-xLd
-x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백
-xnormal
-xi386
-lSLF07#2@161"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백318741950#318741950#0(0"0(0#0#0"8626952832#1051"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphonesimulator/MMBB.build/Objects-normal/i386/명명백백.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백0#
-
-CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백 normal i386
 s321850509.617393
 e321850509.744338
 r1
@@ -2438,6 +2590,9 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 xnormal
 xi386
 lSLF07#2@161"Link /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백321850509#321850509#0(0"0(0#0#0"8603428704#1051"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator -F/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator -filelist /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/MMBB.build/Release-iphonesimulator/MMBB.build/Objects-normal/i386/명명백백.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백0#
+
+CLd /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/명명백백 normal i386
+r0
 
 CProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/Info.plist MMBB-Info.plist
 s318740703.806227
@@ -2449,13 +2604,7 @@ xMMBB-Info.plist
 lSLF07#2@23"Process MMBB-Info.plist318740703#318740704#0(0"0(0#0#64"/Users/jinsung/Documents/workspace/CocoApps/MMBB/MMBB-Info.plist8596499776#504"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MMBB-Info.plist -genpkginfo /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app/Info.plist0#
 
 CProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Info.plist MMBB-Info.plist
-s321849875.084219
-e321849875.218607
-r1
-xProcessInfoPlistFile
-x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Info.plist
-xMMBB-Info.plist
-lSLF07#2@23"Process MMBB-Info.plist321849875#321849875#0(0"0(0#0#64"/Users/jinsung/Documents/workspace/CocoApps/MMBB/MMBB-Info.plist8604166912#568"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MMBB-Info.plist -genpkginfo /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Info.plist0#
+r0
 
 CProcessInfoPlistFile /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app/Info.plist MMBB-Info.plist
 s318826241.755838
@@ -2488,12 +2637,7 @@ x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/
 lSLF07#2@93"Touch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app318740704#318740704#0(0"0(0#0#0"8620321632#297"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/MMBB.app0#
 
 CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app
-s321850509.869142
-e321850509.872731
-r1
-xTouch
-x/Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app
-lSLF07#2@125"Touch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app321850509#321850509#0(0"0(0#0#0"8623901472#329"    cd /Users/jinsung/Documents/workspace/CocoApps/MMBB    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app0#
+r0
 
 CTouch /Users/jinsung/Documents/workspace/CocoApps/MMBB/build/Release-iphonesimulator/명명백백.app
 s318741950.326599

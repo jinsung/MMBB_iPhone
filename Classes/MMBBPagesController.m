@@ -12,7 +12,7 @@
 
 @synthesize pageDataArray, scrollView, pageControl, viewControllers, pageNumberBuffer;
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
 	[super viewDidLoad];
 	// view controllers are created lazily
 	// in the meantime, load the array with placeholders which will be replaced on demand
@@ -45,7 +45,7 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)addControllerOnScroller:(UIViewController *)controller withPageNumber:(int) page {
+- (void) addControllerOnScroller:(UIViewController *)controller withPageNumber:(int) page {
 	// add the controller's view to the scroll view
     if (controller.view.superview == nil)
     {

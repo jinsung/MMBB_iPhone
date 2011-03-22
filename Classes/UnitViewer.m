@@ -21,6 +21,7 @@
 - (void) loadWithUnitID: (NSInteger) newId;
 - (void) updateToolbarBtns;
 - (void) rotateView:(CGFloat) radian;
+- (void) openNavIfEndOfContents:(UIScrollView *)scrollView;
 
 - (UIBarButtonItem *)backButton;
 - (CGImageRef)createBackArrowImageRef;
@@ -36,15 +37,18 @@
 	if (!self) return nil;
 	UnitItem * thisUnitItem = [[MMBBAppDelegate sql] getUnitItemByID:pUnitID];
 	[self setUnitItem: thisUnitItem];
+	
 	return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
 	if ( self.interfaceOrientation == UIInterfaceOrientationPortrait ) {
 		[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+		[(MMBBAppDelegate *)[UIApplication sharedApplication].delegate setOrientation: UIInterfaceOrientationLandscapeRight];
 		[self rotateView:90];
 	} else if ( self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
 		[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight];
+		[(MMBBAppDelegate *)[UIApplication sharedApplication].delegate setOrientation: UIInterfaceOrientationLandscapeRight];
 		[self rotateView:270];
 	}
 }
@@ -66,18 +70,20 @@
 	scrollView = [[ContentScrollView alloc] initWithFrame:bound];
 	[self loadWithUnitID:[[self unitItem] id]];
 	[self.view addSubview:scrollView];
-	
+	scrollView.delegate = self;
 }
 
 - (void)loadWithUnitID: (NSInteger) newId {
 	UnitItem * thisUnitItem = [[MMBBAppDelegate sql] getUnitItemByID:newId];
 	[self setUnitItem: thisUnitItem];
-
+	
+	[[self navigationItem] setTitle: [NSString stringWithFormat:@"%d. %@", [unitItem unitNum], [unitItem title]]];
+	//[self navigationController ] 
 	NSString *dir = @"";	
 	NSString *file;
 	if (thisUnitItem.unitType > 0 ) {
-		NSString *unitTypeCode = [NSString stringWithFormat:@"-%d", [[self unitItem] unitType]];
-		file = [NSString stringWithFormat:@"%d-%d%s", [[self unitItem] chapterID], [[self unitItem] unitNum], unitTypeCode]; 
+		NSString *unitTypeCode = [NSString stringWithFormat:@"-%d", thisUnitItem.unitType];
+		file = [NSString stringWithFormat:@"%d-%d%@", [[self unitItem] chapterID], [[self unitItem] unitNum], unitTypeCode]; 
 	} else {
 		file = [NSString stringWithFormat:@"%d-%d", [[self unitItem] chapterID], [[self unitItem] unitNum]]; 
 	}
@@ -101,9 +107,31 @@
 	}
 	
 	[scrollView addSubview:imageView];
+	[scrollView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 	[self updateToolbarBtns];
 	[imageView release];
 	imageView = nil;
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+	[self setHideBars:YES];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)lscrollView willDecelerate:(BOOL)decelerate {
+	if (!decelerate) {
+		[self openNavIfEndOfContents:lscrollView];
+	}
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)lscrollView {
+	[self openNavIfEndOfContents:lscrollView];
+}
+
+- (void)openNavIfEndOfContents:(UIScrollView *)lscrollView {
+	NSLog (@"scrollViewDidEndDecelerating contentSize width:%f, offset x:%f ", lscrollView.contentSize.width-lscrollView.frame.size.width , lscrollView.contentOffset.x);
+	if (scrollView.contentOffset.x >= lscrollView.contentSize.width-lscrollView.frame.size.width) {
+		[self setHideBars:NO];
+	}
 }
 
 - (void)rotateView:(CGFloat) radian {
@@ -113,17 +141,25 @@
 	
 	self.navigationController.view.transform = CGAffineTransformIdentity;
 	self.navigationController.view.transform = CGAffineTransformMakeRotation(radian * M_PI / 180);
-	self.navigationController.view.bounds = CGRectMake(0.0, 0.0, 480, 320);
-	self.navigationController.view.center = CGPointMake(160.0f, 240.0f);
+	if (radian == 0) {
+		self.navigationController.view.bounds = CGRectMake(0.0, 0.0, 320, 480);
+//		self.navigationController.view.center = CGPointMake(240.0f, 160.0f);
+		self.navigationController.view.center = CGPointMake(160.0f, 240.0f);
+		self.navigationController.navigationBar.frame = CGRectMake(0, 20, 320, 44); 
+	} else {
+		self.navigationController.view.bounds = CGRectMake(0.0, 0.0, 480, 320);
+		self.navigationController.view.center = CGPointMake(160.0f, 240.0f);
+	}	
 	[UIView commitAnimations];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-	if ( self.interfaceOrientation == UIInterfaceOrientationPortrait ||
-		self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ) {
+//	if ( self.interfaceOrientation == UIInterfaceOrientationPortrait ||
+//		self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ) {
 		[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+		[(MMBBAppDelegate *)[UIApplication sharedApplication].delegate setOrientation: UIInterfaceOrientationPortrait];
 		[self rotateView:0];
-	}
+//	}
 	
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
 	[[[self navigationController] navigationBar] setBarStyle:UIBarStyleDefault];
@@ -178,11 +214,7 @@
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    if (interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-		return YES;
-	} else {
-		return NO;
-	}
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 
 - (void)setNavigationBarHidden:(BOOL)hidden animated:(BOOL)animated {
@@ -264,7 +296,6 @@
 																   style:UIBarButtonItemStylePlain
 																  target:self
 																  action:@selector(back)];
-	
 	[backImage release], backImage = nil;
 	
 	return [backButton autorelease];

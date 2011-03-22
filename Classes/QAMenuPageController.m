@@ -9,9 +9,15 @@
 #import "QAMenuPageController.h"
 #import "MMBBAppDelegate.h"
 #import "QuestionPagesController.h"
+#import "QuestionItem.h"
+
+@interface QAMenuPageController (Private)
+- (void)updateCurrentPage;
+@end
+
 
 @implementation QAMenuPageController
-@synthesize selectedTabIndex, segmentedControl;
+@synthesize currentPageIndex, segmentedControl;
 
 // The designated initializer. Override if you create the controller programmatically 
 // and want to perform customization that is not appropriate for viewDidLoad.
@@ -39,6 +45,15 @@
 	segmentedControl.momentary = NO;
 	segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	segmentedControl.selectedSegmentIndex = 0;
+	//[self updateCurrentPage];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[self updateCurrentPage];
+}
+
+- (IBAction) segmentAction: (id) sender {
+	[self updateCurrentPage];
 }
 
 /*
@@ -49,9 +64,14 @@
 }
 */
 
-- (void) pageTouched:(QAMenuItemViewController *) sender {
+- (void) startQuizTouched:(QAMenuItemViewController *) sender withReset: (BOOL) isReset {
 	QuestionPagesController *qp = [[QuestionPagesController alloc] 
 								   initWithNibName:@"QuestionPagesController" bundle:nil ];
+	if (isReset) {
+		[[MMBBAppDelegate sql] resetQuestionsInChapter: sender.itemData.id 
+													   withType: segmentedControl.selectedSegmentIndex + 1];
+		
+	}
 	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInChapter:sender.itemData.id
 														  withType:segmentedControl.selectedSegmentIndex + 1];
 	qp.chapterData = sender.itemData;
@@ -67,8 +87,7 @@
 	[qp release];
 }
 
-- (void)loadScrollViewWithPage:(int)page 
-{
+- (void)loadScrollViewWithPage:(int)page {
 	if (page < 0) 
 		return;
 	if (page > [self.pageDataArray count] - 1) 
@@ -87,6 +106,24 @@
 	}
 }
 
+- (void)continueChangePage:(NSInteger) page {
+	self.currentPageIndex = page;
+	[self updateCurrentPage];
+}
+
+- (void) updateCurrentPage {
+	ChapterItem *ci = [self.pageDataArray objectAtIndex:self.currentPageIndex];
+	NSArray *qa = [[MMBBAppDelegate sql] getQuestionInChapter:ci.id
+													 withType:segmentedControl.selectedSegmentIndex + 1];
+	QAMenuItemViewController *controller = [self.viewControllers objectAtIndex:currentPageIndex];
+	if (qa.count > 0 ) {
+		QuestionItem *qi = [qa objectAtIndex:0];
+		[controller update: qi.answerPageVisited];
+	} else {
+		[controller update: NO];
+	}
+}
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -101,6 +138,7 @@
 }
 
 - (void)dealloc {
+	[segmentedControl release];
     [super dealloc];
 }
 

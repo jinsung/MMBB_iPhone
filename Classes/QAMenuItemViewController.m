@@ -10,14 +10,13 @@
 
 @implementation QAMenuItemViewController
 
-@synthesize idelegate, rimageView, itemData;
+@synthesize idelegate, rimageView, itemData, startBtn, resetBtn, getAnswerBtn;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithItemData:(ChapterItem *)data {
     self = [super initWithNibName:@"QAMenuItemViewController" bundle:nil];
     if (self) {
 		itemData = data;
-        
     }
     return self;
 }
@@ -39,9 +38,26 @@
 	[super viewDidLoad];
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	if ( idelegate && [idelegate respondsToSelector:@selector(pageTouched:)] ) {
-		[idelegate pageTouched: self];
+- (void)update: (BOOL) solved {
+	if (solved) {
+		getAnswerBtn.hidden = NO;
+		resetBtn.hidden = NO;
+		startBtn.hidden = YES;
+	} else {
+		resetBtn.hidden = YES;
+		getAnswerBtn.hidden = YES;
+		startBtn.hidden = NO;
+	}
+}
+
+- (IBAction) startBtnTouched: (UIButton *) sender {
+	if ( idelegate && [idelegate respondsToSelector:@selector(startQuizTouched: withReset: )] ) {
+		[idelegate startQuizTouched:self withReset: NO];
+	}
+}
+- (IBAction) resetBtnTouched: (UIButton *) sender {
+	if ( idelegate && [idelegate respondsToSelector:@selector(startQuizTouched: withReset:)] ) {
+		[idelegate startQuizTouched:self withReset: YES];
 	}
 }
 
@@ -70,8 +86,10 @@
 - (void)dealloc {
 	[rimageView release];
 	[itemData release];
+	[startBtn release];
+	[resetBtn release];
+	[getAnswerBtn release];
     [super dealloc];
 }
-
 
 @end
