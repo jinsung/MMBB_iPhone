@@ -10,6 +10,7 @@
 #import "MMBBAppDelegate.h"
 #import "QuestionPagesController.h"
 #import "QuestionItem.h"
+#import "QuestionGroupItem.h"
 
 @interface QAMenuPageController (Private)
 - (void)updateCurrentPage;
@@ -17,7 +18,7 @@
 
 
 @implementation QAMenuPageController
-@synthesize currentPageIndex, segmentedControl;
+@synthesize currentPageIndex, segmentedControl, seg1BGImg, seg2BGImg;
 
 // The designated initializer. Override if you create the controller programmatically 
 // and want to perform customization that is not appropriate for viewDidLoad.
@@ -32,8 +33,16 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	self.pageDataArray = [[MMBBAppDelegate sql] getChapters];
+	self.pageDataArray = [[MMBBAppDelegate sql] getQuestionGroup];
 	self.pageControl.numberOfPages = [pageDataArray count];
+	NSMutableArray *controllers = [[NSMutableArray alloc] init];
+	for (unsigned i = 0; i < [pageDataArray count]; i++)
+	{
+		[controllers addObject:[NSNull null]];
+	}
+	self.viewControllers = controllers;
+	[controllers release];
+	
 	[super viewDidLoad];
 	
 	//Set the title
@@ -45,7 +54,8 @@
 	segmentedControl.momentary = NO;
 	segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	segmentedControl.selectedSegmentIndex = 0;
-	//[self updateCurrentPage];
+	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * [pageDataArray count], 
+											 self.scrollView.frame.size.height);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -68,13 +78,13 @@
 	QuestionPagesController *qp = [[QuestionPagesController alloc] 
 								   initWithNibName:@"QuestionPagesController" bundle:nil ];
 	if (isReset) {
-		[[MMBBAppDelegate sql] resetQuestionsInChapter: sender.itemData.id 
+		[[MMBBAppDelegate sql] resetQuestionsInGroup: sender.itemData.id 
 													   withType: segmentedControl.selectedSegmentIndex + 1];
 		
 	}
-	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInChapter:sender.itemData.id
+	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInGroup:sender.itemData.id
 														  withType:segmentedControl.selectedSegmentIndex + 1];
-	qp.chapterData = sender.itemData;
+	qp.qgData = sender.itemData;
 	[qp setHidesBottomBarWhenPushed: YES];
 	
 	if (segmentedControl.selectedSegmentIndex == 0) {
@@ -90,7 +100,7 @@
 - (void)loadScrollViewWithPage:(int)page {
 	if (page < 0) 
 		return;
-	if (page > [self.pageDataArray count] - 1) 
+	if (page > [self.pageDataArray count]-1) 
 		return;
 	
 	UIViewController *controller;
@@ -107,13 +117,26 @@
 }
 
 - (void)continueChangePage:(NSInteger) page {
+	// load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling)
+    [self loadScrollViewWithPage:page - 1];
+    [self loadScrollViewWithPage:page];
+    [self loadScrollViewWithPage:page + 1];
+	
 	self.currentPageIndex = page;
 	[self updateCurrentPage];
 }
 
 - (void) updateCurrentPage {
-	ChapterItem *ci = [self.pageDataArray objectAtIndex:self.currentPageIndex];
-	NSArray *qa = [[MMBBAppDelegate sql] getQuestionInChapter:ci.id
+	if (segmentedControl.selectedSegmentIndex == 0 ) {
+		[self.seg1BGImg setHidden:NO];
+		[self.seg2BGImg setHidden:YES];
+	} else {
+		[self.seg1BGImg setHidden:YES];
+		[self.seg2BGImg setHidden:NO];
+	}
+
+	QuestionGroupItem *ci = [self.pageDataArray objectAtIndex:self.currentPageIndex];
+	NSArray *qa = [[MMBBAppDelegate sql] getQuestionInGroup:ci.id
 													 withType:segmentedControl.selectedSegmentIndex + 1];
 	QAMenuItemViewController *controller = [self.viewControllers objectAtIndex:currentPageIndex];
 	if (qa.count > 0 ) {
@@ -139,6 +162,8 @@
 
 - (void)dealloc {
 	[segmentedControl release];
+	[seg1BGImg release];
+	[seg2BGImg release];
     [super dealloc];
 }
 

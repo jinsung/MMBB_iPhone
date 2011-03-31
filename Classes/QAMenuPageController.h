@@ -14,11 +14,15 @@
 @interface QAMenuPageController : MMBBPagesController <QAMenuItemViewControllerDelegate> {
 	NSInteger currentPageIndex;
 	UISegmentedControl *segmentedControl;
-	
+	UIImageView *seg1BGImg;
+	UIImageView *seg2BGImg;
 }
 
 @property (nonatomic) NSInteger currentPageIndex;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedControl;
+@property (nonatomic, retain) IBOutlet UIImageView *seg1BGImg;
+@property (nonatomic, retain) IBOutlet UIImageView *seg2BGImg;
+
 //@property (nonatomic, retain) NSMutableArray *pageData;
 - (void) startQuizTouched:(QAMenuItemViewController *) sender withReset: (BOOL) isReset;
 

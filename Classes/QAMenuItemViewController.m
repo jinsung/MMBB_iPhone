@@ -13,7 +13,7 @@
 @synthesize idelegate, rimageView, itemData, startBtn, resetBtn, getAnswerBtn;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithItemData:(ChapterItem *)data {
+- (id)initWithItemData:(QuestionGroupItem *)data {
     self = [super initWithNibName:@"QAMenuItemViewController" bundle:nil];
     if (self) {
 		itemData = data;

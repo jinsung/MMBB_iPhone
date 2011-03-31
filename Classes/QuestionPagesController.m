@@ -22,7 +22,7 @@
 
 @implementation QuestionPagesController
 
-@synthesize chapterData, chapterInfoLable;
+@synthesize qgData, chapterInfoLable;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
@@ -38,16 +38,25 @@
 
 - (void)viewDidLoad {
 	NSString *chapterTitleText = [NSString stringWithFormat:@"%d. %@", 
-								  chapterData.id, chapterData.title];
+								  qgData.id, qgData.title];
 	chapterInfoLable.text = chapterTitleText;
 	
-	self.pageControl.numberOfPages = [pageDataArray count] + 1;
+	self.pageControl.numberOfPages = [pageDataArray count]+1;
+	NSMutableArray *controllers = [[NSMutableArray alloc] init];
+	for (unsigned i = 0; i < [pageDataArray count]+1; i++)
+	{
+		[controllers addObject:[NSNull null]];
+	}
+	self.viewControllers = controllers;
+	[controllers release];
 	[super viewDidLoad];
+	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * ([pageDataArray count]+1), 
+											 self.scrollView.frame.size.height);
 }
 
 - (void)dealloc {
 	[chapterInfoLable release];
-	[chapterData release];
+	[qgData release];
 	[super dealloc];
 }
 
@@ -126,7 +135,7 @@
 			q.answerPageVisited = YES;
 	}
 	NSInteger solved = !reset;
-	[[MMBBAppDelegate sql] updateUserSolved: solved inChater: q.chapterID withType: q.type];
+	[[MMBBAppDelegate sql] updateUserSolved: solved inGroup: q.groupID withType: q.type];
 }
 
 @end

@@ -11,6 +11,7 @@
 #import "ChapterItem.h"
 #import "UnitItem.h"
 #import "QuestionItem.h"
+#import "QuestionGroupItem.h"
 
 @interface SQLAccess (Private)
 - (NSMutableArray *) getUnitsWithSQL: (NSString *) sql;
@@ -25,6 +26,7 @@ static NSString *kSectionTableName = @"Section";
 static NSString *kChapterTableName = @"Chapter";
 static NSString *kUnitTableName = @"Unit";
 static NSString *kQuestionTableName = @"Question";
+static NSString *kQuestionGroupTableName = @"QuestionGroup";
 
 @synthesize db;
 
@@ -213,10 +215,25 @@ static NSString *kQuestionTableName = @"Question";
 #pragma mark -
 #pragma mark QUESTION 
 
-- (NSMutableArray *) getQuestionInChapter: (NSInteger) chapterID withType: (NSInteger) typeID{
+- (NSMutableArray *) getQuestionGroup {
 	NSMutableArray *a = [[NSMutableArray alloc] init];
-	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE chapter_id=%d AND type=%d",
-					 kQuestionTableName, chapterID, typeID];
+	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@", 
+					 kQuestionGroupTableName];
+	FMResultSet *rs = [db executeQuery:sql];
+	while ([rs next]) {
+		QuestionGroupItem *qg = [[QuestionGroupItem alloc] init];
+		[qg setId:[rs intForColumn:@"id"]];
+		[qg setTitle:[rs stringForColumn:@"title"]];
+		[a addObject:qg];
+		[qg release], qg=nil;
+	}	
+	return [a autorelease];	
+}
+
+- (NSMutableArray *) getQuestionInGroup: (NSInteger) groupID withType: (NSInteger) typeID{
+	NSMutableArray *a = [[NSMutableArray alloc] init];
+	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE group_id=%d AND type=%d",
+					 kQuestionTableName, groupID, typeID];
 	FMResultSet *rs = [db executeQuery:sql];
 	while ([rs next]) {
 		QuestionItem *question = [self getQuestionItem:rs];
@@ -225,15 +242,15 @@ static NSString *kQuestionTableName = @"Question";
 	return [a autorelease];
 }
 
-- (BOOL) updateUserSolved: (NSInteger) isSolved inChater: (NSInteger) chapterID withType: (NSInteger) typeID {
-	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer_page_visited=%d WHERE chapter_id=%d AND type=%d",
-					 kQuestionTableName, isSolved, chapterID, typeID];
+- (BOOL) updateUserSolved: (NSInteger) isSolved inGroup: (NSInteger) groupID withType: (NSInteger) typeID {
+	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer_page_visited=%d WHERE group_id=%d AND type=%d",
+					 kQuestionTableName, isSolved, groupID, typeID];
 	return [db executeUpdate:sql];
 }
 
-- (BOOL) resetQuestionsInChapter: (NSInteger) chapterID withType: (NSInteger) typeID {
-	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer_page_visited=0, answer=0 WHERE chapter_id=%d AND type=%d",
-					 kQuestionTableName, chapterID, typeID];
+- (BOOL) resetQuestionsInGroup: (NSInteger) groupID withType: (NSInteger) typeID {
+	NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET answer_page_visited=0, answer=0 WHERE group_id=%d AND type=%d",
+					 kQuestionTableName, groupID, typeID];
 	return [db executeUpdate:sql];
 }
 
@@ -248,6 +265,7 @@ static NSString *kQuestionTableName = @"Question";
 	[question setId:[rs intForColumn:@"id"]];
 	[question setIndex:[rs intForColumn: @"q_index"]];
 	[question setType:[rs intForColumn: @"type"]];
+	[question setGroupID:[rs intForColumn: @"group_id"]];
 	[question setChapterID:[rs intForColumn: @"chapter_id"]];
 	[question setCorrectAnswer:[rs intForColumn:@"correct_answer"]];
 	[question setUserAnswer:[rs intForColumn:@"answer"]];

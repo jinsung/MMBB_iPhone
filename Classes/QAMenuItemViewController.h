@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ChapterItem.h"
+#import "QuestionGroupItem.h"
 
 @interface QAMenuItemViewController : UIViewController {
 	id idelegate;
-	ChapterItem *itemData;
+	QuestionGroupItem *itemData;
 	UIImageView *rimageView;
 	UIButton *startBtn;
 	UIButton *resetBtn;
@@ -19,13 +19,13 @@
 }
 
 @property (nonatomic, retain) id idelegate;
-@property (nonatomic, retain) ChapterItem *itemData;
+@property (nonatomic, retain) QuestionGroupItem *itemData;
 @property (nonatomic, retain) IBOutlet UIImageView *rimageView;
 @property (nonatomic, retain) IBOutlet UIButton	*startBtn;
 @property (nonatomic, retain) IBOutlet UIButton	*resetBtn;
 @property (nonatomic, retain) IBOutlet UIButton	*getAnswerBtn;
 
-- (id)initWithItemData:(ChapterItem *)data;
+- (id)initWithItemData:(QuestionGroupItem *)data;
 - (void)update: (BOOL) solved;
 - (IBAction) startBtnTouched: (UIButton *) sender;
 - (IBAction) resetBtnTouched: (UIButton *) sender;

@@ -14,15 +14,6 @@
 
 - (void) viewDidLoad {
 	[super viewDidLoad];
-	// view controllers are created lazily
-	// in the meantime, load the array with placeholders which will be replaced on demand
-	NSMutableArray *controllers = [[NSMutableArray alloc] init];
-	for (unsigned i = 0; i < [pageDataArray count] + 1; i++)
-	{
-		[controllers addObject:[NSNull null]];
-	}
-	self.viewControllers = controllers;
-	[controllers release];
 	
 	// a page is the width of the scroll view
 	self.scrollView.pagingEnabled = YES;
@@ -30,9 +21,7 @@
 	self.scrollView.showsVerticalScrollIndicator = NO;
 	self.scrollView.scrollsToTop = NO;
 	self.scrollView.delegate = self;
-	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * ([pageDataArray count]+1), 
-											 self.scrollView.frame.size.height);
-	
+		
 	self.pageControl.currentPage = 0;
 	[pageControl updateCurrentPageDisplay];
     

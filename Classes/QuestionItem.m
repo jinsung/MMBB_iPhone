@@ -10,7 +10,7 @@
 
 @implementation QuestionItem
 
-@synthesize id, index, chapterID, type, correctAnswer, userAnswer, answerPageVisited, answerDesc;
+@synthesize id, index, groupID, chapterID, type, correctAnswer, userAnswer, answerPageVisited, answerDesc;
 
 - (void) dealloc {
 	[answerDesc release];

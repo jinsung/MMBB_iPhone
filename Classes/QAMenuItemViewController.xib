@@ -45,7 +45,7 @@
 					<object class="IBUIImageView" id="223816442">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{12, 115}, {245, 170}}</string>
+						<string key="NSFrame">{{12, 117}, {245, 170}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<int key="IBUIContentMode">2</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -53,7 +53,7 @@
 					<object class="IBUIButton" id="346856826">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{148, 246}, {69, 25}}</string>
+						<string key="NSFrame">{{148, 248}, {69, 25}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -88,7 +88,7 @@
 					<object class="IBUIButton" id="545897687">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{58, 246}, {69, 25}}</string>
+						<string key="NSFrame">{{58, 248}, {69, 25}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -108,7 +108,7 @@
 					<object class="IBUIButton" id="794395624">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{100, 246}, {69, 25}}</string>
+						<string key="NSFrame">{{100, 248}, {69, 25}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -284,7 +284,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>QAMenuItemViewController</string>
 					<string>UIResponder</string>
-					<string>{{402, 267}, {320, 480}}</string>
+					<string>{{355, 267}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">

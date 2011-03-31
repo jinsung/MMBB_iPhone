@@ -11,6 +11,7 @@
 @interface QuestionItem : NSObject {
 	NSInteger id;
 	NSInteger index;
+	NSInteger groupID;
 	NSInteger chapterID;
 	NSInteger type;
 	NSInteger correctAnswer;
@@ -21,6 +22,7 @@
 
 @property (nonatomic) NSInteger id;
 @property (nonatomic) NSInteger index;
+@property (nonatomic) NSInteger groupID;
 @property (nonatomic) NSInteger chapterID;
 @property (nonatomic) NSInteger type;
 @property (nonatomic) NSInteger correctAnswer;
