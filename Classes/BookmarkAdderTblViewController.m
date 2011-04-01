@@ -57,6 +57,12 @@
 #pragma mark -
 #pragma mark UITableViewDataSource
 
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	ChapterItem *ci = [[self tableData] objectAtIndex:section];
+	return [ci.units count];
+}
+
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView 
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -75,7 +81,28 @@
 		ChapterItem *ci = [[self tableData] objectAtIndex:[indexPath section]];	
 		ui = [ci.units objectAtIndex:[indexPath row]];
 	}
-	[cell setTitle:[ui title]];
+	if (ui.unitType > 0) {
+		NSString *unitTypeName = @"";
+		switch (ui.unitType) {
+			case 1:
+				unitTypeName = NSLocalizedString(@"Special", @"dummy");
+				break;
+			case 2:
+				unitTypeName = NSLocalizedString(@"More", @"dummy");
+				break;
+			case 3:
+				unitTypeName = NSLocalizedString(@"Bouns", @"dummy");
+				break;
+			case 4:
+				unitTypeName = NSLocalizedString(@"Mini", @"dummy");
+				break;
+			default:
+				break;
+		}
+		[cell setTitle:[NSString stringWithFormat:@"%@ %d. %@", unitTypeName, [ui unitNum], [ui title]]];
+	} else {
+		[cell setTitle:[NSString stringWithFormat:@"%d. %@", [ui unitNum], [ui title]]];
+	}
 	
 	if ([ui isBookmarked]) {
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
