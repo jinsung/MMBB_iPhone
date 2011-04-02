@@ -10,8 +10,9 @@
 #import "QuestionItem.h"
 
 @implementation AnswerSheetViewController
+@synthesize descViewBtn;
 
-@synthesize pageController, totalLabel, totalTitleLabel, quizNumberTitleLabel;
+@synthesize pageController, totalLabel, totalCorrectLabel, totalTitleLabel, quizNumberTitleLabel;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithPageController: (QuestionPagesController *) pc {
@@ -21,10 +22,14 @@
     return self;
 }
 
+- (IBAction)descViewBtnTouch:(id)sender {
+    [pageController gotoFirstPage:self];
+}
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	totalTitleLabel.text = NSLocalizedString(@"총점", @"dummy");
-	quizNumberTitleLabel.text =NSLocalizedString(@"틀린문제", @"dummy");
+	quizNumberTitleLabel.text =NSLocalizedString(@"정답", @"dummy");
 }
 
 /*
@@ -43,26 +48,53 @@
 }
 
 - (void) update: (NSMutableArray *) questions {
-//	NSMutableString *answers = [[NSMutableString alloc] initWithString:@"answers: "];
 	NSInteger numberOfCorrect = 0;
+    NSInteger hightMultipler = -1;
 	for (NSInteger i=0; i<[questions count]; i++) {
 		QuestionItem *item = [questions objectAtIndex:i];
 		UILabel *quizNumLable = [[UILabel alloc] init];
-		quizNumLable.text = [NSString stringWithFormat:@"%d", i+1];
-		
-		quizNumLable.frame = CGRectOffset(quizNumberTitleLabel.frame, 16*(i+1) + 37, 0);
+        NSString *quizAnswerNumID = [NSString stringWithFormat:@"Answer%d", item.correctAnswer];
+        if(i<9) {
+            quizNumLable.text = [NSString stringWithFormat:@"0%d. %@", i+1, NSLocalizedString(quizAnswerNumID, @"dummy")];
+        } else {
+            quizNumLable.text = [NSString stringWithFormat:@"%d. %@", i+1, NSLocalizedString(quizAnswerNumID, @"dummy")];
+        }
+        
+        NSInteger threeRounder = i%3;
+        if (threeRounder==0) {
+            hightMultipler++;
+        }
+        quizNumLable.frame = CGRectOffset(quizNumberTitleLabel.frame, 78*threeRounder + 80, hightMultipler*20 - 5);
 		[self.view addSubview:quizNumLable];
-		quizNumLable.backgroundColor = [UIColor clearColor];
-		if (item.correctAnswer==item.userAnswer) {
+        
+        if (item.correctAnswer==item.userAnswer) {
 			numberOfCorrect++;
 		} else {
-			quizNumLable.textColor = [UIColor redColor];
+            UILabel *quizWrongAnswerLabel = [[UILabel alloc] init];
+			quizWrongAnswerLabel.textColor = [UIColor redColor];
+            quizWrongAnswerLabel.backgroundColor = [UIColor clearColor];
+            NSString *quizWrongAnswerNumID = [NSString stringWithFormat:@"Answer%d", item.userAnswer];
+            quizWrongAnswerLabel.text = [NSString stringWithFormat:@"%@", NSLocalizedString(quizWrongAnswerNumID, @"dummy")];
+            quizWrongAnswerLabel.frame = CGRectOffset(quizNumLable.frame, 50, 0);
+            [self.view addSubview:quizWrongAnswerLabel];
+            [quizWrongAnswerLabel release];
+            
+            // red check marker.
+            UIImage *image = [UIImage imageNamed:@"wrong_answer_marker.png"];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+            imageView.frame = CGRectOffset(quizNumLable.frame, -10, -8);
+            [self.view addSubview:imageView];
+            [imageView release];
+            
 		}
+		quizNumLable.backgroundColor = [UIColor clearColor];
+		
 		[quizNumLable release];
 	}
-	NSString *totalString = [NSString stringWithFormat:@"%d / %d", numberOfCorrect, [questions count]];
+	NSString *totalString = [NSString stringWithFormat:@"/%d", [questions count]];
+    NSString *totalCorrectString = [NSString stringWithFormat:@"%d", numberOfCorrect];
 	totalLabel.text = totalString;	
-//	[answers release];
+    totalCorrectLabel.text = totalCorrectString;
 }
 
 - (void)dealloc {
@@ -70,8 +102,14 @@
 	[totalLabel release];
 	[totalTitleLabel release];
 	[quizNumberTitleLabel release];
+    [totalCorrectLabel release];
+    [descViewBtn release];
     [super dealloc];
 }
 
-
+- (void)viewDidUnload {
+    [self setTotalCorrectLabel:nil];
+    [self setDescViewBtn:nil];
+    [super viewDidUnload];
+}
 @end

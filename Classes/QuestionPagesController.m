@@ -17,6 +17,7 @@
 @interface QuestionPagesController (Private)
 - (void)scrollViewDidScroll:(UIScrollView *)sender;
 - (void)setQuestionsSolved: (BOOL) reset;
+- (void)gotoPage:(NSInteger) page;
 @end
 
 
@@ -72,7 +73,7 @@
 		// the last page that shows the answers.
 		controller = [self.viewControllers objectAtIndex:page];
 		if ((NSNull *)controller == [NSNull null]) {
-			controller = [[AnswerSheetViewController alloc] init];
+			controller = [[AnswerSheetViewController alloc] initWithPageController:self];
 			[self.viewControllers replaceObjectAtIndex:page withObject:controller];
 			[controller release];
 		}
@@ -95,8 +96,18 @@
 
 - (IBAction)changePage:(id)sender
 {
-	int page = self.pageControl.currentPage;
-	[self continueChangePage:page];
+    int page = self.pageControl.currentPage;
+    [self gotoPage:page];
+}
+
+- (void) gotoFirstPage: (id)sender {
+    self.pageControl.currentPage = 0;
+    int page = self.pageControl.currentPage;
+    [self gotoPage:page];
+}
+
+- (void) gotoPage: (NSInteger) page {
+    [self continueChangePage:page];
 	pageNumberBuffer = page;
 	
 	// update the scroll view to the appropriate page
@@ -107,6 +118,7 @@
     
 	// Set the boolean used when scrolls originate from the UIPageControl. See scrollViewDidScroll: above.
     pageControlUsed = YES;
+
 }
 
 - (void)continueChangePage:(NSInteger) page {

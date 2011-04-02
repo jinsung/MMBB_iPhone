@@ -39,7 +39,7 @@ infoBtn, answerLabel, wrongAnswerLabel, descTextView;
 }
 
 - (id)initWithQuestionItem: (QuestionItem *) qi{
-	if (self = [super initWithNibName:@"QADescriptionFlipsideViewController" bundle:nil]) {
+	if (self == [super initWithNibName:@"QADescriptionFlipsideViewController" bundle:nil]) {
 		self.question = qi;
     }
     return self;

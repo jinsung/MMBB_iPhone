@@ -14,7 +14,7 @@
 @synthesize tableView, question, qImage, answerIndicatorCell, infoBtn, answerLabel;
 
 - (id)initWithQuestionItem: (QuestionItem *) qi{
-	if (self = [super initWithNibName:@"QuestionView" bundle:nil]) {
+	if (self == [super initWithNibName:@"QuestionView" bundle:nil]) {
 		self.question = qi;
     }
     return self;

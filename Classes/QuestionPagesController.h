@@ -20,5 +20,5 @@
 @property (nonatomic, retain) IBOutlet UILabel *chapterInfoLable;
 
 - (IBAction)changePage:(id)sender;
-
+- (void) gotoFirstPage: (id)sender;
 @end
