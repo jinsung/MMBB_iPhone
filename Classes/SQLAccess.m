@@ -8,15 +8,15 @@
 
 #import "SQLAccess.h"
 #import "SectionItem.h"
-#import "ChapterItem.h"
 #import "UnitItem.h"
 #import "QuestionItem.h"
-#import "QuestionGroupItem.h"
 
 @interface SQLAccess (Private)
 - (NSMutableArray *) getUnitsWithSQL: (NSString *) sql;
 - (UnitItem *) getUnitItem: (FMResultSet *) rs;
+- (ChapterItem *) getChapterItem: (FMResultSet *) rs;
 - (QuestionItem *) getQuestionItem: (FMResultSet *) rs;
+- (QuestionGroupItem *) getQuestionGroupItem: (FMResultSet *) rs;
 @end
 
 
@@ -98,26 +98,15 @@ static NSString *kQuestionGroupTableName = @"QuestionGroup";
 	return [a autorelease];
 }
 */
+
 - (NSMutableArray *) getChapters {
 	NSMutableArray *a = [[NSMutableArray alloc] init];
 	NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@", 
 					 kChapterTableName];
 	FMResultSet *rs = [db executeQuery:sql];
 	while ([rs next]) {
-		ChapterItem *chapter = [[ChapterItem alloc] init];
-		[chapter setId:[rs intForColumn:@"id"]];
-		[chapter setTitle:[rs stringForColumn:@"title"]];
-		[chapter setUnits:[self getUnitsInChapterID:chapter.id]];
-		
-		NSInteger currentSectionID = [rs intForColumn:@"section_id"];
-		NSString *sectionSql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE id=%d", 
-								kSectionTableName, currentSectionID];
-		FMResultSet *sectionRs = [db executeQuery:sectionSql];
-		while ([sectionRs next]) {
-			[chapter setSectionTitle:[sectionRs stringForColumn:@"title"]];
-		}
+        ChapterItem *chapter = [self getChapterItem: rs];
 		[a addObject:chapter];
-		[chapter release], chapter=nil;
 	}	
 	return [a autorelease];
 }
@@ -160,6 +149,17 @@ static NSString *kQuestionGroupTableName = @"QuestionGroup";
 	return ui;
 }
 
+
+- (ChapterItem *) getChapterItemByID: (NSInteger) chapterID {
+    NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE id=%d", kChapterTableName, chapterID];
+    FMResultSet *rs = [db executeQuery:sql];
+    ChapterItem *ci;
+    while ([rs next]) {
+        ci = [self getChapterItem: rs];
+    }
+    return ci;
+}
+
 - (NSMutableArray *) getUnitsWithSQL: (NSString *) sql {
 	FMResultSet *rs = [db executeQuery:sql];
 	NSMutableArray *sa = [[NSMutableArray alloc] init];
@@ -167,6 +167,23 @@ static NSString *kQuestionGroupTableName = @"QuestionGroup";
 		[sa addObject:[self getUnitItem:rs]];
 	}
 	return [sa autorelease];
+}
+              
+- (ChapterItem *) getChapterItem: (FMResultSet *) rs {
+    ChapterItem *chapter = [[ChapterItem alloc] init];
+    [chapter setId:[rs intForColumn:@"id"]];
+    [chapter setTitle:[rs stringForColumn:@"title"]];
+    [chapter setUnits:[self getUnitsInChapterID:chapter.id]];
+    
+    NSInteger currentSectionID = [rs intForColumn:@"section_id"];
+    NSString *sectionSql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE id=%d", 
+                            kSectionTableName, currentSectionID];
+    FMResultSet *sectionRs = [db executeQuery:sectionSql];
+    while ([sectionRs next]) {
+        [chapter setSectionTitle:[sectionRs stringForColumn:@"title"]];
+    }
+    
+    return [chapter autorelease];
 }
 
 - (UnitItem *) getUnitItem: (FMResultSet *) rs {
@@ -177,6 +194,7 @@ static NSString *kQuestionGroupTableName = @"QuestionGroup";
 	[ui setChapterID:[rs intForColumn: @"chapter_id"]];
 	[ui setIsBookmarked:[rs intForColumn:@"is_bookmarked"]];
 	[ui setUnitType:[rs intForColumn:@"unit_type"]];
+    [ui setQuestionGroupID:[rs intForColumn:@"question_group_id"]];
 	return [ui autorelease];
 }
 
@@ -221,13 +239,28 @@ static NSString *kQuestionGroupTableName = @"QuestionGroup";
 					 kQuestionGroupTableName];
 	FMResultSet *rs = [db executeQuery:sql];
 	while ([rs next]) {
-		QuestionGroupItem *qg = [[QuestionGroupItem alloc] init];
-		[qg setId:[rs intForColumn:@"id"]];
-		[qg setTitle:[rs stringForColumn:@"title"]];
+		QuestionGroupItem *qg = [self getQuestionGroupItem: rs];
 		[a addObject:qg];
-		[qg release], qg=nil;
 	}	
 	return [a autorelease];	
+}
+
+- (QuestionGroupItem *) getQuestionGroupItemByGroupID: (NSInteger) groupID {
+    NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE id=%d", 
+					 kQuestionGroupTableName, groupID];
+	FMResultSet *rs = [db executeQuery:sql];
+    QuestionGroupItem *qg;
+	while ([rs next]) {
+		qg = [self getQuestionGroupItem: rs];
+	}
+    return qg;
+}
+
+- (QuestionGroupItem *) getQuestionGroupItem: (FMResultSet *) rs {
+    QuestionGroupItem *qg = [[QuestionGroupItem alloc] init];
+    [qg setId:[rs intForColumn:@"id"]];
+    [qg setTitle:[rs stringForColumn:@"title"]];
+    return [qg autorelease];
 }
 
 - (NSMutableArray *) getQuestionInGroup: (NSInteger) groupID withType: (NSInteger) typeID{

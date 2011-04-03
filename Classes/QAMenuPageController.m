@@ -48,8 +48,8 @@
 	//Set the title
 	[[self navigationItem] setTitle: NSLocalizedString(@"QandA",@"dummy")];
 	// setup segment controlls
-	[segmentedControl setTitle:NSLocalizedString(@"정문일침", "dummy") forSegmentAtIndex:0];
-	[segmentedControl setTitle:NSLocalizedString(@"일망타진", "dummy") forSegmentAtIndex:1];
+	[segmentedControl setTitle:NSLocalizedString(@"정문일침", @"dummy") forSegmentAtIndex:0];
+	[segmentedControl setTitle:NSLocalizedString(@"일망타진", @"dummy") forSegmentAtIndex:1];
 	
 	segmentedControl.momentary = NO;
 	segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;

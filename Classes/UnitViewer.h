@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ContentScrollView.h"
 #import "UnitItem.h"
+#import "LastUnitView.h"
 
-@interface UnitViewer : UIViewController <UIScrollViewDelegate> {
+@interface UnitViewer : UIViewController <UIScrollViewDelegate, LastUnitViewDelegate> {
 	UnitItem *unitItem;
 	ContentScrollView *scrollView;
 	UIBarButtonItem *backBtn;
@@ -26,5 +27,6 @@
 
 - (id) initWithUnitID:(NSInteger)pUnitID;
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
+-(void) showQuiz:(LastUnitView *) sender withType:(NSInteger) typeNum isReset: (BOOL) reset;
 
 @end

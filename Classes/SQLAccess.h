@@ -10,6 +10,8 @@
 #import <sqlite3.h>
 #import "FMDatabase.h"
 #import "UnitItem.h"
+#import "ChapterItem.h"
+#import "QuestionGroupItem.h"
 
 @interface SQLAccess : NSObject {
 	FMDatabase *db;
@@ -23,8 +25,10 @@
 - (NSMutableArray *) getUnitsInOrder;
 - (NSMutableArray *) getUnitsInBookmarked;
 - (UnitItem *) getUnitItemByID: (NSInteger) unitID;
+- (ChapterItem *) getChapterItemByID: (NSInteger) chapterID;
 - (BOOL) updateBookmarkUnitWithID: (NSInteger) unitId isBookmark: (NSInteger) bookmark;
 - (NSMutableArray *) getQuestionGroup;
+- (QuestionGroupItem *) getQuestionGroupItemByGroupID: (NSInteger) groupID;
 - (NSMutableArray *) getQuestionInGroup: (NSInteger) groupID withType: (NSInteger) typeID;
 - (BOOL) resetQuestionsInGroup: (NSInteger) groupID withType: (NSInteger) typeID;
 - (BOOL) updateUserAnswer: (NSInteger) answer forQuestionID:(NSInteger) questionID;

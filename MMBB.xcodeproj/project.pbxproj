@@ -20,7 +20,6 @@
 		EF2FA4FE1346DC5A000833E2 /* 1-1-3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA4FD1346DC5A000833E2 /* 1-1-3.png */; };
 		EF2FA5041346DCB8000833E2 /* 6-22-3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA5031346DCB8000833E2 /* 6-22-3.png */; };
 		EF2FA5061346DCCA000833E2 /* 10-25-3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA5051346DCCA000833E2 /* 10-25-3.png */; };
-		EF2FA5081346DCED000833E2 /* 1-1-3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA5071346DCED000833E2 /* 1-1-3.png */; };
 		EF2FA5101346DCFA000833E2 /* 3-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA5091346DCFA000833E2 /* 3-2-1.png */; };
 		EF2FA5111346DCFA000833E2 /* 3-3-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA50A1346DCFA000833E2 /* 3-3-1.png */; };
 		EF2FA5121346DCFA000833E2 /* 3-4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2FA50B1346DCFA000833E2 /* 3-4-1.png */; };
@@ -235,6 +234,7 @@
 		EFC08B741281803B00B916DB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC08B721281803B00B916DB /* MainWindow.xib */; };
 		EFC1A0B813398CDA007D297A /* quiz_type1_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EFC1A0B713398CD9007D297A /* quiz_type1_bg.png */; };
 		EFD22320128B9CBD00256D1C /* UnitViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2231F128B9CBD00256D1C /* UnitViewer.m */; };
+		EFD238511347C2E4007D554E /* LastUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD2384F1347C2E2007D554E /* LastUnitView.m */; };
 		EFDF182D1322CE6800F3177D /* 1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDF181E1322CE6800F3177D /* 1-2.png */; };
 		EFDF182E1322CE6800F3177D /* 1-3.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDF181F1322CE6800F3177D /* 1-3.png */; };
 		EFDF182F1322CE6800F3177D /* 1-4.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDF18201322CE6800F3177D /* 1-4.png */; };
@@ -306,7 +306,6 @@
 		EF2FA4FD1346DC5A000833E2 /* 1-1-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-1-3.png"; path = "01/1-1-3.png"; sourceTree = "<group>"; };
 		EF2FA5031346DCB8000833E2 /* 6-22-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "6-22-3.png"; path = "06/6-22-3.png"; sourceTree = "<group>"; };
 		EF2FA5051346DCCA000833E2 /* 10-25-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "10-25-3.png"; path = "10/10-25-3.png"; sourceTree = "<group>"; };
-		EF2FA5071346DCED000833E2 /* 1-1-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-1-3.png"; path = "01/1-1-3.png"; sourceTree = "<group>"; };
 		EF2FA5091346DCFA000833E2 /* 3-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-2-1.png"; sourceTree = "<group>"; };
 		EF2FA50A1346DCFA000833E2 /* 3-3-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-3-1.png"; sourceTree = "<group>"; };
 		EF2FA50B1346DCFA000833E2 /* 3-4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-4-1.png"; sourceTree = "<group>"; };
@@ -541,6 +540,8 @@
 		EFC1A0B713398CD9007D297A /* quiz_type1_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz_type1_bg.png; path = Assets/quiz/quiz_type1_bg.png; sourceTree = "<group>"; };
 		EFD2231E128B9CBD00256D1C /* UnitViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitViewer.h; sourceTree = "<group>"; };
 		EFD2231F128B9CBD00256D1C /* UnitViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitViewer.m; sourceTree = "<group>"; };
+		EFD2384E1347C2E2007D554E /* LastUnitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastUnitView.h; sourceTree = "<group>"; };
+		EFD2384F1347C2E2007D554E /* LastUnitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastUnitView.m; sourceTree = "<group>"; };
 		EFDF181E1322CE6800F3177D /* 1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-2.png"; path = "01/1-2.png"; sourceTree = "<group>"; };
 		EFDF181F1322CE6800F3177D /* 1-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-3.png"; path = "01/1-3.png"; sourceTree = "<group>"; };
 		EFDF18201322CE6800F3177D /* 1-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-4.png"; path = "01/1-4.png"; sourceTree = "<group>"; };
@@ -563,12 +564,12 @@
 		EFF5FFB912871B7B00C0F8E3 /* TOCItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCItemCell.m; sourceTree = "<group>"; };
 		EFF5FFE31287379100C0F8E3 /* SQLAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLAccess.h; sourceTree = "<group>"; };
 		EFF5FFE41287379100C0F8E3 /* SQLAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLAccess.m; sourceTree = "<group>"; };
-		EFF5FFE7128737A700C0F8E3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../AlarmClock/FMDatabase.h; sourceTree = SOURCE_ROOT; };
-		EFF5FFE8128737A700C0F8E3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../AlarmClock/FMDatabase.m; sourceTree = SOURCE_ROOT; };
-		EFF5FFE9128737A700C0F8E3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ../AlarmClock/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
-		EFF5FFEA128737A700C0F8E3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = ../AlarmClock/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
-		EFF5FFEB128737A700C0F8E3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../AlarmClock/FMResultSet.h; sourceTree = SOURCE_ROOT; };
-		EFF5FFEC128737A700C0F8E3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ../AlarmClock/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		EFF5FFE7128737A700C0F8E3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = Classes/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		EFF5FFE8128737A700C0F8E3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = Classes/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		EFF5FFE9128737A700C0F8E3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = Classes/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		EFF5FFEA128737A700C0F8E3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = Classes/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		EFF5FFEB128737A700C0F8E3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = Classes/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		EFF5FFEC128737A700C0F8E3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = Classes/FMResultSet.m; sourceTree = SOURCE_ROOT; };
 		EFFECE1D128A3E580084EF7A /* ChapterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterItem.h; sourceTree = "<group>"; };
 		EFFECE1E128A3E580084EF7A /* ChapterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1166,7 +1167,6 @@
 		EFDF18061322CE4200F3177D /* 01 */ = {
 			isa = PBXGroup;
 			children = (
-				EF2FA5071346DCED000833E2 /* 1-1-3.png */,
 				EF2FA4FD1346DC5A000833E2 /* 1-1-3.png */,
 				EFDF18CF1322F44500F3177D /* 1-1.png */,
 				EFDF181E1322CE6800F3177D /* 1-2.png */,
@@ -1242,6 +1242,8 @@
 				EFD2231F128B9CBD00256D1C /* UnitViewer.m */,
 				EFAEBD2B128D018900C44B0A /* ContentScrollView.h */,
 				EFAEBD2C128D018900C44B0A /* ContentScrollView.m */,
+				EFD2384E1347C2E2007D554E /* LastUnitView.h */,
+				EFD2384F1347C2E2007D554E /* LastUnitView.m */,
 			);
 			name = ContentsViewer;
 			sourceTree = "<group>";
@@ -1491,7 +1493,6 @@
 				EF2FA4FE1346DC5A000833E2 /* 1-1-3.png in Resources */,
 				EF2FA5041346DCB8000833E2 /* 6-22-3.png in Resources */,
 				EF2FA5061346DCCA000833E2 /* 10-25-3.png in Resources */,
-				EF2FA5081346DCED000833E2 /* 1-1-3.png in Resources */,
 				EF2FA5101346DCFA000833E2 /* 3-2-1.png in Resources */,
 				EF2FA5111346DCFA000833E2 /* 3-3-1.png in Resources */,
 				EF2FA5121346DCFA000833E2 /* 3-4-1.png in Resources */,
@@ -1565,6 +1566,7 @@
 				EF53CAC21336AC0B00075D5C /* MMBBTabBarController.m in Sources */,
 				EF37BE931342CA5400CCEF54 /* QuestionGroupItem.m in Sources */,
 				EF47A3AC1346B17A00C94A06 /* QAMenuPageController.m in Sources */,
+				EFD238511347C2E4007D554E /* LastUnitView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

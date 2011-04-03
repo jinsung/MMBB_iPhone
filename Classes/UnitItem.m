@@ -11,7 +11,7 @@
 
 @implementation UnitItem
 
-@synthesize id, chapterID, title, isBookmarked, unitNum, unitType;
+@synthesize id, chapterID, title, isBookmarked, unitNum, unitType, questionGroupID;
 
 - (void) dealloc {
 	[title release];

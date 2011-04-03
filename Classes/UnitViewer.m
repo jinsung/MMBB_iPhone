@@ -9,6 +9,7 @@
 #import "UnitViewer.h"
 #import "Constants.h"
 #import "MMBBAppDelegate.h"
+#import "QuestionPagesController.h"
 
 @interface UnitViewer (Private)
 
@@ -78,35 +79,46 @@
 	[self setUnitItem: thisUnitItem];
 	
 	[[self navigationItem] setTitle: [NSString stringWithFormat:@"%d. %@", [unitItem unitNum], [unitItem title]]];
-	//[self navigationController ] 
+
 	NSString *dir = @"";	
 	NSString *file;
 	if (thisUnitItem.unitType > 0 ) {
 		NSString *unitTypeCode = [NSString stringWithFormat:@"-%d", thisUnitItem.unitType];
 		file = [NSString stringWithFormat:@"%d-%d%@", [[self unitItem] chapterID], [[self unitItem] unitNum], unitTypeCode]; 
 	} else {
-		file = [NSString stringWithFormat:@"%d-%d", [[self unitItem] chapterID], [[self unitItem] unitNum]]; 
+		file = [NSString stringWithFormat:@"%d-%d", [[self unitItem] chapterID], [[self unitItem] unitNum]];
 	}
 	NSString *path = [[NSBundle mainBundle] pathForResource:file
 													 ofType:@"png" inDirectory:dir];
 	UIImage *image = [UIImage imageWithContentsOfFile:path];
-	CGFloat width = image.size.width/2.0;
-	CGFloat height = image.size.height/2.0;
-	CGRect bound = CGRectMake(0, 0, width, height);
+	CGFloat iwidth = image.size.width/2.0;
+	CGFloat iheight = image.size.height/2.0;
+	CGRect bound = CGRectMake(0, 0, iwidth, iheight);
 
-	//[image setBounds: bound];
 	UIImageView *imageView = [[UIImageView alloc] 
 							  initWithImage:[UIImage imageWithContentsOfFile:path]];
 	imageView.frame = bound;
 	imageView.contentMode = UIViewContentModeScaleAspectFit;
-	[scrollView setContentSize:[imageView bounds].size];
 	NSArray *oldImages = [scrollView subviews];
+    
 	for (int i=0; i<oldImages.count; i++) {
 		UIView *oldImage = [oldImages objectAtIndex:i];
 		[oldImage removeFromSuperview];
 	}
 	
 	[scrollView addSubview:imageView];
+    
+    // if this is the last unit for the question group, we display button for user to go to question page.
+    if (self.unitItem.questionGroupID > 0) {
+        CGRect luvbound = [[UIScreen mainScreen] bounds];
+        luvbound = CGRectMake(iwidth, 0, luvbound.size.height, luvbound.size.width);
+        LastUnitView *lastUnitView = [[LastUnitView alloc] initWithFrame:luvbound];
+        [scrollView addSubview:lastUnitView];
+        [lastUnitView setDelegate:self];
+        [lastUnitView release];
+        bound = CGRectMake(0, 0, iwidth+[lastUnitView bounds].size.width, iheight);
+    }
+    [scrollView setContentSize:bound.size];
 	[scrollView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 	[self updateToolbarBtns];
 	[imageView release];
@@ -128,7 +140,6 @@
 }
 
 - (void)openNavIfEndOfContents:(UIScrollView *)lscrollView {
-	NSLog (@"scrollViewDidEndDecelerating contentSize width:%f, offset x:%f ", lscrollView.contentSize.width-lscrollView.frame.size.width , lscrollView.contentOffset.x);
 	if (scrollView.contentOffset.x >= lscrollView.contentSize.width-lscrollView.frame.size.width) {
 		[self setHideBars:NO];
 	}
@@ -143,7 +154,6 @@
 	self.navigationController.view.transform = CGAffineTransformMakeRotation(radian * M_PI / 180);
 	if (radian == 0) {
 		self.navigationController.view.bounds = CGRectMake(0.0, 0.0, 320, 480);
-//		self.navigationController.view.center = CGPointMake(240.0f, 160.0f);
 		self.navigationController.view.center = CGPointMake(160.0f, 240.0f);
 		self.navigationController.navigationBar.frame = CGRectMake(0, 20, 320, 44); 
 	} else {
@@ -301,9 +311,44 @@
 	return [backButton autorelease];
 }
 
+-(void) showQuiz:(LastUnitView *) sender withType:(NSInteger) typeNum isReset: (BOOL) reset; {
+    if (self.unitItem.questionGroupID > 0 ) {
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+        [(MMBBAppDelegate *)[UIApplication sharedApplication].delegate setOrientation: UIInterfaceOrientationPortrait];
+        [self rotateView:0];
+	
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
+        [[[self navigationController] navigationBar] setBarStyle:UIBarStyleDefault];
+        [[[self navigationController] navigationBar] setTranslucent:NO];
+        [[[self navigationController] toolbar] setBarStyle:UIBarStyleDefault];
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        [[self navigationController] setToolbarHidden:NO];
+        [[self navigationController] setNavigationBarHidden:NO];
+    
+        QuestionPagesController *qp = [[QuestionPagesController alloc] 
+                                       initWithNibName:@"QuestionPagesController" bundle:nil ];
+        if (reset) {
+            [[MMBBAppDelegate sql] resetQuestionsInGroup: self.unitItem.questionGroupID 
+                                                withType: typeNum];
+		
+        }
+        qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInGroup:self.unitItem.questionGroupID
+                                                            withType:typeNum];
+    
+        qp.qgData = [[MMBBAppDelegate sql] getQuestionGroupItemByGroupID:self.unitItem.questionGroupID];
+	
+        if (typeNum==1) {
+            [[qp navigationItem] setTitle:NSLocalizedString(@"정문일침", "dummy")];
+        } else {
+            [[qp navigationItem] setTitle:NSLocalizedString(@"일망타진", "dummy")];
+        }
+    
+        [self.navigationController pushViewController:qp animated:YES];
+        [qp release];
+    }
+}
 
 - (void)dealloc {
-
 	[foreBtn release];
 	foreBtn = nil;
 	[bookmarkBtn release];
