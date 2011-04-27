@@ -34,6 +34,7 @@
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
+    NSLog(@"QuestionPagesController Memory warning");
     [super didReceiveMemoryWarning];
 }
 
@@ -65,7 +66,7 @@
 {
     if (page < 0)
         return;
-    if (page > [pageDataArray count]) 
+    if (page > [self.pageDataArray count]) 
 		return;
 		
 	UIViewController *controller;
@@ -91,7 +92,8 @@
 			[controller release];
 		}
     }
-    [self addControllerOnScroller:controller withPageNumber:page];
+    
+    [self addControllerOnScrollerWithPageNumber:page];
 }
 
 - (IBAction)changePage:(id)sender

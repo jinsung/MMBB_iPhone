@@ -10,7 +10,16 @@
 
 @implementation QAMenuItemViewController
 
-@synthesize idelegate, rimageView, itemData, startBtn, resetBtn, getAnswerBtn;
+@synthesize idelegate, rimageView, startBtn, resetBtn, getAnswerBtn;
+
+- (void)dealloc {
+    [idelegate release];
+	[rimageView release];
+	[startBtn release];
+	[resetBtn release];
+	[getAnswerBtn release];
+    [super dealloc];
+}
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithItemData:(QuestionGroupItem *)data {
@@ -23,6 +32,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    [super viewDidLoad];
 	NSString *chapterNumber;
 	if ([itemData id] < 10) {
 		chapterNumber = [NSString stringWithFormat:@"0%d", [itemData id]];
@@ -35,7 +45,6 @@
 													 ofType:@"png" inDirectory:dir];
 	rimageView.image = nil;
 	rimageView.image = [UIImage imageWithContentsOfFile:path];
-	[super viewDidLoad];
 }
 
 - (void)update: (BOOL) solved {
@@ -77,19 +86,14 @@
 }
 
 - (void)viewDidUnload {
-	self.rimageView = nil;
+//	self.rimageView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
-- (void)dealloc {
-	[rimageView release];
-	[itemData release];
-	[startBtn release];
-	[resetBtn release];
-	[getAnswerBtn release];
-    [super dealloc];
+- (QuestionGroupItem *)itemData {
+    return itemData;
 }
 
 @end

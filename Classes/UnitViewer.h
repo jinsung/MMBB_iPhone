@@ -14,15 +14,11 @@
 @interface UnitViewer : UIViewController <UIScrollViewDelegate, LastUnitViewDelegate> {
 	UnitItem *unitItem;
 	ContentScrollView *scrollView;
-	UIBarButtonItem *backBtn;
-	UIBarButtonItem *foreBtn;
 	UIBarButtonItem *bookmarkBtn;
 }
 
 @property (nonatomic, readonly) ContentScrollView *scrollView;
 @property (nonatomic, retain) UnitItem *unitItem;
-@property (nonatomic, retain) UIBarButtonItem *backBtn;
-@property (nonatomic, retain) UIBarButtonItem *foreBtn;
 @property (nonatomic, retain) UIBarButtonItem *bookmarkBtn;
 
 - (id) initWithUnitID:(NSInteger)pUnitID;

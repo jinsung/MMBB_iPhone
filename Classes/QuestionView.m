@@ -11,11 +11,11 @@
 
 @implementation QuestionView
 
-@synthesize tableView, question, qImage, answerIndicatorCell, infoBtn, answerLabel;
+@synthesize tableView, qImage, answerIndicatorCell, infoBtn, answerLabel;
 
 - (id)initWithQuestionItem: (QuestionItem *) qi{
 	if (self == [super initWithNibName:@"QuestionView" bundle:nil]) {
-		self.question = qi;
+		question = qi;
     }
     return self;
 }
@@ -164,7 +164,6 @@
 - (void)dealloc {
     [tableView release];
 	[qImage release];
-	[question release];
 	[answerIndicatorCell release];
 	[infoBtn release];
 	[answerLabel release];

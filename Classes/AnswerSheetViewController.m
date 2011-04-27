@@ -67,26 +67,30 @@
         quizNumLable.frame = CGRectOffset(quizNumberTitleLabel.frame, 78*threeRounder + 80, hightMultipler*20 - 5);
 		[self.view addSubview:quizNumLable];
         
-        if (item.correctAnswer==item.userAnswer) {
-			numberOfCorrect++;
-		} else {
-            UILabel *quizWrongAnswerLabel = [[UILabel alloc] init];
-			quizWrongAnswerLabel.textColor = [UIColor redColor];
-            quizWrongAnswerLabel.backgroundColor = [UIColor clearColor];
-            NSString *quizWrongAnswerNumID = [NSString stringWithFormat:@"Answer%d", item.userAnswer];
-            quizWrongAnswerLabel.text = [NSString stringWithFormat:@"%@", NSLocalizedString(quizWrongAnswerNumID, @"dummy")];
-            quizWrongAnswerLabel.frame = CGRectOffset(quizNumLable.frame, 50, 0);
-            [self.view addSubview:quizWrongAnswerLabel];
-            [quizWrongAnswerLabel release];
-            
-            // red check marker.
-            UIImage *image = [UIImage imageNamed:@"wrong_answer_marker.png"];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-            imageView.frame = CGRectOffset(quizNumLable.frame, -10, -8);
-            [self.view addSubview:imageView];
-            [imageView release];
-            
-		}
+        if (item.userAnswer > 0 ) {
+            if (item.correctAnswer==item.userAnswer) {
+                numberOfCorrect++;
+            } else {
+                UILabel *quizWrongAnswerLabel = [[UILabel alloc] init];
+                quizWrongAnswerLabel.textColor = [UIColor redColor];
+                quizWrongAnswerLabel.backgroundColor = [UIColor clearColor];
+                NSString *quizWrongAnswerNumID = [NSString stringWithFormat:@"Answer%d", item.userAnswer];
+                quizWrongAnswerLabel.text = [NSString stringWithFormat:@"%@", NSLocalizedString(quizWrongAnswerNumID, @"dummy")];
+                quizWrongAnswerLabel.frame = CGRectOffset(quizNumLable.frame, 50, 0);
+                [self.view addSubview:quizWrongAnswerLabel];
+                [quizWrongAnswerLabel release];
+                
+                // red check marker.
+                UIImage *image = [UIImage imageNamed:@"wrong_answer_marker.png"];
+                UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+                imageView.frame = CGRectOffset(quizNumLable.frame, -10, -8);
+                [self.view addSubview:imageView];
+                [imageView release];
+            }
+        } else {
+            quizNumLable.textColor = [UIColor grayColor];
+        }
+        
 		quizNumLable.backgroundColor = [UIColor clearColor];
 		
 		[quizNumLable release];

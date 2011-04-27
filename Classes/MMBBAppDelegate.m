@@ -10,7 +10,8 @@
 #import "HomeTableViewController.h"
 #import "HomeNavController.h"
 #import "QAMenuPageController.h"
-#import "QANavController.h"
+#import "MoreViewsTableController.h"
+#import "Constants.h"
 
 static SQLAccess *sql;
 
@@ -29,23 +30,30 @@ static SQLAccess *sql;
 	
 	// create view controllers
 	UIViewController *homeViewController = [[HomeTableViewController alloc] init];
-	
 	// Create an instance of a UINavigationController
 	// its stack contains only itemsViewController
 	UINavigationController *homeNavController = [[HomeNavController alloc] 
 												 initWithRootViewController:homeViewController];
 	
-	
 	UIViewController *qaPageMenuController = [[QAMenuPageController alloc] 
 										  initWithNibName:@"QAMenuPageController" 
 													   bundle:nil ];
-	UINavigationController *qaNavController = [[QANavController alloc]
+	UINavigationController *qaNavController = [[UINavigationController alloc]
 											   initWithRootViewController:qaPageMenuController];
+    [qaNavController navigationBar].tintColor = [Constants mmbbColor];
+	[[qaNavController tabBarItem] setTitle:NSLocalizedString(@"QandA",@"dummy")];
+	[[qaNavController tabBarItem] setImage:[UIImage imageNamed:@"house.png"]];
+    
+    UIViewController *moreViewController = [[MoreViewsTableController alloc] 
+                                            initWithNibName:@"MoreViewsTableController" bundle:nil];
+    UINavigationController *moreViewNavController = [[UINavigationController alloc] initWithRootViewController:moreViewController];
+    [moreViewNavController navigationBar].tintColor = [Constants mmbbColor];
+	[[moreViewNavController tabBarItem] setTitle:NSLocalizedString(@"MoreView",@"dummy")];
+	[[moreViewNavController tabBarItem] setImage:[UIImage imageNamed:@"house.png"]];
 
 	// make an array containing the two view controllers
-	NSArray *viewControlles = 
-		[NSArray arrayWithObjects:homeNavController, qaNavController, nil];
-
+	NSArray *viewControlles = [NSArray arrayWithObjects:homeNavController, qaNavController, moreViewNavController, nil];
+    
 	// attach them to the tab bar controller
 	[tabBarController setViewControllers:viewControlles];
 	[window setRootViewController:tabBarController];
@@ -54,8 +62,10 @@ static SQLAccess *sql;
 	//[searchViewController release];
 	[homeViewController release];
 	[homeNavController release];
+    [moreViewNavController release];
 	[qaPageMenuController release];	
 	[qaNavController release];
+    [moreViewNavController release];
 	[tabBarController release];
     return YES;
 }

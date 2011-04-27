@@ -28,5 +28,5 @@
 
 - (void)continueChangePage:(NSInteger) page;
 - (void)loadScrollViewWithPage:(int)page;
-- (void)addControllerOnScroller:(UIViewController *)controller withPageNumber:(int)page;
+- (void)addControllerOnScrollerWithPageNumber:(int)page;
 @end

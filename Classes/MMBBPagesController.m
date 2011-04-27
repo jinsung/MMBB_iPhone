@@ -34,20 +34,35 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void) addControllerOnScroller:(UIViewController *)controller withPageNumber:(int) page {
+- (void) addControllerOnScrollerWithPageNumber:(int) page {
 	// add the controller's view to the scroll view
-    if (controller.view.superview == nil)
-    {
+    UIViewController* controller = [self.viewControllers objectAtIndex:page];
+    if (controller.view.superview != self.scrollView){
         CGRect frame = self.scrollView.frame;
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0;
         controller.view.frame = frame;
         [self.scrollView addSubview:controller.view];
     }
+    
 	CGSize size = scrollView.contentSize;
 	size.height = CGRectGetHeight(scrollView.frame)-1;
 	scrollView.contentSize = size;
 	scrollView.alwaysBounceVertical=NO;
+    
+    // remove pages that is currently not showing.
+    for ( int i=0; i<[self.viewControllers count]; i++) {
+        if (i<page-2 || i>page+2) {
+            if ([self.viewControllers objectAtIndex:i] != [NSNull null]) {
+                // this should be UIViewController.
+                UIViewController * vc = [self.viewControllers objectAtIndex:i];
+                if (vc.view.superview != nil) {
+                    [vc.view removeFromSuperview];
+                    [self.viewControllers replaceObjectAtIndex:i withObject:[NSNull null]];
+                }
+            }
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -114,8 +129,6 @@
 		self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * ([pageDataArray count]+1), 
 												 self.scrollView.frame.size.height);
 }
-
-
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

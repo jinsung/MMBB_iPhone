@@ -7,7 +7,7 @@
 //
 
 #import "MoreViewsTableController.h"
-
+#import "MoreDetailViewController.h"
 
 @implementation MoreViewsTableController
 
@@ -38,7 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [[self navigationItem] setTitle:NSLocalizedString(@"MoreView", @"dummy")];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -83,16 +83,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    if ( section==0 ) {
+        return 4;
+    } else {
+        return 1;
+    }
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
+{
+    if ( section==0 ) {
+        return NSLocalizedString(@"명명백백 스토리", @"dummy");
+    }
+    return @"";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +115,27 @@
     }
     
     // Configure the cell...
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = NSLocalizedString(@"명명백백이란", @"dummy");    
+                break;
+            case 1:
+                cell.textLabel.text = NSLocalizedString(@"명명백백 패밀리", @"dummy");
+                break;
+            case 2:
+                cell.textLabel.text = NSLocalizedString(@"100% 활용하기", @"dummy");
+                break;
+            default:
+                cell.textLabel.text = NSLocalizedString(@"만국이에게 메세지보내기", @"dummy");
+                break;
+        }
+    } else if (indexPath.section == 1) {
+        cell.textLabel.text = NSLocalizedString(@"저작단 소개", @"dummy");
+    } else {
+        cell.textLabel.text = NSLocalizedString(@"정보", @"dummy");
+    }
+
     
     return cell;
 }
@@ -153,13 +184,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+     MoreDetailViewController *detailViewController = [[MoreDetailViewController alloc] initWithNibName:@"MoreDetailViewController" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
-     */
 }
 
 @end

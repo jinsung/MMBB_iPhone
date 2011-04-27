@@ -100,7 +100,7 @@
 - (void)loadScrollViewWithPage:(int)page {
 	if (page < 0) 
 		return;
-	if (page > [self.pageDataArray count]-1) 
+	if (page >= [self.pageDataArray count]) 
 		return;
 	
 	UIViewController *controller;
@@ -111,8 +111,8 @@
 					  initWithItemData:[self.pageDataArray objectAtIndex:page]];
 		((QAMenuItemViewController *)controller).idelegate = self;
 		[self.viewControllers replaceObjectAtIndex:page withObject:controller];
-		[self addControllerOnScroller:controller withPageNumber:page];
-		[controller release];
+        [controller release];
+		[self addControllerOnScrollerWithPageNumber:page];
 	}
 }
 

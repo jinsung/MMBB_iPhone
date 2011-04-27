@@ -1,4 +1,4 @@
-    //
+//
 //  UnitViewer.m
 //  MMBB
 //
@@ -31,7 +31,7 @@
 @end
 
 @implementation UnitViewer
-@synthesize scrollView, unitItem, backBtn, foreBtn, bookmarkBtn;
+@synthesize scrollView, unitItem, bookmarkBtn;
 
 - (id) initWithUnitID:(NSInteger)pUnitID {
 	self = [super init];
@@ -65,48 +65,64 @@
 	[[[self navigationController] toolbar] setTranslucent:YES];
 	[self setHideBars:true];
 	
-	CGRect bound = [[UIScreen mainScreen] bounds];
-	bound = CGRectMake(0, 0, bound.size.height, bound.size.width);
-	[[self view] setFrame:bound];
-	scrollView = [[ContentScrollView alloc] initWithFrame:bound];
-	[self loadWithUnitID:[[self unitItem] id]];
-	[self.view addSubview:scrollView];
-	scrollView.delegate = self;
+    //if (!scrollView) {
+        CGRect bound = [[UIScreen mainScreen] bounds];
+        bound = CGRectMake(0, 0, bound.size.height, bound.size.width);
+        [[self view] setFrame:bound];
+    
+        scrollView = [[ContentScrollView alloc] initWithFrame:bound];
+    
+        [self loadWithUnitID:[[self unitItem] id]];
+        [self.view addSubview:scrollView];
+        scrollView.delegate = self;
+    //}
 }
 
 - (void)loadWithUnitID: (NSInteger) newId {
-	UnitItem * thisUnitItem = [[MMBBAppDelegate sql] getUnitItemByID:newId];
-	[self setUnitItem: thisUnitItem];
-	
-	[[self navigationItem] setTitle: [NSString stringWithFormat:@"%d. %@", [unitItem unitNum], [unitItem title]]];
-
-	NSString *dir = @"";	
-	NSString *file;
-	if (thisUnitItem.unitType > 0 ) {
-		NSString *unitTypeCode = [NSString stringWithFormat:@"-%d", thisUnitItem.unitType];
-		file = [NSString stringWithFormat:@"%d-%d%@", [[self unitItem] chapterID], [[self unitItem] unitNum], unitTypeCode]; 
-	} else {
-		file = [NSString stringWithFormat:@"%d-%d", [[self unitItem] chapterID], [[self unitItem] unitNum]];
-	}
-	NSString *path = [[NSBundle mainBundle] pathForResource:file
-													 ofType:@"png" inDirectory:dir];
-	UIImage *image = [UIImage imageWithContentsOfFile:path];
-	CGFloat iwidth = image.size.width/2.0;
-	CGFloat iheight = image.size.height/2.0;
-	CGRect bound = CGRectMake(0, 0, iwidth, iheight);
-
-	UIImageView *imageView = [[UIImageView alloc] 
-							  initWithImage:[UIImage imageWithContentsOfFile:path]];
-	imageView.frame = bound;
-	imageView.contentMode = UIViewContentModeScaleAspectFit;
-	NSArray *oldImages = [scrollView subviews];
+    NSArray *oldImages = [scrollView subviews];
     
 	for (int i=0; i<oldImages.count; i++) {
 		UIView *oldImage = [oldImages objectAtIndex:i];
 		[oldImage removeFromSuperview];
 	}
+    
+	UnitItem * thisUnitItem = [[MMBBAppDelegate sql] getUnitItemByID:newId];
+	[self setUnitItem: thisUnitItem];
+	
+	[[self navigationItem] setTitle: [NSString stringWithFormat:@"%d. %@", [unitItem unitNum], [unitItem title]]];
+
+	NSString *dir = @"";
+	NSString *file;
+	if (thisUnitItem.unitType > 0 ) {
+		NSString *unitTypeCode = [NSString stringWithFormat:@"-%d", thisUnitItem.unitType];
+		file = [NSString stringWithFormat:@"%d-%d%@", [[self unitItem] chapterID], [[self unitItem] unitNum], unitTypeCode]; 
+	} else {
+        file = [NSString stringWithFormat:@"%d-%d", [[self unitItem] chapterID], [[self unitItem] unitNum]];
+	}
+	NSString *path = [[NSBundle mainBundle] pathForResource:file
+													 ofType:@"png" inDirectory:dir];
+    
+	UIImage *image = [[UIImage alloc] initWithContentsOfFile:path];
+    CGFloat iwidth;
+    CGFloat iheight;
+    if (image.size.height > 321 ) {
+        iwidth = image.size.width/2.0;
+        iheight = image.size.height/2.0;
+    } else {
+        iwidth = image.size.width;
+        iheight = image.size.height;
+    }
+    CGRect bound = CGRectMake(0, 0, iwidth, iheight);
+	UIImageView *imageView = [[UIImageView alloc] 
+							  initWithImage:image];
+    [image release];
+    image = nil;
+	imageView.frame = bound;
+	imageView.contentMode = UIViewContentModeScaleAspectFit;
 	
 	[scrollView addSubview:imageView];
+    [imageView release];
+	imageView = nil;
     
     // if this is the last unit for the question group, we display button for user to go to question page.
     if (self.unitItem.questionGroupID > 0) {
@@ -121,8 +137,7 @@
     [scrollView setContentSize:bound.size];
 	[scrollView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 	[self updateToolbarBtns];
-	[imageView release];
-	imageView = nil;
+    
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
@@ -182,15 +197,18 @@
 	UIBarButtonItem *btnSpace = [[UIBarButtonItem alloc] 
 								 initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
 								 target:self action:nil];
-	foreBtn = [[UIBarButtonItem alloc] 
+	UIBarButtonItem *foreBtn = [[UIBarButtonItem alloc] 
 								initWithBarButtonSystemItem:UIBarButtonSystemItemPlay 
 								target:self action:@selector(forward)];
 	bookmarkBtn = [[UIBarButtonItem alloc] 
 									initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks 
 									target:self action:@selector(bookmark:)];
-	backBtn = [self backButton];
+	UIBarButtonItem *backBtn = [self backButton];
 		
 	[self setToolbarItems: [NSArray arrayWithObjects: backBtn, btnSpace, foreBtn, btnSpace, bookmarkBtn, nil]];
+
+    [foreBtn release];
+    foreBtn = nil;
 	[btnSpace release];
 	btnSpace = nil;
 }
@@ -349,8 +367,8 @@
 }
 
 - (void)dealloc {
-	[foreBtn release];
-	foreBtn = nil;
+    [unitItem release];
+    unitItem = nil;
 	[bookmarkBtn release];
 	bookmarkBtn = nil;
 	[scrollView release];

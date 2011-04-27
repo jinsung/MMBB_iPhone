@@ -20,7 +20,7 @@
 	UIView *contentView;
 }
 
-@property (nonatomic, retain) QuestionItem *question;
+//@property (nonatomic, retain) QuestionItem *question;
 @property (nonatomic, retain) IBOutlet UIImageView *qImage;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) IBOutlet UITableViewCell *answerIndicatorCell;

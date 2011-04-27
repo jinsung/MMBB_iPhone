@@ -19,7 +19,7 @@
 }
 
 @property (nonatomic, retain) id idelegate;
-@property (nonatomic, retain) QuestionGroupItem *itemData;
+//@property (nonatomic, retain) QuestionGroupItem *itemData;
 @property (nonatomic, retain) IBOutlet UIImageView *rimageView;
 @property (nonatomic, retain) IBOutlet UIButton	*startBtn;
 @property (nonatomic, retain) IBOutlet UIButton	*resetBtn;
@@ -29,7 +29,7 @@
 - (void)update: (BOOL) solved;
 - (IBAction) startBtnTouched: (UIButton *) sender;
 - (IBAction) resetBtnTouched: (UIButton *) sender;
-
+- (QuestionGroupItem *)itemData;
 @end
 
 @protocol QAMenuItemViewControllerDelegate

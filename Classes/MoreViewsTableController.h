@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MMBBTableController.h"
 
 @interface MoreViewsTableController : UITableViewController {
     
