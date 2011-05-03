@@ -16,7 +16,7 @@
 
 @implementation AnswerBtnsViewController
 
-@synthesize question, aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, contentView, questionView;
+@synthesize questionView, question, aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, contentView;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -27,17 +27,27 @@
 }
 
 - (void)viewDidLoad {
-	//[super viewDidLoad];
 	questionView = [[QuestionView alloc] initWithQuestionItem:question];
 	//self.contentView.frame = CGRectMake(0, self.contentView.frame.origin-76, 
 	//									self.contentView.frame.size.width, self.contentView.frame.size.height+76);
 	[[self contentView] addSubview: [questionView view]];
 	// update quiz button with answer.
+    [questionView update];
 	[self update];
+    [super viewDidLoad];
+}
+
+- (void)viewDidUnload {
+    self.aBtn1 = nil;
+    self.aBtn2 = nil;
+    self.aBtn3 = nil;
+    self.aBtn4 = nil;
+    self.aBtn5 = nil;
+    self.contentView = nil;
+    [super viewDidUnload];
 }
 
 - (void)update {
-	[questionView update];
 	if (question.userAnswer>0) {
 		NSArray *aBtns = [NSArray arrayWithObjects: aBtn1, aBtn2, aBtn3, aBtn4, aBtn5, nil];
 		UIButton *btn = [aBtns objectAtIndex:question.userAnswer-1];
@@ -96,20 +106,15 @@
 
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (void)dealloc {
-	[aBtn1 release]; 
-	[aBtn2 release];
-	[aBtn3 release]; 
-	[aBtn4 release];
-	[aBtn5 release];	
+    [questionView release];
+    [self.aBtn1 release];
+    [self.aBtn2 release];
+    [self.aBtn3 release];
+    [self.aBtn4 release];
+    [self.aBtn5 release];
+    [self.contentView release];
 	[question release];
-	[questionView release];
     [super dealloc];
 }
 

@@ -59,6 +59,7 @@
                 if (vc.view.superview != nil) {
                     [vc.view removeFromSuperview];
                     [self.viewControllers replaceObjectAtIndex:i withObject:[NSNull null]];
+                    vc = nil;
                 }
             }
         }

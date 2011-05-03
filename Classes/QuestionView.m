@@ -11,7 +11,7 @@
 
 @implementation QuestionView
 
-@synthesize tableView, qImage, answerIndicatorCell, infoBtn, answerLabel;
+@synthesize tableView, qImage, answerIndicatorCell, infoBtn,answerLabel;
 
 - (id)initWithQuestionItem: (QuestionItem *) qi{
 	if (self == [super initWithNibName:@"QuestionView" bundle:nil]) {
@@ -42,6 +42,24 @@
 	qImage.image = [UIImage imageWithContentsOfFile:path];
 	
 	//self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)viewDidUnload {
+    [self setQImage:nil];
+    [self setTableView:nil];
+    [self setAnswerIndicatorCell:nil];
+    [self setInfoBtn:nil];
+    [self setAnswerLabel:nil];
+    [super viewDidUnload];
+}
+
+- (void)dealloc {
+    [tableView release];
+	[qImage release];
+	[answerIndicatorCell release];
+	[infoBtn release];
+	[answerLabel release];
+	[super dealloc];
 }
 
 - (void) update {
@@ -153,23 +171,5 @@
     
     // Release any cached data, images, etc. that aren't in use.
 }
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-    [tableView release];
-	[qImage release];
-	[answerIndicatorCell release];
-	[infoBtn release];
-	[answerLabel release];
-	[contentView release];
-	[super dealloc];
-}
-
 
 @end

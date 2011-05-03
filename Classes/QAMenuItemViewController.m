@@ -12,12 +12,24 @@
 
 @synthesize idelegate, rimageView, startBtn, resetBtn, getAnswerBtn;
 
+
+
+- (void)viewDidUnload {
+    [self setRimageView:nil];
+    [self setStartBtn:nil];
+    [self setResetBtn:nil];
+    [self setGetAnswerBtn:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 - (void)dealloc {
     [idelegate release];
 	[rimageView release];
 	[startBtn release];
 	[resetBtn release];
-	[getAnswerBtn release];
+    [getAnswerBtn release];
     [super dealloc];
 }
 
@@ -83,13 +95,6 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc. that aren't in use.
-}
-
-- (void)viewDidUnload {
-//	self.rimageView = nil;
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (QuestionGroupItem *)itemData {

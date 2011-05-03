@@ -17,7 +17,6 @@
 	UITableViewCell *answerIndicatorCell;
 	UIButton *infoBtn;
 	UILabel *answerLabel;
-	UIView *contentView;
 }
 
 //@property (nonatomic, retain) QuestionItem *question;

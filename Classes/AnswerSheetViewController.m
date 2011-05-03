@@ -10,9 +10,8 @@
 #import "QuestionItem.h"
 
 @implementation AnswerSheetViewController
-@synthesize descViewBtn;
 
-@synthesize pageController, totalLabel, totalCorrectLabel, totalTitleLabel, quizNumberTitleLabel;
+@synthesize pageController, totalLabel, totalCorrectLabel, totalTitleLabel, quizNumberTitleLabel, descViewBtn;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithPageController: (QuestionPagesController *) pc {
@@ -30,6 +29,26 @@
 	[super viewDidLoad];
 	totalTitleLabel.text = NSLocalizedString(@"총점", @"dummy");
 	quizNumberTitleLabel.text =NSLocalizedString(@"정답", @"dummy");
+}
+
+- (void)viewDidUnload {
+    [self setTotalLabel:nil];
+    [self setTotalCorrectLabel:nil];
+    [self setTotalTitleLabel:nil];
+    [self setQuizNumberTitleLabel:nil];
+    [self setDescViewBtn:nil];
+    [super viewDidUnload];
+}
+
+
+- (void)dealloc {
+	[pageController release];
+	[totalLabel release];
+	[totalTitleLabel release];
+	[quizNumberTitleLabel release];
+    [totalCorrectLabel release];
+    [descViewBtn release];
+    [super dealloc];
 }
 
 /*
@@ -101,19 +120,4 @@
     totalCorrectLabel.text = totalCorrectString;
 }
 
-- (void)dealloc {
-	[pageController release];
-	[totalLabel release];
-	[totalTitleLabel release];
-	[quizNumberTitleLabel release];
-    [totalCorrectLabel release];
-    [descViewBtn release];
-    [super dealloc];
-}
-
-- (void)viewDidUnload {
-    [self setTotalCorrectLabel:nil];
-    [self setDescViewBtn:nil];
-    [super viewDidUnload];
-}
 @end

@@ -16,7 +16,6 @@
 - (void)updateCurrentPage;
 @end
 
-
 @implementation QAMenuPageController
 @synthesize currentPageIndex, segmentedControl, seg1BGImg, seg2BGImg;
 
@@ -58,6 +57,13 @@
 											 self.scrollView.frame.size.height);
 }
 
+- (void)viewDidUnload {
+    [self setSegmentedControl:nil];
+    [self setSeg1BGImg:nil];
+    [self setSeg2BGImg:nil];
+    [super viewDidUnload];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
 	[self updateCurrentPage];
 }
@@ -80,7 +86,6 @@
 	if (isReset) {
 		[[MMBBAppDelegate sql] resetQuestionsInGroup: sender.itemData.id 
 													   withType: segmentedControl.selectedSegmentIndex + 1];
-		
 	}
 	qp.pageDataArray = [[MMBBAppDelegate sql] getQuestionInGroup:sender.itemData.id
 														  withType:segmentedControl.selectedSegmentIndex + 1];
@@ -152,12 +157,6 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc. that aren't in use.
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)dealloc {

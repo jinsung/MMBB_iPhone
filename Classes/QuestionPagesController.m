@@ -56,6 +56,11 @@
 											 self.scrollView.frame.size.height);
 }
 
+- (void)viewDidUnload {
+    [self setChapterInfoLable:nil];
+    [super viewDidUnload];
+}
+
 - (void)dealloc {
 	[chapterInfoLable release];
 	[qgData release];

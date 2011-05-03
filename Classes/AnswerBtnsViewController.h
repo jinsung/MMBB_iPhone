@@ -27,8 +27,8 @@
 @property (nonatomic, retain) IBOutlet UIButton *aBtn3;
 @property (nonatomic, retain) IBOutlet UIButton *aBtn4;
 @property (nonatomic, retain) IBOutlet UIButton *aBtn5;
-@property (nonatomic, retain) QuestionItem *question;
 @property (nonatomic, retain) IBOutlet UIView *contentView;
+@property (nonatomic, retain) QuestionItem *question;
 @property (nonatomic, retain) QuestionView *questionView;
 
 - (IBAction)answerBtnPressed:(UIButton *)sender;

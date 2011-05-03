@@ -49,6 +49,16 @@ infoBtn, answerLabel, wrongAnswerLabel, descTextView;
 	[self setupDescTextView];
 }
 
+- (void)viewDidUnload {
+    [self setAnswerIndicatorCell:nil];
+    [self setDescCell:nil];
+    [self setInfoBtn:nil];
+    [self setAnswerLabel:nil];
+    [self setWrongAnswerLabel:nil];
+    [self setDescTextView:nil];
+    [super viewDidUnload];
+}
+
 - (IBAction)flipBtnPressed:(UIButton *)sender {
 	[self.delegate flipsideViewControllerDidFinish:self];
 }
@@ -142,12 +152,6 @@ infoBtn, answerLabel, wrongAnswerLabel, descTextView;
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc. that aren't in use.
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 @end
