@@ -47,6 +47,7 @@ letUserSelectRow=_letUserSelectRow;
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    [self setTableView:nil];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

@@ -37,9 +37,10 @@
 }
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
 	self.filteredListContent = nil;
 	self.tableView.scrollEnabled = YES;
+    self.segmentedControl = nil;
+    [super viewDidUnload];
 }
 
 -(void) viewDidLoad 
