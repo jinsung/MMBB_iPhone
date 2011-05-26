@@ -150,7 +150,6 @@
 		EF36652E1344225F00374124 /* 18-159.png in Resources */ = {isa = PBXBuildFile; fileRef = EF36652B1344225F00374124 /* 18-159.png */; };
 		EF36652F1344225F00374124 /* 18-160.png in Resources */ = {isa = PBXBuildFile; fileRef = EF36652C1344225F00374124 /* 18-160.png */; };
 		EF36701312CD43470008AC83 /* MMBBNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36701212CD43470008AC83 /* MMBBNavController.m */; };
-		EF36705B12CD4CF50008AC83 /* QANavController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36705A12CD4CF50008AC83 /* QANavController.m */; };
 		EF36706B12CD4E2E0008AC83 /* QATableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF36706912CD4E2E0008AC83 /* QATableViewController.xib */; };
 		EF36711A12D14B300008AC83 /* QuestionPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36711812D14B300008AC83 /* QuestionPagesController.m */; };
 		EF36711B12D14B300008AC83 /* QuestionPagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF36711912D14B300008AC83 /* QuestionPagesController.xib */; };
@@ -202,6 +201,10 @@
 		EF53CD3E1336E7AD00075D5C /* 3-47.png in Resources */ = {isa = PBXBuildFile; fileRef = EF53CD1D1336E7AD00075D5C /* 3-47.png */; };
 		EF53CD3F1336E7AD00075D5C /* 3-48.png in Resources */ = {isa = PBXBuildFile; fileRef = EF53CD1E1336E7AD00075D5C /* 3-48.png */; };
 		EF5A0133133060EC004BDAD7 /* quiz_menu_green_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5A0132133060EC004BDAD7 /* quiz_menu_green_btn.png */; };
+		EF5C9269135D2814009EC6DE /* MoreViewsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5C9267135D2814009EC6DE /* MoreViewsTableController.m */; };
+		EF5C926A135D2814009EC6DE /* MoreViewsTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5C9268135D2814009EC6DE /* MoreViewsTableController.xib */; };
+		EF5C926E135D3276009EC6DE /* MoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5C926C135D3275009EC6DE /* MoreDetailViewController.m */; };
+		EF5C926F135D3276009EC6DE /* MoreDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5C926D135D3275009EC6DE /* MoreDetailViewController.xib */; };
 		EF600D9A130DC46C00447AF3 /* quiz_btn_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = EF600D97130DC46C00447AF3 /* quiz_btn_normal.png */; };
 		EF600D9B130DC46C00447AF3 /* quiz_btn_pick.png in Resources */ = {isa = PBXBuildFile; fileRef = EF600D98130DC46C00447AF3 /* quiz_btn_pick.png */; };
 		EF600D9C130DC46C00447AF3 /* quiz_btn_wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = EF600D99130DC46C00447AF3 /* quiz_btn_wrong.png */; };
@@ -229,6 +232,8 @@
 		EFA72745130734B6000CA831 /* pageControllerBG.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA72744130734B6000CA831 /* pageControllerBG.png */; };
 		EFA727F3130751DB000CA831 /* RespondedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA727F2130751DB000CA831 /* RespondedImageView.m */; };
 		EFAEBD2D128D018900C44B0A /* ContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAEBD2C128D018900C44B0A /* ContentScrollView.m */; };
+		EFB32245135243C30029BD1A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB32244135243C30029BD1A /* Icon.png */; };
+		EFB322471352443A0029BD1A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB322461352443A0029BD1A /* Default@2x.png */; };
 		EFB3FA0F1300F21200604DA2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB3FA0E1300F21200604DA2 /* Icon.png */; };
 		EFC08B331281794000B916DB /* UnitItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC08B321281794000B916DB /* UnitItem.m */; };
 		EFC08B741281803B00B916DB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC08B721281803B00B916DB /* MainWindow.xib */; };
@@ -437,8 +442,6 @@
 		EF36652C1344225F00374124 /* 18-160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "18-160.png"; path = "Images/Units/18/18-160.png"; sourceTree = SOURCE_ROOT; };
 		EF36701112CD43470008AC83 /* MMBBNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBBNavController.h; sourceTree = "<group>"; };
 		EF36701212CD43470008AC83 /* MMBBNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBBNavController.m; sourceTree = "<group>"; };
-		EF36705912CD4CF50008AC83 /* QANavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QANavController.h; sourceTree = "<group>"; };
-		EF36705A12CD4CF50008AC83 /* QANavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QANavController.m; sourceTree = "<group>"; };
 		EF36706912CD4E2E0008AC83 /* QATableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = QATableViewController.xib; path = Classes/QATableViewController.xib; sourceTree = "<group>"; };
 		EF36711712D14B300008AC83 /* QuestionPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionPagesController.h; sourceTree = "<group>"; };
 		EF36711812D14B300008AC83 /* QuestionPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionPagesController.m; sourceTree = "<group>"; };
@@ -494,6 +497,12 @@
 		EF53CD1D1336E7AD00075D5C /* 3-47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-47.png"; sourceTree = "<group>"; };
 		EF53CD1E1336E7AD00075D5C /* 3-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-48.png"; sourceTree = "<group>"; };
 		EF5A0132133060EC004BDAD7 /* quiz_menu_green_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz_menu_green_btn.png; path = Assets/quiz/quiz_menu_green_btn.png; sourceTree = "<group>"; };
+		EF5C9266135D2814009EC6DE /* MoreViewsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewsTableController.h; sourceTree = "<group>"; };
+		EF5C9267135D2814009EC6DE /* MoreViewsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewsTableController.m; sourceTree = "<group>"; };
+		EF5C9268135D2814009EC6DE /* MoreViewsTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreViewsTableController.xib; path = Classes/MoreViewsTableController.xib; sourceTree = "<group>"; };
+		EF5C926B135D3275009EC6DE /* MoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDetailViewController.h; sourceTree = "<group>"; };
+		EF5C926C135D3275009EC6DE /* MoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDetailViewController.m; sourceTree = "<group>"; };
+		EF5C926D135D3275009EC6DE /* MoreDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreDetailViewController.xib; path = Classes/MoreDetailViewController.xib; sourceTree = "<group>"; };
 		EF600D97130DC46C00447AF3 /* quiz_btn_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz_btn_normal.png; path = Assets/quiz/quiz_btn_normal.png; sourceTree = "<group>"; };
 		EF600D98130DC46C00447AF3 /* quiz_btn_pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz_btn_pick.png; path = Assets/quiz/quiz_btn_pick.png; sourceTree = "<group>"; };
 		EF600D99130DC46C00447AF3 /* quiz_btn_wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quiz_btn_wrong.png; path = Assets/quiz/quiz_btn_wrong.png; sourceTree = "<group>"; };
@@ -532,6 +541,8 @@
 		EFA727F2130751DB000CA831 /* RespondedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RespondedImageView.m; sourceTree = "<group>"; };
 		EFAEBD2B128D018900C44B0A /* ContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentScrollView.h; sourceTree = "<group>"; };
 		EFAEBD2C128D018900C44B0A /* ContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentScrollView.m; sourceTree = "<group>"; };
+		EFB32244135243C30029BD1A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EFB322461352443A0029BD1A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EFB3FA0E1300F21200604DA2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Assets/Icon.png; sourceTree = "<group>"; };
 		EFC08B311281794000B916DB /* UnitItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitItem.h; sourceTree = "<group>"; };
 		EFC08B321281794000B916DB /* UnitItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitItem.m; sourceTree = "<group>"; };
@@ -611,6 +622,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				EFB322461352443A0029BD1A /* Default@2x.png */,
+				EFB32244135243C30029BD1A /* Icon.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				EFC08B6E1281800700B916DB /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -653,6 +666,7 @@
 		EF235758128024D1004001E3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF5C9265135D2799009EC6DE /* MoreViews */,
 				EF36705812CD4AD30008AC83 /* QandA */,
 				EF96A90A12B87E83006C6FE3 /* Common */,
 				EFFECF03128A5BC80084EF7A /* ContentsViewer */,
@@ -903,8 +917,6 @@
 			isa = PBXGroup;
 			children = (
 				EF3670F812D12E110008AC83 /* QuestionPage */,
-				EF36705912CD4CF50008AC83 /* QANavController.h */,
-				EF36705A12CD4CF50008AC83 /* QANavController.m */,
 				EF8C771F12FF0C45009B1F5C /* QAMenuPageController.h */,
 				EF47A3AB1346B17A00C94A06 /* QAMenuPageController.m */,
 				EFA726B213070C08000CA831 /* QAMenuItemViewController.h */,
@@ -1009,6 +1021,17 @@
 			name = quiz;
 			sourceTree = "<group>";
 		};
+		EF5C9265135D2799009EC6DE /* MoreViews */ = {
+			isa = PBXGroup;
+			children = (
+				EF5C9266135D2814009EC6DE /* MoreViewsTableController.h */,
+				EF5C9267135D2814009EC6DE /* MoreViewsTableController.m */,
+				EF5C926B135D3275009EC6DE /* MoreDetailViewController.h */,
+				EF5C926C135D3275009EC6DE /* MoreDetailViewController.m */,
+			);
+			name = MoreViews;
+			sourceTree = "<group>";
+		};
 		EF8C772412FF0CBB009B1F5C /* PageController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1021,6 +1044,8 @@
 		EF96A8F412B87151006C6FE3 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
+				EF5C926D135D3275009EC6DE /* MoreDetailViewController.xib */,
+				EF5C9268135D2814009EC6DE /* MoreViewsTableController.xib */,
 				EFC08B721281803B00B916DB /* MainWindow.xib */,
 				EF60135B1310A0DF00447AF3 /* QuestionView.xib */,
 				EF6011551310485400447AF3 /* QADescriptionFlipsideViewController.xib */,
@@ -1513,6 +1538,10 @@
 				EF2FA52D1346DD35000833E2 /* 9-19-1.png in Resources */,
 				EF2FA52E1346DD35000833E2 /* 9-20-1.png in Resources */,
 				EF2FA5301346DD3E000833E2 /* 18-21-1.png in Resources */,
+				EFB32245135243C30029BD1A /* Icon.png in Resources */,
+				EFB322471352443A0029BD1A /* Default@2x.png in Resources */,
+				EF5C926A135D2814009EC6DE /* MoreViewsTableController.xib in Resources */,
+				EF5C926F135D3276009EC6DE /* MoreDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1552,7 +1581,6 @@
 				EFE0F7EA12A06C2100DA292B /* BookmarkAdderTblViewController.m in Sources */,
 				EF96A90E12B87EB5006C6FE3 /* MMBBTableController.m in Sources */,
 				EF36701312CD43470008AC83 /* MMBBNavController.m in Sources */,
-				EF36705B12CD4CF50008AC83 /* QANavController.m in Sources */,
 				EF36711A12D14B300008AC83 /* QuestionPagesController.m in Sources */,
 				EF36714C12D153D90008AC83 /* AnswerBtnsViewController.m in Sources */,
 				EF250CD712E25ED500E12F85 /* QuestionItem.m in Sources */,
@@ -1567,6 +1595,8 @@
 				EF37BE931342CA5400CCEF54 /* QuestionGroupItem.m in Sources */,
 				EF47A3AC1346B17A00C94A06 /* QAMenuPageController.m in Sources */,
 				EFD238511347C2E4007D554E /* LastUnitView.m in Sources */,
+				EF5C9269135D2814009EC6DE /* MoreViewsTableController.m in Sources */,
+				EF5C926E135D3276009EC6DE /* MoreDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1627,8 +1657,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "BCF9CA86-7385-4726-865D-CABD7D84FD9E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BCF9CA86-7385-4726-865D-CABD7D84FD9E";
+				PROVISIONING_PROFILE = "011EA93C-D8EB-4EE5-B2DE-9C6015A42DB6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "011EA93C-D8EB-4EE5-B2DE-9C6015A42DB6";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1645,8 +1675,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "BCF9CA86-7385-4726-865D-CABD7D84FD9E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A2C288E2-E3CE-4330-8990-53B433391986";
+				PROVISIONING_PROFILE = "011EA93C-D8EB-4EE5-B2DE-9C6015A42DB6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "011EA93C-D8EB-4EE5-B2DE-9C6015A42DB6";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
