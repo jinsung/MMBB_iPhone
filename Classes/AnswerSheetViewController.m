@@ -11,7 +11,7 @@
 
 @implementation AnswerSheetViewController
 
-@synthesize pageController, totalLabel, totalCorrectLabel, totalTitleLabel, quizNumberTitleLabel, descViewBtn;
+@synthesize pageController, totalLabel, totalCorrectLabel, totalTitleLabel, quizNumberTitleLabel, descViewBtn, mmbbScoreImage;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithPageController: (QuestionPagesController *) pc {
@@ -37,9 +37,9 @@
     [self setTotalTitleLabel:nil];
     [self setQuizNumberTitleLabel:nil];
     [self setDescViewBtn:nil];
+    [self setMmbbScoreImage:nil];
     [super viewDidUnload];
 }
-
 
 - (void)dealloc {
 	[pageController release];
@@ -48,6 +48,7 @@
 	[quizNumberTitleLabel release];
     [totalCorrectLabel release];
     [descViewBtn release];
+    [mmbbScoreImage release];
     [super dealloc];
 }
 
@@ -67,7 +68,7 @@
 }
 
 - (void) update: (NSMutableArray *) questions {
-	NSInteger numberOfCorrect = 0;
+	float numberOfCorrect = 0;
     NSInteger hightMultipler = -1;
 	for (NSInteger i=0; i<[questions count]; i++) {
 		QuestionItem *item = [questions objectAtIndex:i];
@@ -114,6 +115,19 @@
 		
 		[quizNumLable release];
 	}
+    //float fnumberOfCorrect = [numberOfCorrect floatValue
+    
+    float scorePercent = numberOfCorrect/[questions count];
+    NSString *path;
+    if (scorePercent > 0.5) {
+        path = [[NSBundle mainBundle] pathForResource:@"bttn_flip"
+                                                         ofType:@"png" inDirectory:@""];
+    } else {
+        path = [[NSBundle mainBundle] pathForResource:@"house"
+                                                         ofType:@"png" inDirectory:@""];
+    }
+    UIImage *image = [[UIImage alloc] initWithContentsOfFile:path];
+    mmbbScoreImage.image = image;
 	NSString *totalString = [NSString stringWithFormat:@"/%d", [questions count]];
     NSString *totalCorrectString = [NSString stringWithFormat:@"%d", numberOfCorrect];
 	totalLabel.text = totalString;	
